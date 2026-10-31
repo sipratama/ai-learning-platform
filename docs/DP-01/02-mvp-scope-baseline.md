@@ -4,10 +4,10 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | MVP Scope Baseline |
-| Version | 0.1.6 — subsequent administrative governance synchronization |
+| Version | 0.1.7 — subsequent administrative governance synchronization |
 | Status | **Approved product baseline v0.1.2; later revisions record governance only** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.5 recorded prior governance; v0.1.6 records AG-04 conditional approval/FA-007 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.6 recorded prior governance; v0.1.7 records later AG-05 conditional approval without changing that substance |
 | Last prepared | 2026-10-31 |
 
 > **Scope authority:** dokumen ini mencatat committed versus deferred capabilities dari discovery dan klarifikasi Product Owner saat ini (PO-CLAR-D021, PO-CLAR-D018, PO-CLAR-D010-Q001). Klarifikasi tersebut menetapkan scope sekarang, bukan membuktikan wording keputusan historis. Perilaku domain yang tepat, user journeys dan kebijakan P1 diselesaikan dalam DP-02. Stable requirement IDs **belum diterbitkan**; ID pada tabel adalah decision references yang telah ada.
@@ -107,7 +107,7 @@ New features, different role models, new scoring methods, a requirement to run u
 - FA-004 B approved: Path participation independent from Course enrollment; DP-02 owns detailed contract.
 - FA-005 B approved: version-pinned enrollment and controlled migration; DP-02 owns detailed contract. Historical retention still depends on FA-006.
 - FA-006 B later approved: lifecycle-based deletion/data minimization and Product Owner targets recorded in [Open Decisions Register](04-open-decisions-register.md); AG-03 review and AG-04 consistency remain.
-- FA-007 B later approved: Balanced Quality Beta target untuk UX, WCAG 2.2 AA, performa, integrity, security dan release evidence dicatat dalam [Decision Registry](03-decision-registry.md); AG-05 dan beta release tetap perlu keputusan terpisah.
+- FA-007 B later approved: Balanced Quality Beta target untuk UX, WCAG 2.2 AA, performa, integrity, security dan release evidence dicatat dalam [Decision Registry](03-decision-registry.md); AG-05 kemudian disetujui kondisional untuk dokumentasi, sementara beta release masih perlu bukti dan keputusan terpisah.
 - FA-008 B later approved: INF-01–INF-14 Balanced Production MVP; Singapore conditional preferred region pending legal/latency validation. Host, paid tier, instance size and numeric RPO/RTO are not approved. See [Decision Registry](03-decision-registry.md).
 
 ## 9. AG-01 approval record
@@ -118,4 +118,6 @@ Product Owner explicitly approved the four DP-01 **v0.1.2** documents through AG
 
 **Historical v0.1.5 governance:** AG-03 Conditionally Approved for DP-03 v0.1.0, FA-006-B1 B and FA-008 B Approved; AG-04 was Not Approved. FA-007 and GAP-001/002/003/007 were Open at that record.
 
-**Current v0.1.6 governance:** AG-04 Conditionally Approved for DP-04 v0.1.0; FA-007 B Approved; GAP-001/002/003/007 Open; AG-05 Not Approved. Earlier v0.1.5 status is historical.
+**Historical v0.1.6 governance:** AG-04 Conditionally Approved for DP-04 v0.1.0; FA-007 B Approved; GAP-001/002/003/007 Open; AG-05 was Not Approved. Earlier v0.1.5 status is historical.
+
+**Current v0.1.7 governance:** AG-05 subsequently Conditionally Approved for all six DP-05 v0.1.0 documents. GAP-001/002/003/007 remain Open; dependent implementation is blocked. AG-06 is Not Approved; DP-06 authoring is separately authorized, but no slice implementation or beta release is authorized. The v0.1.2 product scope is unchanged.

@@ -3,7 +3,7 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-03 — Domain-Aligned Architecture & Data Contracts |
-| Version | v0.1.2 — subsequent administrative addendum after the six-document v0.1.0 snapshot |
+| Version | v0.1.3 — subsequent administrative addendum after the six-document v0.1.0 snapshot |
 | Status | **DP-03 v0.1.0 Conditionally Approved; this addendum records later governance only** |
 | Approval gate | AG-03 — **Conditionally Approved for six v0.1.0 documents** |
 | Approved sources | [DP-01 Decision Registry](../DP-01/03-decision-registry.md), [Open Decisions Register](../DP-01/04-open-decisions-register.md), [DP-02 rules](../DP-02/02-domain-rules-and-invariants.md), [acceptance criteria](../DP-02/05-acceptance-criteria.md), [conditional AG-02 addendum](../DP-02/06-traceability-matrix.md) |
@@ -76,3 +76,7 @@ GAP-001/002/003/007 remain **Open** with dependent implementation unauthorized; 
 ## 6. Later governance status — v0.1.2 administrative addendum
 
 The Product Owner subsequently **conditionally approved AG-04** for the six DP-04 v0.1.0 documents and **approved FA-007 B** for DP-05. The §5 FA-007/AG-04 statuses are historical; the original DP-03 v0.1.0 architecture contract remains unchanged. GAP-001/002/003/007 remain **Open**, with dependent implementation unauthorized. AG-05 is **Not Approved**. See the current [Decision Registry](../DP-01/03-decision-registry.md).
+
+## 7. Later governance status — v0.1.3 administrative addendum
+
+AG-05 was subsequently **Conditionally Approved** for six DP-05 v0.1.0 documents; §6 records its earlier state. The DP-03 v0.1.0 architecture contract remains unchanged. GAP-001/002/003/007 remain **Open** with dependent implementation unauthorized. AG-06 is **Not Approved**; no implementation or beta release is authorized. See the current [Decision Registry](../DP-01/03-decision-registry.md).

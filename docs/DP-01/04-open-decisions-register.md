@@ -4,13 +4,13 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Open Decisions Register |
-| Version | 0.1.6 — subsequent administrative governance synchronization |
-| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.6 record later governance decisions** |
+| Version | 0.1.7 — subsequent administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.7 record later governance decisions** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.5 record prior governance; v0.1.6 records AG-04 conditional approval and FA-007 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.6 record prior governance; v0.1.7 records later AG-05 conditional approval without changing that substance |
 | Prepared | 2026-10-31 |
 
-> **Rule:** FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B, FA-007 B and FA-008 B are current explicit Product Owner approvals. AG-02/AG-03/AG-04 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. v0.1.6 is a later administrative record, not a change to DP-01 v0.1.2 product substance or historical evidence.
+> **Rule:** FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B, FA-007 B and FA-008 B are current explicit Product Owner approvals. AG-02/AG-03/AG-04/AG-05 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. v0.1.7 is a later administrative record, not a change to DP-01 v0.1.2 product substance or historical evidence.
 
 ## 1. Open decisions overview
 
@@ -69,7 +69,7 @@ FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-
 
 **Affected:** DP-02 UX, DP-04 operational requirements, DP-05 QA and release gates.
 
-**Decision status:** **Approved — Option B** by current explicit Product Owner approval. AG-05 remains Not Approved; beta release requires separate evidence and authorization.
+**Decision status:** **Approved — Option B** by current explicit Product Owner approval. AG-05 was Not Approved at the v0.1.6 record; its later conditional approval is in §13. Beta release still requires separate evidence and authorization.
 
 ## 6. FA-008 — Infrastructure & Operational Parameters
 
@@ -113,14 +113,14 @@ AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001�
 
 | Gate | Current status | Open decisions relevant |
 |---|---|---|
-| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3–v0.1.6 are subsequent administrative records |
+| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3–v0.1.7 are subsequent administrative records |
 | AG-02 | **Conditionally Approved for six DP-02 v0.1.1 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
 | AG-03 | **Conditionally Approved for six DP-03 v0.1.0 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
 | AG-04 | **Conditionally Approved for six DP-04 v0.1.0 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; planned tests/drills not evidence |
-| AG-05 | Not Approved | Review DP-05 against approved FA-007 B; documentation approval is not beta release approval |
-| AG-06 | Not Started | Requires approved dependencies / governance plan |
+| AG-05 | **Conditionally Approved for six DP-05 v0.1.0 documents** | Verification plans and release-gate design approved conditionally; no executed evidence or beta release authorization |
+| AG-06 | Not Approved | DP-06 review required; no implementation slice authorized |
 
-**Authoring boundary:** DP-05 documentation authoring is separately authorized after conditional AG-04 approval and FA-007 B. DP-06 authoring and application code/test scripts/configuration remain unauthorized. AG-05 is Not Approved.
+**Authoring boundary:** DP-06 documentation authoring is separately authorized after conditional AG-05 approval. AG-06 is Not Approved; VS-01 and other application code/test scripts/configuration remain unauthorized. GAP-dependent implementation remains blocked.
 
 ## 10. Conditional AG-02 open GAPs
 
@@ -144,3 +144,7 @@ Material changes require the [Decision Registry change control](03-decision-regi
 ## 12. Subsequent AG-04 disposition
 
 **AG-04 — Conditionally Approved:** The six DP-04 v0.1.0 documents are the approved baseline for contracts supported by approved product decisions. Their original Draft/Not Approved metadata records the earlier snapshot. GAP-001/002/003/007 remain Open and their dependent implementation blocked. Planned security tests and operational drills are not completed evidence. Material contract changes require change control. FA-007 B was approved later as the DP-05 quality source; neither decision approves AG-05 or beta release.
+
+## 13. Subsequent AG-05 disposition
+
+**AG-05 — Conditionally Approved:** The six DP-05 v0.1.0 documents form the conditionally approved verification-plan baseline. Their original Draft/Not Approved metadata reports the earlier snapshot. This later administrative disposition approves strategy, scenarios, evidence requirements and release-gate design only; security and integrity hard gates remain nonwaivable. It supplies no executed evidence, technical readiness, slice implementation permission or beta release approval. FA-007 B stays Approved. GAP-001/002/003/007 stay Open with dependent implementation blocked; material changes require change control. AG-06 is Not Approved.

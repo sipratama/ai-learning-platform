@@ -2,9 +2,9 @@
 
 | Metadata | Value |
 |---|---|
-| Version | v0.1.0 |
-| Status | Draft — Not Approved |
-| Approval gate | AG-05 — Not Approved |
+| Version | v0.1.1 — administrative addendum after the six-document v0.1.0 snapshot |
+| Status | DP-05 v0.1.0 Conditionally Approved; addendum records later governance only |
+| Approval gate | AG-05 — Conditionally Approved for six v0.1.0 documents |
 | Purpose | Connect approved sources to planned evidence and govern defect disposition. |
 
 ## 1. Authority and reading key
@@ -59,3 +59,7 @@ Coverage audit at drafting: critical approved MVP rules have planned scenarios, 
 | DEF-007 Acceptance/closure | Close only on verified retest and documented impact resolution. Noncritical performance/UX acceptance follows `EXC-001`; hard security/integrity/privacy gates cannot be accepted through that path. Reopened on regression or expired exception. |
 
 No defect counts, test passes or exceptions are fabricated. AG-05 documentation approval, technical readiness and release authorization remain separate [decisions](05-release-evidence-and-go-no-go-criteria.md).
+
+## 5. Subsequent governance addendum — outside approved v0.1.0 snapshot
+
+Sections 1–4 preserve the original DP-05 v0.1.0 Draft/Not Approved review state. The Product Owner later **conditionally approved AG-05** for all six DP-05 v0.1.0 documents, covering verification strategy, scenarios, evidence requirements and release-gate design. The other five files retain original snapshot metadata. This v0.1.1 addendum changes no test target or gate. FA-007 B remains Approved; GAP-001/002/003/007 remain **Open**, and their dependent implementation blocked. Security and data-integrity hard gates cannot be waived. Documentation approval supplies no executed evidence, beta release authorization or slice implementation permission. AG-06 is **Not Approved**; material changes require [Decision Registry change control](../DP-01/03-decision-registry.md).

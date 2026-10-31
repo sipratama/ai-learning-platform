@@ -3,7 +3,7 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-02 — Comprehensive Domain & UX Contracts |
-| Version | 0.1.4 — subsequent administrative addendum after the six-document v0.1.1 snapshot |
+| Version | 0.1.5 — subsequent administrative addendum after the six-document v0.1.1 snapshot |
 | Status | **DP-02 v0.1.1 Conditionally Approved; later addenda record governance only** |
 | Approval gate | AG-02 — **Conditionally Approved for six v0.1.1 documents** |
 | Source | [Approved DP-01 baseline and governance record](../DP-01/03-decision-registry.md) |
@@ -93,3 +93,7 @@ The Product Owner later conditionally approved the six DP-03 v0.1.0 documents th
 ## 6. Later governance status — v0.1.4 administrative addendum
 
 The Product Owner subsequently **conditionally approved AG-04** for six DP-04 v0.1.0 documents and **approved FA-007 B**. The §5 FA-007/AG-04 statuses are historical. GAP-001/002/003/007 remain **Open** and dependent implementation blocked. AG-05 is **Not Approved**. This addendum changes no DP-02 rule or acceptance criterion; current decision wording is in the [Decision Registry](../DP-01/03-decision-registry.md).
+
+## 7. Later governance status — v0.1.5 administrative addendum
+
+The Product Owner subsequently **conditionally approved AG-05** for the six DP-05 v0.1.0 documents. The §6 AG-05 status is historical. FA-007 B remains Approved; GAP-001/002/003/007 remain **Open** and dependent implementation blocked. AG-06 is **Not Approved**; no slice implementation or beta release follows from the DP-05 documentation approval. This addendum changes no DP-02 domain rule or AC; see the current [Decision Registry](../DP-01/03-decision-registry.md).

@@ -4,7 +4,7 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Product Charter |
-| Version | 0.1.1 |
+| Version | 0.1.2 |
 | Status | **Draft — Not Approved** |
 | Authoring authorization | AAR-01 — explicitly authorized by product owner |
 | Approval gate | AG-01 — **Not Started** |
@@ -103,4 +103,4 @@ Dokumen ini **tidak** menetapkan schema, state machine detail, endpoint HTTP, UX
 - **FA-007:** UX/performance/beta thresholds belum final (blocks AG-05).
 - **FA-008:** operational vendor/capacity/RPO/RTO belum final (blocks AG-04).
 
-**AG-01 status:** NOT STARTED. Rationale historis sebagian keputusan awal perlu verifikasi sumber primer sebelum approval. Tidak ada implied approval.
+**AG-01 status:** NOT STARTED. EG-001–EG-003 tetap belum terverifikasi secara historis; AG-01-EG-B menerima disposisi prospektifnya untuk baseline saat ini, bukan membuktikan wording historis atau menyetujui AG-01. Persetujuan AG-01 atas revisi dokumen ini tetap harus eksplisit.

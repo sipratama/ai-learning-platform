@@ -4,7 +4,7 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Open Decisions Register |
-| Version | 0.1.1 |
+| Version | 0.1.2 |
 | Status | **Draft — Not Approved** |
 | Approval gate | AG-01 — **Not Started** |
 | Prepared | 2026-10-31 |
@@ -126,22 +126,24 @@ For each FA item:
 
 These are **source evidence gaps, not product P1 decisions**:
 
-| ID | Evidence gap | Disposition |
+| ID | Historical evidence gap | Current disposition |
 |---|---|---|
-| EG-001 | D-001–D-008 individually mapped decision text not fully available; D-007/008 unknown | Verify primary conversation; block misleading registry approval |
-| EG-002 | D-029 exact historical decision wording unavailable | Verify or explicitly mark partial during AG-01 review |
-| EG-003 | Original approval records and per-ID source pointers are unavailable in this repository for R/P entries, including Q/G2/G3; existing U entries also lack an independently checkable original source here | Check primary sources where available; otherwise obtain explicit Product Owner attestation of the accepted current baseline without claiming historical wording was verified |
-| EG-004 | AG-01 has not reviewed four drafts | Run cross-artifact check and explicit named-version approval |
+| EG-001 | D-001–D-008 individually mapped decision text not fully available; D-007/008 unknown | Prospective disposition accepted by AG-01-EG-B; historical mapping remains unverified |
+| EG-002 | D-029 exact historical decision wording unavailable | Prospective disposition accepted by AG-01-EG-B; original wording remains unverified |
+| EG-003 | Original approval records and per-ID source pointers are unavailable in this repository for R/P entries, including Q/G2/G3; existing U entries also lack an independently checkable original source here | Prospective disposition accepted by AG-01-EG-B; no original source is thereby verified |
+| EG-004 | Formal AG-01 review and approval of the four drafts have not occurred | Complete formal review and obtain explicit named-version approval |
 
 Reference: [03-decision-registry.md](03-decision-registry.md).
 
 PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003 or change FA-004–FA-008 from Open.
 
+AG-01-EG-B is the Product Owner's current prospective evidence-gap disposition. EG-001–EG-003 remain historically unresolved; the disposition does not approve AG-01 or authorize later documentation.
+
 ## 9. Gate status and controls
 
 | Gate | Current status | Open decisions relevant |
 |---|---|---|
-| AG-01 | **Not Started** | Source-verification gaps EG-001–EG-004; FA P1 allowed to remain Open |
+| AG-01 | **Not Started** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; EG-004 formal review and explicit approval pending; FA P1 allowed to remain Open |
 | AG-02 | Not Started | FA-004, FA-005 |
 | AG-03 | Not Started | FA-006 |
 | AG-04 | Not Started | FA-008, FA-006 consistency |

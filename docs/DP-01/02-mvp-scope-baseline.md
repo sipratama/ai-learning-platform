@@ -4,12 +4,14 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | MVP Scope Baseline |
-| Version | 0.1.1 |
+| Version | 0.1.2 |
 | Status | **Draft — Not Approved** |
 | Approval gate | AG-01 — **Not Started** |
 | Last prepared | 2026-10-31 |
 
 > **Scope authority:** dokumen ini mencatat committed versus deferred capabilities dari discovery dan klarifikasi Product Owner saat ini (PO-CLAR-D021, PO-CLAR-D018, PO-CLAR-D010-Q001). Klarifikasi tersebut menetapkan scope sekarang, bukan membuktikan wording keputusan historis. Perilaku domain yang tepat, user journeys dan kebijakan P1 diselesaikan dalam DP-02. Stable requirement IDs **belum diterbitkan**; ID pada tabel adalah decision references yang telah ada.
+
+AG-01-EG-B menerima disposisi prospektif untuk kesenjangan bukti historis EG-001–EG-003. Isi historis yang belum diketahui tetap tidak terverifikasi; disposisi ini bukan persetujuan AG-01 atau izin mengerjakan DP-02.
 
 ## 1. MVP product release intent
 

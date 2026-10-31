@@ -4,13 +4,13 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Open Decisions Register |
-| Version | 0.1.5 — subsequent administrative governance synchronization |
-| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.5 record later governance decisions** |
+| Version | 0.1.6 — subsequent administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.6 record later governance decisions** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 record prior governance; v0.1.5 records AG-03 conditional approval, FA-006-B1 B and FA-008 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.5 record prior governance; v0.1.6 records AG-04 conditional approval and FA-007 B without changing that substance |
 | Prepared | 2026-10-31 |
 
-> **Rule:** FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B and FA-008 B are current explicit Product Owner approvals; FA-007 remains Open. AG-02 and AG-03 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. This v0.1.5 administrative revision follows the approved DP-01 v0.1.2 snapshot; it does not replace historical source evidence.
+> **Rule:** FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B, FA-007 B and FA-008 B are current explicit Product Owner approvals. AG-02/AG-03/AG-04 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. v0.1.6 is a later administrative record, not a change to DP-01 v0.1.2 product substance or historical evidence.
 
 ## 1. Open decisions overview
 
@@ -20,10 +20,10 @@
 | FA-005 | P1 | Publishing & Historical Access | AG-02 contract review | **Approved — Option B** |
 | FA-006 | P1 | Retention & Account Deletion Parameters | AG-03; consistency AG-04 | **Approved — Option B** |
 | FA-006-B1 | P1 | Student-linked learning-record disposition | AG-04 privacy consistency | **Approved — Option B** |
-| FA-007 | P1 | UX, Performance & Beta Thresholds | AG-05 | **Open** |
+| FA-007 | P1 | UX, Performance & Beta Thresholds | AG-05 | **Approved — Option B** |
 | FA-008 | P1 | Infrastructure & Operational Parameters | AG-04 | **Approved — Option B** |
 
-FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-B1 B and FA-008 B supply DP-04 inputs. FA-007 remains Open for AG-05. The open AG-02 GAPs below do not receive implementation authorization.
+FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-B1 B and FA-008 B supplied DP-04 inputs. FA-007 B supplies DP-05 quality targets. Only GAP-001/002/003/007 remain open here; their dependent implementation remains unauthorized.
 
 ## 2. FA-004 — Learning Path Participation
 
@@ -63,21 +63,13 @@ FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-
 
 ## 5. FA-007 — UX, Performance & Beta Thresholds
 
-**Decision question:** What measurable, testable UX, accessibility, speed, load, and beta-release thresholds are acceptable for R1–R4?
+**Resolved decision — Option B, Balanced Quality Beta:** Primary usability task, Guest learning journey and Student enrollment-to-assessment journey success are each **≥90%**, with no critical usability blocker at beta and responsive mobile/desktop. WCAG 2.2 AA is the target for critical journeys. Frontend targets: LCP p75 **≤2.5 seconds**, INP p75 **≤200 milliseconds**, CLS p75 **≤0.1**. API targets: read p95 **≤500 milliseconds**, write p95 **≤1,000 milliseconds**, HTTP 5xx **<1%**, initial load test **50 concurrent virtual users**. All critical E2E journeys and critical business rules require evidence; no unresolved critical integrity defect, forged/lost/duplicated verified assessment evidence, cross-Student private access, privilege escalation or unpublished answer exposure. Deletion and restore safeguards require verification. No unresolved Critical/High security blocker, and no ordinary exception for unauthorized access, privilege escalation or personal-data exposure. Noncritical performance/UX deviations may receive documented authorized limited-beta risk acceptance; security and data-integrity hard gates cannot. These are beta acceptance targets, not commercial SLAs or test results. Full wording is in the [Decision Registry §14](03-decision-registry.md).
 
-**Already approved:** responsive contextual UX (G2-002), accessibility as product requirement (G2-003), evidence-based gates R0–R4 (G2-004). Suggested example metrics in prior discussion are not approvals.
-
-**Must resolve:**
-- Accessibility target and verification protocol, including manual assistive-technology evidence.
-- Primary usability tasks, representative participant selection, task success criteria.
-- Page performance indicators and representative device/network profile.
-- Go API latency/load metrics and supported concurrency; coordinate with FA-008.
-- Beta participant selection, defect severity thresholds and release No-Go policy.
-- Recovery drill and operational evidence requirements appropriate to R4.
+**Verification design work:** DP-05 defines representative sampling, field/lab measurement, workload/dataset assumptions, manual accessibility review, test evidence and Go/No-Go process without claiming an executed result.
 
 **Affected:** DP-02 UX, DP-04 operational requirements, DP-05 QA and release gates.
 
-**Blocking:** **AG-05**; operationally consistent with FA-008. **Owner:** product owner with UX/QA and engineering input; **due:** before AG-05.
+**Decision status:** **Approved — Option B** by current explicit Product Owner approval. AG-05 remains Not Approved; beta release requires separate evidence and authorization.
 
 ## 6. FA-008 — Infrastructure & Operational Parameters
 
@@ -87,7 +79,7 @@ FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-
 
 **Affected:** DP-04 operations/security, DP-03 storage/recovery assumptions, DP-05 performance/reliability.
 
-**Decision status:** **Approved — Option B** by current explicit Product Owner approval. **AG-04** remains Not Approved.
+**Decision status:** **Approved — Option B** by current explicit Product Owner approval. AG-04 was Not Approved at the v0.1.5 record; its later conditional approval is recorded in §12.
 
 ## 7. Open decision workflow
 
@@ -113,7 +105,7 @@ These are **source evidence gaps, not product P1 decisions**:
 
 Reference: [03-decision-registry.md](03-decision-registry.md).
 
-PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003. FA-004/005/006, FA-006-B1 and FA-008 were separately approved as Option B; FA-007 remains Open.
+PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003. FA-004/005/006, FA-006-B1, FA-007 and FA-008 were separately approved as Option B.
 
 AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001–EG-003 remain historically unresolved. AG-01 approval and DP-02 authoring authorization were separate later Product Owner actions.
 
@@ -121,14 +113,14 @@ AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001�
 
 | Gate | Current status | Open decisions relevant |
 |---|---|---|
-| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3–v0.1.5 are subsequent administrative records |
+| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3–v0.1.6 are subsequent administrative records |
 | AG-02 | **Conditionally Approved for six DP-02 v0.1.1 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
 | AG-03 | **Conditionally Approved for six DP-03 v0.1.0 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
-| AG-04 | Not Approved | Review DP-04 against approved FA-006 B, FA-006-B1 B and FA-008 B |
-| AG-05 | Not Started | FA-007 |
+| AG-04 | **Conditionally Approved for six DP-04 v0.1.0 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; planned tests/drills not evidence |
+| AG-05 | Not Approved | Review DP-05 against approved FA-007 B; documentation approval is not beta release approval |
 | AG-06 | Not Started | Requires approved dependencies / governance plan |
 
-**Authoring boundary:** DP-04 documentation authoring is separately authorized after conditional AG-03 approval and FA-008 B. DP-05–DP-06 authoring and application code/configuration remain unauthorized. AG-04 is Not Approved.
+**Authoring boundary:** DP-05 documentation authoring is separately authorized after conditional AG-04 approval and FA-007 B. DP-06 authoring and application code/test scripts/configuration remain unauthorized. AG-05 is Not Approved.
 
 ## 10. Conditional AG-02 open GAPs
 
@@ -141,10 +133,14 @@ The Product Owner conditionally approved the six DP-02 v0.1.1 documents as a cur
 | GAP-003 | Evidence compatibility criteria, target eligibility beyond approved status, and abandonment trigger. | [DP-02 traceability](../DP-02/06-traceability-matrix.md) |
 | GAP-007 | Exact protected prerequisite action coverage and edge cases. | [DP-02 traceability](../DP-02/06-traceability-matrix.md) |
 
-Material changes require the [Decision Registry change control](03-decision-registry.md). Conditional AG-02/AG-03 approval does not close these GAPs or grant AG-04 approval.
+Material changes require the [Decision Registry change control](03-decision-registry.md). Conditional AG-02/AG-03/AG-04 approval does not close these GAPs or grant AG-05 approval.
 
 ## 11. Subsequent FA-006-B1 and AG-03 disposition
 
 **FA-006-B1 — Approved B:** Delete or irreversibly de-identify individual Student-linked learning records during account deletion. Only genuinely anonymous aggregate statistics may be retained; replacing personal identifiers with pseudonymous identifiers alone is not anonymization. Historical learning-evidence protection does not override FA-006 B personal-data deletion. Active data deletion remains within 30 days of a valid request, backup expiry within 30 days, and security audit retention 180 days unless legitimate legal obligations require otherwise. These are Product Owner targets, not statutory claims.
 
 **AG-03 — Conditionally Approved:** The six DP-03 v0.1.0 documents are the approved baseline. Their original Draft/Not Approved metadata records the earlier snapshot. GAP-001/002/003/007 remain Open; dependent implementation is unauthorized. Material changes require change control. The later disposition does not approve AG-04.
+
+## 12. Subsequent AG-04 disposition
+
+**AG-04 — Conditionally Approved:** The six DP-04 v0.1.0 documents are the approved baseline for contracts supported by approved product decisions. Their original Draft/Not Approved metadata records the earlier snapshot. GAP-001/002/003/007 remain Open and their dependent implementation blocked. Planned security tests and operational drills are not completed evidence. Material contract changes require change control. FA-007 B was approved later as the DP-05 quality source; neither decision approves AG-05 or beta release.

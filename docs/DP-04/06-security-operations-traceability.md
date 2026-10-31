@@ -3,9 +3,9 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-04 — API, Security & Operations Contracts |
-| Version | v0.1.0 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-04 — **Not Approved** |
+| Version | v0.1.1 — administrative addendum after the six-document v0.1.0 snapshot |
+| Status | **DP-04 v0.1.0 Conditionally Approved; addendum records later governance only** |
+| Approval gate | AG-04 — **Conditionally Approved for six v0.1.0 documents** |
 | Approved sources | [DP-01 Decision Registry](../DP-01/03-decision-registry.md) and [Open Decisions Register](../DP-01/04-open-decisions-register.md); [DP-02 rule/AC sources](../DP-02/06-traceability-matrix.md); [DP-03 architecture decisions and AG-03 addendum](../DP-03/06-architecture-decisions-and-traceability.md) |
 
 This matrix links **DP-01/current Product Owner source → DP-02 behavior → DP-03 architecture → DP-04 proposed API/security/operations → planned verification**. The approval column refers to product/governance source status, not approval of DP-04 methods or controls. All `API`, `SEC`, `WF`, `OPS`, `OBS`, `RB` and `TRC` contracts are Draft proposals for AG-04 review. No verification evidence has been collected or asserted here. AG-02 and AG-03 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. FA-007 remains Open; AG-04 is Not Approved.
@@ -46,3 +46,9 @@ This matrix links **DP-01/current Product Owner source → DP-02 behavior → DP
 ## 3. Approval and evidence status
 
 AG-01 approved DP-01 v0.1.2 prospectively; historical evidence gaps EG-001–EG-003 remain unverified. AG-02 conditionally approved six DP-02 v0.1.1 files; AG-03 conditionally approved six DP-03 v0.1.0 files. FA-006 B, FA-006-B1 B and FA-008 B are current explicit Product Owner approvals recorded later in the [Decision Registry](../DP-01/03-decision-registry.md). This DP-04 package is **Draft v0.1.0, AG-04 Not Approved**. “Planned verification” is a checklist, not passed test evidence, deploy permission or implementation authorization. Material changes require change control; no DP-05 work or application code follows automatically.
+
+## 4. Subsequent governance addendum — outside approved v0.1.0 snapshot
+
+Sections 1–3 retain the original DP-04 v0.1.0 draft review state. The Product Owner later **conditionally approved AG-04** for the six DP-04 v0.1.0 documents, only for contracts supported by approved product decisions. The other five files retain Draft/Not Approved metadata from their original snapshot. This v0.1.1 administrative addendum changes no API, security or operations contract. Planned tests and drills remain **unexecuted plans**. Material contract changes require [Decision Registry change control](../DP-01/03-decision-registry.md).
+
+FA-007 B, Balanced Quality Beta, was approved later with its exact targets recorded in the [Decision Registry](../DP-01/03-decision-registry.md). TRC-016's earlier “Open” status is historical. GAP-001/002/003/007 remain **Open**, and related implementation remains blocked. Singapore remains conditional on legal/latency validation; no Go host, commercial SLA or numeric RPO/RTO is approved. AG-05 is **Not Approved**; DP-05 documentation authoring is separately authorized. Neither documentation approval nor a planned test is beta-release evidence.

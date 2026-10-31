@@ -4,12 +4,12 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Decision Registry |
-| Version | 0.1.5 — subsequent administrative governance synchronization |
-| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.5 record later governance decisions** |
+| Version | 0.1.6 — subsequent administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.6 record later governance decisions** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 record prior governance; v0.1.5 records AG-03 conditional approval, FA-006-B1 B and FA-008 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.5 record prior governance; v0.1.6 records AG-04 conditional approval and FA-007 B without changing that substance |
 | Prepared | 2026-10-31 |
-| Source basis | Project conversation recap and reported user selections; current Product Owner clarifications and explicit AG-01-EG-B, AG-01, FA-004/005, AG-02 and FA-006 B dispositions |
+| Source basis | Project conversation recap and reported user selections; current Product Owner clarifications and explicit AG-01-EG-B, AG-01–AG-04 and FA-004–FA-008 B dispositions; no fabricated historical source |
 
 > **Historical-evidence caution.** Ini **bukan transkrip asli** atau pengakuan bahwa sumber primer seluruh keputusan telah diverifikasi. Repo ini tidak menyertakan catatan persetujuan primer atau tautan sumber per keputusan; riwayat Git dokumen draft bukan bukti wording keputusan asli. `R` dan `P` tetap bersandar pada ringkasan; baris `U` mempertahankan klasifikasi laporan pemilihan langsung dari konteks sebelumnya, tetapi sumber primernya juga tidak tersedia di repo ini. Disposisi Product Owner saat ini dicatat terpisah sebagai `C`, bukan sebagai bukti wording historis. Tidak ada rationale, timestamp persetujuan, atau detail opsi yang direka.
 
@@ -146,16 +146,16 @@ These are current Product Owner dispositions supplied for DP-01 remediation, **n
 | FA-004 | **B — Independent Path and Course Participation:** participation and enrollment independent; joining a Path does not enroll all member Courses; Course completion global and reusable; Path progress derives from member Course completion; official participation requires Student authentication. | Approved (current disposition, Option B) | DP-02 v0.1.1; AG-02 conditionally approved |
 | FA-005 | **B — Version-Pinned Learning with Controlled Migration:** existing enrollment stays on pinned published Course version; new enrollment uses latest eligible published version; no silent migration; historical progress/completion/passing preserved; MVP migration manual, Admin-controlled, explicitly authorized, audited and communicated appropriately to learners; no automatic migration engine; retention depends on FA-006. | Approved (current disposition, Option B) | DP-02 v0.1.1; AG-02 conditionally approved |
 | FA-006 | **B — Lifecycle-Based Deletion & Data Minimization:** valid authenticated Student deletion request starts controlled, idempotent, auditable, retry-safe lifecycle; invalidate access after acceptance; delete profile, notes and bookmarks; delete or irreversibly de-identify Student-linked learning data under applicable policy; protect active-account evidence without overriding deletion rights; security audit retention 180 days unless legitimate legal obligation requires otherwise; active data deletion within 30 days of valid request; backup expiry within 30 days; anonymous aggregates may remain; no self-service recovery after effective deletion begins; restored backups must not silently resurrect personal data. These are Product Owner targets, not statutory claims. | Approved (current disposition, Option B) | DP-03 v0.1.0; AG-03 conditionally approved; AG-04 consistency |
-| FA-006-B1 | **B — Individual Student-linked learning records:** delete or irreversibly de-identify each individual linked record during account deletion; retain only genuinely anonymous aggregates. Pseudonymous replacement alone is not anonymization; historical evidence protection does not override FA-006 B. Preserve its 30-day active-data and backup targets and 180-day security-audit target. | Approved (current disposition, Option B) | DP-04 privacy/security consistency; AG-04 not approved |
-| FA-007 | UX, accessibility verification, performance and beta thresholds | Open | AG-05 |
-| FA-008 | **B — Balanced Production MVP:** INF-01–INF-14 in §13 define managed frontend/Go/Supabase services, environment/delivery/security/observability/backup/cost controls; Singapore is only conditionally preferred after legal and latency validation; availability is best-effort without commercial SLA. No named Go host, paid tier, instance size or numeric RPO/RTO is approved. | Approved (current disposition, Option B) | DP-04; AG-04 not approved |
+| FA-006-B1 | **B — Individual Student-linked learning records:** delete or irreversibly de-identify each individual linked record during account deletion; retain only genuinely anonymous aggregates. Pseudonymous replacement alone is not anonymization; historical evidence protection does not override FA-006 B. Preserve its 30-day active-data and backup targets and 180-day security-audit target. | Approved (current disposition, Option B) | DP-04 privacy/security consistency; AG-04 later conditionally approved (§14) |
+| FA-007 | **B — Balanced Quality Beta:** approved usability, WCAG 2.2 AA, Core Web Vitals, API performance, reliability, security and evidence-based release targets detailed in §14. Targets are beta acceptance criteria, not commercial SLAs or executed results. | Approved (current disposition, Option B) | DP-05; AG-05 not approved |
+| FA-008 | **B — Balanced Production MVP:** INF-01–INF-14 in §13 define managed frontend/Go/Supabase services, environment/delivery/security/observability/backup/cost controls; Singapore is only conditionally preferred after legal and latency validation; availability is best-effort without commercial SLA. No named Go host, paid tier, instance size or numeric RPO/RTO is approved. | Approved (current disposition, Option B) | DP-04; AG-04 later conditionally approved (§14) |
 
 Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisions-register.md).
 
 ## 9. Decision relations & change control
 
 - `refines`: FA-001 → Q-003/Q-004; FA-002 → Q-007/D-013; FA-003 → Q-005.
-- `depends on`: AG-02 conditionally approved for DP-02 v0.1.1, with GAP-001/002/003/007 Open and dependent implementation unauthorized; AG-03 conditionally approved for DP-03 v0.1.0; AG-04 → approved FA-006 B/FA-006-B1 B/FA-008 B and DP-04 review; AG-05 → open FA-007.
+- `depends on`: AG-02/AG-03/AG-04 conditionally approved for their named snapshots, with GAP-001/002/003/007 Open and dependent implementation unauthorized; AG-05 → approved FA-007 B and DP-05 review. Documentation approval is separate from beta release authorization.
 - `verified by`: future requirement/test IDs in DP-05; no test evidence exists yet.
 - `supersedes`: **none asserted** without explicit historical proof.
 
@@ -172,9 +172,9 @@ Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisio
 
 ## 11. AG-01 approval record and limits
 
-AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 documents. v0.1.3/v0.1.4 recorded later governance decisions; this v0.1.5 revision records still later AG-03, FA-006-B1 B and FA-008 B decisions, none part of the original approved snapshot. AG-01-EG-B remains effective; EG-001–EG-003 remain unverified historically. FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B and FA-008 B are current explicit approvals. FA-007 remains Open. AG-02 and AG-03 are conditionally approved for their named snapshots; AG-04 and later gates remain unapproved.
+AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 documents. v0.1.3–v0.1.5 recorded later governance decisions; this v0.1.6 revision records still later AG-04 and FA-007 B decisions, none part of the original approved snapshot. AG-01-EG-B remains effective; EG-001–EG-003 remain unverified historically. FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B, FA-007 B and FA-008 B are current explicit approvals. AG-02/AG-03/AG-04 are conditionally approved for their named snapshots; AG-05 and later gates remain unapproved.
 
-**Current disposition:** DP-01 v0.1.2 product baseline approved through AG-01; AG-02 conditionally approved for six DP-02 v0.1.1 documents; AG-03 conditionally approved for six DP-03 v0.1.0 documents. GAP-001/002/003/007 remain Open and dependent implementation unauthorized. DP-04 documentation authoring is separately authorized; AG-04 not approved; DP-05–DP-06 authoring and application code unauthorized. Material changes require the change control above.
+**Current disposition:** DP-01 v0.1.2 product baseline approved through AG-01; AG-02/AG-03/AG-04 conditionally approved for their six-document v0.1.1/v0.1.0/v0.1.0 snapshots respectively. GAP-001/002/003/007 remain Open and dependent implementation unauthorized. DP-05 documentation authoring is separately authorized; AG-05 not approved; DP-06 authoring and application code unauthorized. Material changes require the change control above.
 
 ## 12. Subsequent Product Owner governance dispositions (v0.1.4 record)
 
@@ -210,4 +210,23 @@ At the v0.1.4 record, AG-03 was Not Approved and FA-007/FA-008 remained Open. Cu
 | INF-13 | Pragmatic horizontal scaling where supported; no Kubernetes requirement. |
 | INF-14 | Budget alerts, resource controls and cost monitoring. |
 
-AG-04 is **Not Approved**. FA-007 remains **Open** for AG-05. No cloud provider for Go, paid tier, exact instance size or numeric RPO/RTO is approved. The three dispositions above are current explicit Product Owner decisions and do not repair EG-001–EG-003 historical evidence gaps.
+At the v0.1.5 record, AG-04 was Not Approved and FA-007 remained Open. Current status follows in §14. No cloud provider for Go, paid tier, exact instance size or numeric RPO/RTO is approved. The three dispositions above are current explicit Product Owner decisions and do not repair EG-001–EG-003 historical evidence gaps.
+
+## 14. Subsequent Product Owner governance dispositions (v0.1.6 record)
+
+| ID | Current explicit disposition | Status / provenance |
+|---|---|---|
+| AG-04 | Conditionally approved for the six DP-04 **v0.1.0** documents, only for contracts supported by approved product decisions. GAP-001/002/003/007 remain Open and dependent implementation blocked. Planned tests/drills are not completed evidence. Material changes require change control. | Conditionally Approved; current Product Owner disposition `C`, not part of the original draft snapshot |
+| FA-007 | **B — Balanced Quality Beta:** targets and release boundaries below. No beta release or AG-05 approval is implied. | Approved (current disposition, Option B); `C`, not historical source verification |
+
+| Area | Exact approved FA-007 B target or boundary |
+|---|---|
+| Usability | Primary task success ≥90%; Guest learning journey success ≥90%; Student enrollment-to-assessment journey success ≥90%; no critical usability blocker at beta; responsive mobile and desktop. |
+| Accessibility | WCAG 2.2 AA target for critical user journeys; manual and automated evidence required. |
+| Frontend performance | LCP p75 ≤2.5 seconds; INP p75 ≤200 milliseconds; CLS p75 ≤0.1. Field percentiles cannot be proven by laboratory measurements alone. |
+| API performance | Read API p95 ≤500 milliseconds; write API p95 ≤1,000 milliseconds; HTTP 5xx error rate <1%; initial load test at 50 concurrent virtual users. Representative critical operations must be assessed separately. |
+| Functional integrity | All critical E2E journeys pass; no unresolved critical integrity defect; no lost/duplicated/forged verified assessment evidence, cross-Student private access, privilege escalation or unpublished answer access; account deletion and restore safeguards verified; critical rules have evidence. |
+| Security | No unresolved Critical or High security blockers. No risk exception for unauthorized access, privilege escalation or personal-data exposure; noncritical findings need documented disposition/mitigation. |
+| Release governance | Evidence-based Go/No-Go; documentation approval is not release approval. Limited beta may accept documented authorized noncritical performance/UX deviation, never waive security/data-integrity hard gates. Actual release evidence requires implementation and execution. |
+
+AG-05 remains **Not Approved**. GAP-001/002/003/007 remain **Open**. Singapore remains conditionally preferred pending legal and latency validation; no named Go hosting provider, commercial SLA or numeric RPO/RTO is approved. These are Product Owner beta acceptance targets, not statutory or commercial SLA claims.

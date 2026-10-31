@@ -3,7 +3,7 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-03 — Domain-Aligned Architecture & Data Contracts |
-| Version | v0.1.1 — administrative addendum after the six-document v0.1.0 snapshot |
+| Version | v0.1.2 — subsequent administrative addendum after the six-document v0.1.0 snapshot |
 | Status | **DP-03 v0.1.0 Conditionally Approved; this addendum records later governance only** |
 | Approval gate | AG-03 — **Conditionally Approved for six v0.1.0 documents** |
 | Approved sources | [DP-01 Decision Registry](../DP-01/03-decision-registry.md), [Open Decisions Register](../DP-01/04-open-decisions-register.md), [DP-02 rules](../DP-02/02-domain-rules-and-invariants.md), [acceptance criteria](../DP-02/05-acceptance-criteria.md), [conditional AG-02 addendum](../DP-02/06-traceability-matrix.md) |
@@ -72,3 +72,7 @@ Sections 1–4 above retain the original Draft v0.1.0 review state. The Product 
 FA-006-B1 B subsequently approved deletion or irreversible de-identification of individual Student-linked learning records during account deletion, permitting only genuinely anonymous aggregate retention; pseudonymous identifiers alone do not anonymize records. FA-008 B subsequently approved INF-01–INF-14 Balanced Production MVP. These later decisions are recorded in the [Decision Registry](../DP-01/03-decision-registry.md) and [Open Decisions Register](../DP-01/04-open-decisions-register.md). The §2–§4 statements that FA-008 was Open are historical; FA-006-B1 sets the minimum disposition without choosing delete versus irreversible de-identification for each class. FA-006 B's 30-day active-data, 30-day backup and 180-day security-audit targets remain effective. Singapore remains a conditional preferred region pending legal and latency validation.
 
 GAP-001/002/003/007 remain **Open** with dependent implementation unauthorized; FA-007 remains **Open**. AG-04 is **Not Approved** and DP-04 documentation authoring is separately authorized. Conditional AG-03 approval neither closes the GAPs nor verifies missing historical evidence.
+
+## 6. Later governance status — v0.1.2 administrative addendum
+
+The Product Owner subsequently **conditionally approved AG-04** for the six DP-04 v0.1.0 documents and **approved FA-007 B** for DP-05. The §5 FA-007/AG-04 statuses are historical; the original DP-03 v0.1.0 architecture contract remains unchanged. GAP-001/002/003/007 remain **Open**, with dependent implementation unauthorized. AG-05 is **Not Approved**. See the current [Decision Registry](../DP-01/03-decision-registry.md).

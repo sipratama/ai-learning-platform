@@ -8,6 +8,7 @@ export default [
       'node_modules/**',
       'test-results/**',
       'playwright-report/**',
+      'playwright-integration-report/**',
     ],
   },
   js.configs.recommended,

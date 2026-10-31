@@ -7,7 +7,7 @@ import { envelope, fixtureResponse, lessons } from '../support/public-fixture'
 const readerUrl = '/courses/course-flagship/lessons/lesson-flagship-1'
 const evidence = resolve(
   import.meta.dirname,
-  '../../../../docs/frontend/evidence',
+  '../../test-results/mock-evidence',
 )
 const publicHeaders = {
   'Content-Type': 'application/json',

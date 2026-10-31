@@ -1,0 +1,92 @@
+{
+  "baseline": "0e82158e812d4b50cef7fb187a44f7d4d54c81c4",
+  "fixture": "vs01a-guest-proof@1.0.0",
+  "snapshotId": "pub-v1",
+  "goVersion": "go1.27.3 darwin/arm64",
+  "goArchiveSHA256": "dd3908cf20959d798c1e06ebe5b72213f0505ce01373b40ce3110975a6cd99c2",
+  "nodeVersion": "22.23.4",
+  "playwrightVersion": "1.64.1",
+  "browser": "Google Chrome 156.0.8078.79",
+  "goChecks": {
+    "standard": {
+      "passedTestEventsIncludingSubtests": 31,
+      "topLevelTests": 12,
+      "failedEvents": 0,
+      "packages": [
+        "internal/publiclearning",
+        "internal/platform/httpserver",
+        "internal/platform/config",
+        "cmd/api"
+      ],
+      "startedAtUTC": "2026-10-31T08:45:41.076937Z",
+      "finishedAtUTC": "2026-10-31T08:45:41.495474Z"
+    },
+    "devfixture": {
+      "passedTestEventsIncludingSubtests": 74,
+      "topLevelTests": 28,
+      "failedEvents": 0,
+      "packages": [
+        "cmd/api",
+        "internal/publiclearning",
+        "internal/platform/config",
+        "internal/platform/httpserver",
+        "internal/devfixture"
+      ],
+      "startedAtUTC": "2026-10-31T08:40:56.578844Z",
+      "finishedAtUTC": "2026-10-31T08:40:56.928707Z"
+    },
+    "race-standard": {
+      "passedTestEventsIncludingSubtests": 31,
+      "topLevelTests": 12,
+      "failedEvents": 0,
+      "packages": [
+        "internal/publiclearning",
+        "internal/platform/httpserver",
+        "internal/platform/config",
+        "cmd/api"
+      ],
+      "startedAtUTC": "2026-10-31T08:45:41.972346Z",
+      "finishedAtUTC": "2026-10-31T08:45:43.361171Z"
+    },
+    "race-devfixture": {
+      "passedTestEventsIncludingSubtests": 74,
+      "topLevelTests": 28,
+      "failedEvents": 0,
+      "packages": [
+        "internal/publiclearning",
+        "cmd/api",
+        "internal/platform/httpserver",
+        "internal/platform/config",
+        "internal/devfixture"
+      ],
+      "startedAtUTC": "2026-10-31T08:40:57.586275Z",
+      "finishedAtUTC": "2026-10-31T08:40:59.047752Z"
+    }
+  },
+  "mocked-playwright": [
+    "24 passed (31.2s)"
+  ],
+  "real-playwright": [
+    "10 passed (19.6s)"
+  ],
+  "realBrowserStats": {
+    "startTime": "2026-10-31T08:40:24.746Z",
+    "duration": 19584.09,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "sourceState": "uncommitted working-tree implementation over the recorded baseline; no Git writes",
+  "frontendChecks": {
+    "typecheck": "PASS",
+    "eslint": "PASS",
+    "unitComponentTests": 23,
+    "productionBuild": "PASS"
+  },
+  "automatedAccessibility": {
+    "normalStateScreenChecks": 8,
+    "axeViolations": 0,
+    "manualScreenReader": "NOT RUN"
+  }
+}

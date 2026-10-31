@@ -30,6 +30,17 @@ if ! LC_ALL=C grep -a -F -q "$marker" "$temporary_dir/api-development"; then
   exit 1
 fi
 
+for public_marker in 'vs01a-guest-proof@1.0.0' 'Synthetic lesson diagram' 'Draft Flagship Revision'; do
+  if LC_ALL=C grep -a -F -q "$public_marker" "$temporary_dir/api-standard"; then
+    echo 'Fixture content appears in standard API artifact.' >&2
+    exit 1
+  fi
+  if ! LC_ALL=C grep -a -F -q "$public_marker" "$temporary_dir/api-development"; then
+    echo 'Development API artifact is missing expected fixture content.' >&2
+    exit 1
+  fi
+done
+
 for environment in staging production; do
   if APP_ENV="$environment" FIXTURE_MODE=disabled "$temporary_dir/api-development" >"$temporary_dir/startup.log" 2>&1; then
     echo 'Development artifact started in a forbidden environment.' >&2

@@ -1,0 +1,36 @@
+{
+  "fixture": "vs01a-guest-proof@1.0.0",
+  "source": "real Go 1.27.3 via Vite proxy; no interception",
+  "requests": {
+    "/api/v1/catalog/courses": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "3c7fb27cf85c7d3c09168fde0b7f8012"
+    },
+    "/api/v1/catalog/paths": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "741d8eb15d044c9525f2ffd532d6d489"
+    },
+    "/api/v1/paths/path-foundations": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "afa256d5d63e7ab6f1b944116db69ab9"
+    },
+    "/api/v1/courses/course-flagship": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "8817696c99ec540ec05e32370da202dd"
+    },
+    "/api/v1/courses/course-flagship/lessons/lesson-flagship-1": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "375fdfc2a71141aab447d49fcd237767"
+    },
+    "/api/v1/courses/course-flagship/lessons/lesson-flagship-2": {
+      "status": 200,
+      "snapshotId": "pub-v1",
+      "requestId": "9a7bb5ff25fb4833273300074ec08844"
+    }
+  }
+}

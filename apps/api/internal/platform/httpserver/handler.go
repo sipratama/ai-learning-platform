@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"regexp"
 	"time"
+
+	"github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning"
 )
 
 const requestIDHeader = "X-Request-ID"
@@ -35,10 +37,15 @@ func (w *responseWriter) Write(body []byte) (int, error) {
 }
 
 func NewHandler(logger *slog.Logger) http.Handler {
+	return NewHandlerWithContent(logger, nil)
+}
+
+func NewHandlerWithContent(logger *slog.Logger, content *publiclearning.Service) http.Handler {
+	permits := make(chan struct{}, 32)
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		started := time.Now()
 		requestID := r.Header.Get(requestIDHeader)
-		if !validRequestID.MatchString(requestID) {
+		if len(r.Header.Values(requestIDHeader)) != 1 || !validRequestID.MatchString(requestID) {
 			bytes := make([]byte, 16)
 			if _, err := rand.Read(bytes); err != nil {
 				writeProblem(w, http.StatusInternalServerError, "Internal Server Error", "")
@@ -49,11 +56,23 @@ func NewHandler(logger *slog.Logger) http.Handler {
 		}
 		w.Header().Set(requestIDHeader, requestID)
 		w.Header().Set("Cache-Control", "no-store")
+		w.Header().Set("X-Content-Type-Options", "nosniff")
 		tracked := &responseWriter{ResponseWriter: w}
+		defer func() {
+			if recover() != nil {
+				if tracked.status == 0 {
+					writeProblem(tracked, http.StatusInternalServerError, "Internal Server Error", requestID)
+				}
+				logger.Error("request_failed", "reason", "public_read_failed", "request_id", requestID)
+			}
+			logger.Info("http_request", "service", "api", "outcome", tracked.status, "request_id", requestID, "duration_ms", time.Since(started).Milliseconds())
+		}()
+		if r.URL.Path != "/healthz" {
+			servePublic(tracked, r, requestID, content, permits)
+			return
+		}
 
 		switch {
-		case r.URL.Path != "/healthz":
-			writeProblem(tracked, http.StatusNotFound, "Not Found", requestID)
 		case r.Method != http.MethodGet:
 			tracked.Header().Set("Allow", http.MethodGet)
 			writeProblem(tracked, http.StatusMethodNotAllowed, "Method Not Allowed", requestID)
@@ -64,7 +83,6 @@ func NewHandler(logger *slog.Logger) http.Handler {
 				RequestID string `json:"requestId"`
 			}{Status: "ok", RequestID: requestID})
 		}
-		logger.Info("http_request", "service", "api", "outcome", tracked.status, "request_id", requestID, "duration_ms", time.Since(started).Milliseconds())
 	})
 }
 

@@ -1,0 +1,386 @@
+{
+  "passedTestEventsIncludingSubtests": 74,
+  "topLevelTests": 28,
+  "failedEvents": 0,
+  "packages": [
+    "cmd/api",
+    "internal/publiclearning",
+    "internal/platform/config",
+    "internal/platform/httpserver",
+    "internal/devfixture"
+  ],
+  "tests": [
+    {
+      "package": "cmd/api",
+      "test": "TestDevelopmentArtifactEnvironmentGuard",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/default",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/custom",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/ipv6",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/missing_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/invalid_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/publiclearning",
+      "test": "TestCursorAuthenticationAndBindings",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/publiclearning",
+      "test": "TestStableTitleIDOrderingAndNormalizedQuery",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/zero_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/large_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/generated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/propagated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/disabled_default",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/local_explicit",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/test_explicit",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/missing_environment",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/invalid_regenerated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/staging",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestSafeErrorsAndRedactedLogs",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/production",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestAPI001Through005Success",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN01CatalogVisibilityAndFilters",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN02N03N04HiddenDraftAndMismatchedIDs",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN05N06AllowlistedDTOs",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/unknown",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/unknown_disabled",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN07N08N09QueryAndIDValidation",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN10N11SignedPaginationAndReset",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/malformed_mode",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN12N13SafeContentAndMedia",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN14N15N16RequestIDsProblemsAndLogs",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestConcurrentFixtureReads",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestVS01AN15Safe500AndBounded429",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestUnavailableContentHasNoSyntheticFallback",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestJSONAcceptNegotiation",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestUnknownOfficialRoutesRemainAbsent",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestServeGracefulShutdown",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestLoadsWithExactIdentityAndPublicHierarchy",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestHiddenDraftAndAnswerKeysNeverProject",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestSnapshotsAreFreshAndConsumerMutationsDoNotPersist",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestConcurrentIndependentSnapshots",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/identity",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/version",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/snapshot",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/draft_ID",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/duplicate_Course",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/duplicate_Path",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/duplicate_Block",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/missing_Course_ref",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/hidden_Course_ref",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/duplicate_membership",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/draft_discoverable",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/published_wrong_version",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/Module_order",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/Lesson_order",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/flagship_locked",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/required_flagship_Lesson",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/required_focus_Lesson_free",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/required_public_Block_type",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/empty_required_field",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/unsupported_Block",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/unsafe_public_Markdown",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/unsafe_public_media",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/media_traversal",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/protocol_relative_media",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/missing_public_asset",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/payload_unknown_field",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent/answer_key_missing",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsInvalidIdentityRelationshipsAndContent",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestManifestRejectsUnknownFieldsAndTrailingJSON",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/devfixture",
+      "test": "TestNonFreeLessonNeverProjects",
+      "status": "PASS"
+    }
+  ],
+  "startedAtUTC": "2026-10-31T08:40:56.578844Z",
+  "finishedAtUTC": "2026-10-31T08:40:56.928707Z"
+}

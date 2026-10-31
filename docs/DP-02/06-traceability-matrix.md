@@ -3,12 +3,12 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-02 — Comprehensive Domain & UX Contracts |
-| Version | 0.1.1 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-02 — **Not Approved** |
+| Version | 0.1.2 — administrative addendum after the six-document v0.1.1 snapshot |
+| Status | **DP-02 v0.1.1 Conditionally Approved; this addendum records later governance only** |
+| Approval gate | AG-02 — **Conditionally Approved for six v0.1.1 documents** |
 | Source | [Approved DP-01 baseline and governance record](../DP-01/03-decision-registry.md) |
 
-Read each row in either direction: an approved source produces a [domain concept](01-domain-model-and-glossary.md) and [rule](02-domain-rules-and-invariants.md), exercised by a [journey/permission](03-user-journeys-and-permissions.md), presented through a [UX contract](04-ux-and-interaction-specification.md), and checked by [acceptance criteria](05-acceptance-criteria.md). `MVP` is scope classification, **not AG-02 approval**. AG02-01–AG02-05 are current explicit Product Owner approvals for this revision, not original historical DP-01 decisions. Historical D/Q/G2 summaries rely on the prospectively approved DP-01 v0.1.2 baseline under AG-01/AG-01-EG-B; unknown D-001–D-008 and D-029 are not independent sources.
+Read each row in either direction: an approved source produces a [domain concept](01-domain-model-and-glossary.md) and [rule](02-domain-rules-and-invariants.md), exercised by a [journey/permission](03-user-journeys-and-permissions.md), presented through a [UX contract](04-ux-and-interaction-specification.md), and checked by [acceptance criteria](05-acceptance-criteria.md). `MVP` is scope classification, **not implementation authorization**. AG02-01–AG02-05 are current explicit Product Owner approvals for the v0.1.1 draft, not original historical DP-01 decisions. Historical D/Q/G2 summaries rely on the prospectively approved DP-01 v0.1.2 baseline under AG-01/AG-01-EG-B; unknown D-001–D-008 and D-029 are not independent sources. Sections 1–3 below preserve the v0.1.1 contract snapshot; §4 records subsequent governance and controls current gap status.
 
 ## 1. Decision → requirement → verification
 
@@ -68,4 +68,20 @@ Read each row in either direction: an approved source produces a [domain concept
 | GAP-006 | FA-008 capacity, hosting, recovery and monitoring parameters. | Open; AG-04. |
 | GAP-007 | AG02-05 resolves Course-completion prerequisite type and cross-Path target. Exact protected-action coverage and edge cases remain unspecified; no extra prerequisite types are inferred. | Core resolved; conditional policy edge for AG-02. |
 
-**Contradiction audit:** No known contradiction within approved rules is asserted. AG02-01–AG02-05 resolve the five material questions from v0.1.0; the narrower policy edges above remain explicit, and FA-006–FA-008 remain Open. Historical evidence gaps EG-001–EG-003 remain visible in [DP-01](../DP-01/04-open-decisions-register.md) under AG-01-EG-B; they are not independent DP-02 requirement sources.
+**v0.1.1 contradiction audit (historical snapshot):** No known contradiction within approved rules was asserted. AG02-01–AG02-05 resolved the five material questions from v0.1.0; the narrower policy edges remained explicit, and FA-006–FA-008 were Open at that time. Historical evidence gaps EG-001–EG-003 remain visible in [DP-01](../DP-01/04-open-decisions-register.md) under AG-01-EG-B; they are not independent DP-02 requirement sources. Current status is in §4.
+
+## 4. Subsequent governance addendum — not part of the approved v0.1.1 snapshot
+
+The Product Owner later **conditionally approved AG-02** for the six DP-02 v0.1.1 documents. The other five files retain their original Draft/Not Approved snapshot metadata; that metadata reports their state when authored, not the later approval disposition. This v0.1.2 administrative addendum does not amend their business rules or acceptance criteria. Material changes require the [Decision Registry change control](../DP-01/03-decision-registry.md).
+
+| ID | Current status and effect |
+|---|---|
+| GAP-001 | **Open.** Exceptional access-eligibility/revocation parameters and public listing behavior remain undecided. |
+| GAP-002 | **Open.** Detailed Path curriculum-version migration and leave behavior remain undecided. |
+| GAP-003 | **Open.** Evidence compatibility criteria, target eligibility beyond approved status and abandonment trigger remain undecided. |
+| GAP-007 | **Open.** Exact protected prerequisite action coverage and edge cases remain undecided. |
+| FA-006 / GAP-004 | **FA-006 Approved — Option B** after v0.1.1; the §3 “Open” status is historical. Lifecycle-Based Deletion & Data Minimization is recorded in the [Decision Registry](../DP-01/03-decision-registry.md) and [Open Decisions Register](../DP-01/04-open-decisions-register.md). |
+| FA-007 / GAP-005 | **Open** for AG-05. |
+| FA-008 / GAP-006 | **Open** for AG-04. |
+
+Requirements depending on unresolved GAP-001/002/003/007 detail are **not authorized for implementation**. Conditional AG-02 approval does not approve those details, AG-03, or application work. Historical evidence gaps EG-001–EG-003 remain unverified.

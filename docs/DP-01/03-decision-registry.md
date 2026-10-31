@@ -4,11 +4,12 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Decision Registry |
-| Version | 0.1.2 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-01 — **Not Started** |
+| Version | 0.1.3 — administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3 records later governance decisions** |
+| Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01, FA-004 B and FA-005 B without changing that substance |
 | Prepared | 2026-10-31 |
-| Source basis | Project conversation recap and reported user selections; current Product Owner clarifications and AG-01-EG-B disposition |
+| Source basis | Project conversation recap and reported user selections; current Product Owner clarifications, AG-01-EG-B, AG-01 and FA-004/005 approvals |
 
 > **Historical-evidence caution.** Ini **bukan transkrip asli** atau pengakuan bahwa sumber primer seluruh keputusan telah diverifikasi. Repo ini tidak menyertakan catatan persetujuan primer atau tautan sumber per keputusan; riwayat Git dokumen draft bukan bukti wording keputusan asli. `R` dan `P` tetap bersandar pada ringkasan; baris `U` mempertahankan klasifikasi laporan pemilihan langsung dari konteks sebelumnya, tetapi sumber primernya juga tidak tersedia di repo ini. Disposisi Product Owner saat ini dicatat terpisah sebagai `C`, bukan sebagai bukti wording historis. Tidak ada rationale, timestamp persetujuan, atau detail opsi yang direka.
 
@@ -16,10 +17,10 @@
 
 **Decision status**
 
-- **Approved (reported)**: riwayat proyek menyebut keputusan sudah dipilih; wording historis baris `R` tetap belum terverifikasi. AG-01-EG-B menerima disposisi prospektif tanpa memverifikasi sumber primer atau menyetujui AG-01.
+- **Approved (reported)**: riwayat proyek menyebut keputusan sudah dipilih; wording historis baris `R` tetap belum terverifikasi. AG-01-EG-B sendiri menerima disposisi prospektif tanpa memverifikasi sumber primer atau memberikan persetujuan AG-01.
 - **Approved (direct)**: pilihan disampaikan eksplisit oleh user dalam percakapan yang tersedia.
 - **Approved (current clarification)**: klarifikasi Product Owner yang dicatat saat remediasi DP-01; tidak membuktikan wording historis ID yang diklarifikasi.
-- **Approved (current disposition)**: pilihan Product Owner saat ini untuk menangani kesenjangan bukti secara prospektif; bukan approval dokumen AG-01.
+- **Approved (current disposition)**: persetujuan eksplisit Product Owner saat ini, dicatat tanpa menyatakan bukti wording historis.
 - **Requires ID confirmation / Requires Confirmation**: mapping atau isi historis belum terbukti; bukan pernyataan approved per-ID.
 - **Open**: belum diputuskan, bukan approval.
 - **Superseded**: hanya digunakan bila penggantian eksplisit terbukti; tidak otomatis dipakai pada refinement.
@@ -30,9 +31,9 @@
 - `U` — previously reported explicit user selection in supplied conversation context; original source is not independently available in this repository. Existing `U` classifications remain unchanged.
 - `R` — historical project recap / previous assistant decision summary; detail beyond summary not verified.
 - `P` — partially verifiable: summary supports broad intent, original wording/rationale/choice not verified; do not expand normative detail.
-- `C` — explicit current Product Owner clarification or evidence-gap disposition; establishes current baseline treatment only, not historical wording.
+- `C` — explicit current Product Owner approval, clarification or evidence-gap disposition; establishes current governance/substance prospectively, not historical wording.
 
-**Important:** Approval dari pengguna untuk **scope/authoring** tidak boleh disamakan dengan approval AG-01 untuk dokumen ini.
+**Important:** AG-01 disetujui secara eksplisit untuk empat dokumen v0.1.2 sesudah snapshot draft; otorisasi DP-02 terpisah. Revisi administratif v0.1.3 dan AG-01-EG-B tidak membuktikan wording historis.
 
 ## 2. Foundational product decisions (D-series)
 
@@ -136,13 +137,14 @@ These are current Product Owner dispositions supplied for DP-01 remediation, **n
 | DP-01-PRE | **B — Evidence-Grounded Controlled Authoring**; historical verification, statuses, IDs, change control, four artifacts, AG-01 review. | Approved (direct) | U |
 | AAR-01 | Authorization **only to draft DP-01** (four artifacts); no application code, app repository or DP-02–DP-06 authoring. | Authorized (direct) | U |
 | AG-01-EG-B | **Prospective Baseline Attestation:** Product Owner accepts a prospective disposition for EG-001–EG-003 in the current DP-01 baseline. Their historical content and source provenance remain unverified. This is neither historical evidence nor AG-01 approval. | Approved (current disposition) | C |
+| AG-01 | Product Owner explicitly approved the four DP-01 v0.1.2 documents as the prospective normative product baseline after that snapshot was created; EG-001–EG-003 remain historical limitations under AG-01-EG-B. Does not approve AG-02 or code. | Approved (current disposition) | C |
 
-## 8. Open decisions — not approved
+## 8. Final audit decisions after AG-01
 
 | ID | Subject | Status | Blocking gate |
 |---|---|---|---|
-| FA-004 | Learning Path Participation | Open | AG-02 |
-| FA-005 | Publishing, unpublish/archive and historical access | Open | AG-02 |
+| FA-004 | **B — Independent Path and Course Participation:** participation and enrollment independent; joining a Path does not enroll all member Courses; Course completion global and reusable; Path progress derives from member Course completion; official participation requires Student authentication. | Approved (current disposition, Option B) | DP-02; AG-02 not yet approved |
+| FA-005 | **B — Version-Pinned Learning with Controlled Migration:** existing enrollment stays on pinned published Course version; new enrollment uses latest eligible published version; no silent migration; historical progress/completion/passing preserved; MVP migration manual, Admin-controlled, explicitly authorized, audited and communicated appropriately to learners; no automatic migration engine; retention depends on FA-006. | Approved (current disposition, Option B) | DP-02; AG-02 not yet approved |
 | FA-006 | Data retention, account deletion and backup reconciliation parameters | Open | AG-03; consistency AG-04 |
 | FA-007 | UX, accessibility verification, performance and beta thresholds | Open | AG-05 |
 | FA-008 | Hosting/capacity/costs, RPO/RTO, monitoring operational parameters | Open | AG-04 |
@@ -152,7 +154,7 @@ Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisio
 ## 9. Decision relations & change control
 
 - `refines`: FA-001 → Q-003/Q-004; FA-002 → Q-007/D-013; FA-003 → Q-005.
-- `depends on`: AG-02 → FA-004/005; AG-03 → FA-006; AG-04 → FA-008 and FA-006 consistency; AG-05 → FA-007.
+- `depends on`: AG-02 → approved FA-004/005 contracts in DP-02; AG-03 → open FA-006; AG-04 → open FA-008 and FA-006 consistency; AG-05 → open FA-007.
 - `verified by`: future requirement/test IDs in DP-05; no test evidence exists yet.
 - `supersedes`: **none asserted** without explicit historical proof.
 
@@ -163,17 +165,12 @@ Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisio
 1. **EG-001 — Exact D-001–D-008 mapping:** available recap consolidates early choices; primary messages would be needed to determine what each ID specifically stated, especially D-007/008. Individual per-ID statements remain provisional (`P`). AG-01-EG-B accepts prospective disposition, not the unknown historical mapping.
 2. **EG-002 — Exact D-029 statement:** recap indicates discovery audit but original title/choice/rationale are not established. AG-01-EG-B accepts prospective disposition without reconstructing D-029.
 3. **EG-003 — Historical provenance:** original approval records, per-ID source pointers and exact wording/rationales are unavailable in this repository for `R`/`P` decisions, including Q/G2/G3 and some D entries. The original source behind existing `U` rows is also unavailable for independent repository verification. No row is classified `V`. AG-01-EG-B accepts a prospective disposition for the current baseline; it does not close this historical gap or turn `C` into original evidence.
-4. **EG-004 — Formal AG-01 review:** confirm the four draft artifacts do not silently elevate interpretations into approved facts. Assign reviewer/approval metadata at review; no formal AG-01 review or approval has yet occurred.
+4. **EG-004 — Formal AG-01 review:** Product Owner explicitly approved the four v0.1.2 documents after the draft snapshot. This closes the pending gate-status question; it does not resolve EG-001–EG-003 historically.
 
-**Disposition:** EG-001–EG-003 remain open as historical evidence gaps under AG-01-EG-B. This prospective attestation allows formal AG-01 review of the current draft; it is not permission to invent missing decisions, claim historical verification, or treat AG-01 as approved.
+**Disposition:** EG-001–EG-003 remain historical evidence gaps under AG-01-EG-B. AG-01 separately approved the v0.1.2 baseline; neither approval invents missing decisions or verifies historical wording.
 
-## 11. AG-01 approval checklist
+## 11. AG-01 approval record and limits
 
-- [ ] Available sources and AG-01-EG-B prospective disposition accurately represented without claiming missing historical records were verified.
-- [ ] EG-001–EG-003 remain visibly unresolved historically; D-001–D-008 and D-029 are not given invented wording.
-- [ ] Approved versus Open versus interpretation visibly separated.
-- [ ] Charter, Scope, Registry and Open Decisions cross-checked.
-- [ ] Stable IDs, relations, impacts, decision changes and sources checked.
-- [ ] AG-01 **explicitly approved for a named document revision**.
+AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 documents. The present v0.1.3 revision is an administrative record of later governance decisions, not the original approved snapshot. AG-01-EG-B remains effective; EG-001–EG-003 remain unverified historically. FA-004 B and FA-005 B are current explicit approvals for DP-02 authoring. FA-006–FA-008 remain Open. AG-02 and later gates remain unapproved.
 
-**Current disposition:** Draft; not approved; no code or later documentation authorization.
+**Current disposition:** DP-01 v0.1.2 product baseline approved through AG-01; DP-02 authoring authorized separately; AG-02 not approved; no DP-03–DP-06 authoring or application code authorization.

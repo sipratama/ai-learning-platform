@@ -4,58 +4,51 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Open Decisions Register |
-| Version | 0.1.2 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-01 — **Not Started** |
+| Version | 0.1.3 — administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3 records later governance decisions** |
+| Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01, FA-004 B and FA-005 B without changing that substance |
 | Prepared | 2026-10-31 |
 
-> **Rule:** Items here are unresolved. Candidate approaches are **not approvals**. A later owner decision is required before the dependent approval gate; Codex and document authors must not choose a policy silently.
+> **Rule:** FA-004 B and FA-005 B are current explicit Product Owner approvals. Only FA-006–FA-008 remain unresolved. Historical candidate approaches below are not additional approvals; no policy is chosen silently. This v0.1.3 administrative revision follows the approved v0.1.2 product snapshot.
 
 ## 1. Open decisions overview
 
 | ID | Priority | Topic | Blocking approval | State |
 |---|---|---|---|---|
-| FA-004 | P1 | Learning Path Participation | AG-02 | **Open** |
-| FA-005 | P1 | Publishing & Historical Access | AG-02 | **Open** |
+| FA-004 | P1 | Learning Path Participation | AG-02 contract review | **Approved — Option B** |
+| FA-005 | P1 | Publishing & Historical Access | AG-02 contract review | **Approved — Option B** |
 | FA-006 | P1 | Retention & Account Deletion Parameters | AG-03; consistency AG-04 | **Open** |
 | FA-007 | P1 | UX, Performance & Beta Thresholds | AG-05 | **Open** |
 | FA-008 | P1 | Infrastructure & Operational Parameters | AG-04 | **Open** |
 
-Priority P1 means **nonblocking to begin DP-01 authoring**, not optional for affected later approvals.
+FA-004/005 Option B supplies approved DP-02 inputs; AG-02 still requires review. Remaining P1 items block their indicated later gates.
 
 ## 2. FA-004 — Learning Path Participation
 
-**Decision question:** Must Student explicitly enroll/follow a Learning Path, or does participation arise from global course activity and aggregated course completion?
+**Resolved decision — Option B:** Path participation and Course enrollment are independent. Joining a Path does not enroll all member Courses. Course completion is global and reusable; Path progress derives from completion of member Courses. Official Path participation requires Student authentication.
 
 **Already approved invariants:** course enrollment is intent-based (G2-001A); browsing alone is not enrollment; same course can belong to multiple paths (D-012); canonical course completion is reused across paths (Q-004).
 
-**Candidate models (not selected):**
-- Aggregated path progress, no path enrollment.
-- Explicit path enrollment with separate intent.
-- Hybrid participation (optional follow path, but canonical course completion remains global).
+**Historical candidate models:** aggregated progress without participation; explicit independent Path participation; hybrid follow behavior. The Product Owner selected independent Path and Course participation (Option B) after DP-01 v0.1.2.
 
-**Must resolve:** enrollment intent; whether an explicit path participation record exists; how path progress is calculated without duplicate completion; removal/visibility of paths; student UX states.
+**DP-02 contract work:** define Path joining, progress and Student UX without duplicating Course completion. No automatic enrollment of member Courses.
 
 **Affected:** DP-02 Domain Rules, Student UX, DP-03 model, DP-04 API, DP-05 verification.
 
-**Blocking:** **AG-02**. **Owner:** product owner, approval explicit; **due:** before AG-02.
+**Decision status:** **Approved — Option B** by the Product Owner after v0.1.2. **AG-02** contract approval remains pending.
 
 ## 3. FA-005 — Publishing, Archiving & Historical Access
 
-**Decision question:** What do unpublish, archive and revision mean for public access and a Student who already enrolled or completed a lesson?
+**Resolved decision — Option B:** Existing enrolled Students stay on their pinned published Course version; new enrollments use the latest eligible published version. Publishing does not silently migrate existing enrollments. Historical progress, completion and passing evidence remain protected. MVP migration is manual, Admin-controlled, explicitly authorized and audited, with appropriate learner communication. No automatic curriculum migration engine. Historical content retention depends on FA-006.
 
 **Already approved:** hybrid editor with draft/preview/publish/revisions (D-015); version-aware/prospective completion (Q-003, FA-001); historical achievements preserved.
 
-**Must resolve:**
-- Publication states and allowed transitions (draft, published, unpublished, archived).
-- Public catalog visibility versus authenticated previously-enrolled access.
-- Revocation for invalid, unsafe or legally restricted materials.
-- Historical revision retention and policy/version links.
-- What Admin may delete versus unpublish/archive; student notifications when affected.
+**DP-02 contract work:** describe version pinning, publishing and controlled migration. Detailed unpublish/archive visibility, exceptional revocation and historical retention are not established by Option B; do not silently choose them. Retention/deletion depends on FA-006.
 
 **Affected:** DP-02 Domain Rules/UX, DP-03 data model, DP-04 CMS/API/security, DP-05 tests.
 
-**Blocking:** **AG-02**. **Owner:** product owner, approval explicit; **due:** before AG-02.
+**Decision status:** **Approved — Option B** by the Product Owner after v0.1.2. **AG-02** contract approval remains pending; unresolved policy details must be flagged rather than invented.
 
 ## 4. FA-006 — Data Retention & Account Deletion Parameters
 
@@ -131,23 +124,23 @@ These are **source evidence gaps, not product P1 decisions**:
 | EG-001 | D-001–D-008 individually mapped decision text not fully available; D-007/008 unknown | Prospective disposition accepted by AG-01-EG-B; historical mapping remains unverified |
 | EG-002 | D-029 exact historical decision wording unavailable | Prospective disposition accepted by AG-01-EG-B; original wording remains unverified |
 | EG-003 | Original approval records and per-ID source pointers are unavailable in this repository for R/P entries, including Q/G2/G3; existing U entries also lack an independently checkable original source here | Prospective disposition accepted by AG-01-EG-B; no original source is thereby verified |
-| EG-004 | Formal AG-01 review and approval of the four drafts have not occurred | Complete formal review and obtain explicit named-version approval |
+| EG-004 | AG-01 approval was pending in the v0.1.2 draft snapshot | Closed by later explicit Product Owner approval for the four v0.1.2 documents; no historical source verification implied |
 
 Reference: [03-decision-registry.md](03-decision-registry.md).
 
-PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003 or change FA-004–FA-008 from Open.
+PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003. FA-004/005 were separately approved as Option B; FA-006–FA-008 remain Open.
 
-AG-01-EG-B is the Product Owner's current prospective evidence-gap disposition. EG-001–EG-003 remain historically unresolved; the disposition does not approve AG-01 or authorize later documentation.
+AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001–EG-003 remain historically unresolved. AG-01 approval and DP-02 authoring authorization were separate later Product Owner actions.
 
 ## 9. Gate status and controls
 
 | Gate | Current status | Open decisions relevant |
 |---|---|---|
-| AG-01 | **Not Started** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; EG-004 formal review and explicit approval pending; FA P1 allowed to remain Open |
-| AG-02 | Not Started | FA-004, FA-005 |
+| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3 is subsequent administrative sync |
+| AG-02 | Not Approved | Review DP-02 contracts based on approved FA-004 B and FA-005 B |
 | AG-03 | Not Started | FA-006 |
 | AG-04 | Not Started | FA-008, FA-006 consistency |
 | AG-05 | Not Started | FA-007 |
 | AG-06 | Not Started | Requires approved dependencies / governance plan |
 
-**Authoring boundary:** Only DP-01 drafts were authorized by AAR-01. No application code, repository, DB schema, API contract or authoring of DP-02–DP-06 has been authorized.
+**Authoring boundary:** DP-02 documentation authoring is separately authorized after AG-01 approval. DP-03–DP-06 authoring, application code, DB schema and API contracts remain unauthorized.

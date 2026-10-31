@@ -4,14 +4,15 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | MVP Scope Baseline |
-| Version | 0.1.2 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-01 — **Not Started** |
+| Version | 0.1.3 — administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3 records later governance decisions** |
+| Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01, FA-004 B and FA-005 B without changing that substance |
 | Last prepared | 2026-10-31 |
 
 > **Scope authority:** dokumen ini mencatat committed versus deferred capabilities dari discovery dan klarifikasi Product Owner saat ini (PO-CLAR-D021, PO-CLAR-D018, PO-CLAR-D010-Q001). Klarifikasi tersebut menetapkan scope sekarang, bukan membuktikan wording keputusan historis. Perilaku domain yang tepat, user journeys dan kebijakan P1 diselesaikan dalam DP-02. Stable requirement IDs **belum diterbitkan**; ID pada tabel adalah decision references yang telah ada.
 
-AG-01-EG-B menerima disposisi prospektif untuk kesenjangan bukti historis EG-001–EG-003. Isi historis yang belum diketahui tetap tidak terverifikasi; disposisi ini bukan persetujuan AG-01 atau izin mengerjakan DP-02.
+AG-01-EG-B menerima disposisi prospektif untuk kesenjangan bukti historis EG-001–EG-003. Isi historis yang belum diketahui tetap tidak terverifikasi. Persetujuan AG-01 untuk snapshot v0.1.2 dan otorisasi authoring DP-02 diberikan terpisah sesudah snapshot dibuat; revisi v0.1.3 ini mencatatnya.
 
 ## 1. MVP product release intent
 
@@ -25,7 +26,7 @@ Menghadirkan **satu flagship learning experience untuk pemula ChatGPT** yang ter
 | Guest learning | Seluruh lesson flagship course “Menguasai ChatGPT dari Nol” gratis dan dapat diakses Guest; local ungraded interactive practice tanpa akun | D-009, D-010, Q-001; PO-CLAR-D010-Q001 | Tidak ada official score/completion atau graded assessment untuk Guest; memerlukan autentikasi Student |
 | Auth/roles | Supabase Auth, Guest (unauthenticated), Student dan Admin | D-011, G3-001, Q-006 | Admin bootstrap via trusted nonpublic privileged operation |
 | Guest recovery | Optional explicit recovery posisi baca, draft, settings; safe merge | D-017, Q-002 | Browser evidence tidak diangkat menjadi verified passing/completion |
-| Learning model | Learning Path → Course → Module → Lesson → Content Block | D-012, Q-004 | Course reusable lintas path; canonical course completion |
+| Learning model | Learning Path → Course → Module → Lesson → Content Block | D-012, Q-004; FA-004 B | Course reusable lintas path; canonical course completion; partisipasi Path terpisah dari enrollment Course |
 | Optional prerequisites | Admin dapat mengonfigurasi prerequisites bila didukung domain specification; Go API menegakkan prerequisites yang berlaku untuk official learning actions | D-018; PO-CLAR-D018 | Perilaku dan konfigurasi rinci milik DP-02 |
 | Enrollment | Student intent-based course enrollment | G2-001A | Melihat course saja tidak mendaftarkan Student |
 | Navigation/UX | Public, Student Workspace, Lesson Reader, Admin layouts | G2-002, D-019 | Responsive, error/empty/loading/unauthorized states |
@@ -34,7 +35,7 @@ Menghadirkan **satu flagship learning experience untuk pemula ChatGPT** yang ter
 | Official completion | Explicit complete action + mandatory activities/assessments; hierarchical and version-aware | D-013, Q-003, Q-004, FA-001 | Prospective by default; existing achievements preserved |
 | Assessment | Structured graded single/multi-select with configurable passing score, weights, retries | D-016, Q-005 | Un/graded knowledge checks terpisah |
 | Attempt lifecycle | Version lock, default 24h expiry, one active attempt, immutable grades, idempotent submission | FA-003 | Expired ≠ scored failure; passing evidence preserved |
-| Admin content workflow | Hybrid visual editor + Markdown, draft/preview/publish/revisions | D-015, Q-007 | Publication/archival historical access details FA-005 open |
+| Admin content workflow | Hybrid visual editor + Markdown, draft/preview/publish/revisions | D-015, Q-007; FA-005 B | Enrollment dipin ke published Course version; migrasi manual dan terkontrol; retensi historis bergantung FA-006 |
 | Student workspace | Basic dashboard/progress, resume, bookmarks, notes, reading preferences | D-019, D-024 | Full analytics/gamification deferred |
 | Security/privacy | Go-side authz, ownership, audit, privacy controls, basic export/deletion lifecycle | D-025, G3-003 | Exact retention timelines FA-006 open |
 | Operability | Managed services, local/staging/prod separation, CI, monitoring, backups/restore checks | D-027, G3-004 | Vendor, budget and quantitative recovery targets FA-008 open |
@@ -97,19 +98,14 @@ New features, different role models, new scoring methods, a requirement to run u
 
 ## 8. Known unresolved topics
 
-- FA-004 path enrollment/participation semantics; DP-02 blocker.
-- FA-005 content archival/unpublish and historical access; DP-02 blocker.
+- FA-004 B approved: Path participation independent from Course enrollment; DP-02 owns detailed contract.
+- FA-005 B approved: version-pinned enrollment and controlled migration; DP-02 owns detailed contract. Historical retention still depends on FA-006.
 - FA-006 exact retention/deletion policy; DP-03 blocker, DP-04 consistency.
 - FA-007 measurable UX/performance/beta goals; DP-05 blocker.
 - FA-008 capacity, hosting, RPO/RTO, costs and monitoring parameters; DP-04 blocker.
 
-## 9. AG-01 review checklist (not executed)
+## 9. AG-01 approval record
 
-- [ ] MVP commitments and deferrals match defensible historical decisions and explicit current Product Owner clarifications.
-- [ ] No P1 is presented as Approved.
-- [ ] Scope items are linked to decision IDs and future requirement ID allocation is described.
-- [ ] No contradictory capability appears in both committed and deferred categories.
-- [ ] Product Charter and Registry use consistent terms.
-- [ ] Product owner gives explicit approval of this version after review.
+Product Owner explicitly approved the four DP-01 **v0.1.2** documents through AG-01 after that draft snapshot. FA-004 B and FA-005 B were approved later as current Product Owner decisions. This v0.1.3 administrative revision records those events; it is not a claim that the post-approval edits were in the approved v0.1.2 snapshot. Historical source limits EG-001–EG-003 remain under AG-01-EG-B.
 
-**Status:** Draft; AG-01 not started.
+**Status:** AG-01 Approved for the v0.1.2 product baseline; AG-02 remains Not Approved.

@@ -4,14 +4,15 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Product Charter |
-| Version | 0.1.2 |
-| Status | **Draft — Not Approved** |
+| Version | 0.1.3 — administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3 records later governance decisions** |
 | Authoring authorization | AAR-01 — explicitly authorized by product owner |
-| Approval gate | AG-01 — **Not Started** |
+| Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01, FA-004 B and FA-005 B without changing that substance |
 | Source-of-truth scope | Visi produk, audiens, positioning, prinsip dan sasaran produk |
 | Last prepared | 2026-10-31 |
 
-> **Governance notice.** Dokumen ini merupakan draft DP-01, bukan persetujuan AG-01, bukan izin DP-02–DP-06, dan bukan izin menulis kode. Pernyataan yang tidak cukup didukung sejarah keputusan ditandai sebagai asumsi atau perlu konfirmasi. Detail domain, UX, API dan arsitektur dimiliki paket dokumentasi berikutnya.
+> **Governance notice.** Product Owner telah menyetujui empat dokumen DP-01 v0.1.2 melalui AG-01 setelah snapshot draft tersebut dibuat. Revisi v0.1.3 ini hanya menyinkronkan catatan governance sesudah approval; tidak mengubah substansi baseline v0.1.2. AG-01-EG-B tetap berlaku dan EG-001–EG-003 tetap keterbatasan bukti historis. DP-02 authoring diizinkan secara terpisah; AG-02, DP-03–DP-06 authoring dan penulisan kode tidak otomatis diizinkan.
 
 ## 1. Product vision
 
@@ -97,10 +98,10 @@ Dokumen ini **tidak** menetapkan schema, state machine detail, endpoint HTTP, UX
 
 ## 10. Open questions & approval
 
-- **FA-004:** partisipasi Learning Path belum final (blocks AG-02).
-- **FA-005:** unpublish, archive, historical access belum final (blocks AG-02).
+- **FA-004 — Approved B:** partisipasi Path terpisah dari enrollment Course; progress Path berasal dari completion Course anggota. Rincian domain di DP-02.
+- **FA-005 — Approved B:** enrollment tetap pada published Course version yang dipin; enrollment baru memakai versi published terbaru yang eligible; migrasi MVP manual, terotorisasi dan diaudit. Retensi konten historis bergantung FA-006.
 - **FA-006:** retention/deletion parameters belum final (blocks AG-03; consistency AG-04).
 - **FA-007:** UX/performance/beta thresholds belum final (blocks AG-05).
 - **FA-008:** operational vendor/capacity/RPO/RTO belum final (blocks AG-04).
 
-**AG-01 status:** NOT STARTED. EG-001–EG-003 tetap belum terverifikasi secara historis; AG-01-EG-B menerima disposisi prospektifnya untuk baseline saat ini, bukan membuktikan wording historis atau menyetujui AG-01. Persetujuan AG-01 atas revisi dokumen ini tetap harus eksplisit.
+**AG-01 status:** APPROVED untuk snapshot DP-01 v0.1.2, berdasarkan persetujuan eksplisit Product Owner setelah snapshot dibuat. AG-01-EG-B menerima disposisi prospektif EG-001–EG-003 tanpa memverifikasi wording historis. Revisi administratif v0.1.3 bukan bagian dari snapshot yang semula disetujui.

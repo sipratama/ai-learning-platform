@@ -258,6 +258,94 @@ test('keyboard skip link, focus and native mobile dialog are operable', async ({
     'solid',
   )
   await noOverflow(page)
+
+  if (testInfo.project.name !== 'desktop') {
+    const menu = page.getByRole('button', { name: 'Menu', exact: true })
+    const dialog = page.getByRole('dialog', { name: 'Jelajahi AI Learning' })
+    for (let cycle = 0; cycle < 10; cycle++) {
+      await menu.focus()
+      await page.keyboard.press('Enter')
+      await expect(dialog).toBeVisible()
+      await expect(menu).toHaveAttribute('aria-expanded', 'true')
+
+      await page.keyboard.press('Escape')
+      await search.focus()
+      await expect(menu).toHaveAttribute('aria-expanded', 'false')
+      await expect(dialog).not.toBeVisible()
+      await expect(search).toBeFocused()
+      expect(
+        await search.evaluate((element) => getComputedStyle(element).outlineStyle),
+      ).toBe('solid')
+
+      await menu.focus()
+      await page.keyboard.press('Enter')
+      await expect(dialog).toBeVisible()
+      // close() restores native focus synchronously and queues close. Focus
+      // search in that exact gap, then inspect it after close handlers finish.
+      // This also exercises the native method used by the close button.
+      const afterClose = await dialog.evaluate(async (element) => {
+        const closed = new Promise<void>((resolve) => {
+          element.addEventListener('close', () => queueMicrotask(resolve), {
+            once: true,
+          })
+        })
+        ;(element as HTMLDialogElement).close()
+        const input = document.getElementById('catalog-search')!
+        input.focus()
+        await closed
+        return {
+          focused: document.activeElement === input,
+          outline: getComputedStyle(input).outlineStyle,
+        }
+      })
+      expect(afterClose).toEqual({ focused: true, outline: 'solid' })
+      await expect(menu).toHaveAttribute('aria-expanded', 'false')
+      await expect(search).toBeFocused()
+
+      await menu.focus()
+      await page.keyboard.press('Enter')
+      await expect(dialog).toBeVisible()
+      await dialog.getByRole('button', { name: 'Tutup menu' }).focus()
+      await page.keyboard.press('Enter')
+      await expect(menu).toHaveAttribute('aria-expanded', 'false')
+      await expect(dialog).not.toBeVisible()
+      await expect(menu).toBeFocused()
+      expect(
+        await menu.evaluate((element) => getComputedStyle(element).outlineStyle),
+      ).toBe('solid')
+    }
+
+    // Query-only navigation uses the same Catalog pathname. Native close must
+    // not leave focus on the opener instead of the newly selected content.
+    for (const kind of ['Course', 'Learning Path']) {
+      await menu.focus()
+      await page.keyboard.press('Enter')
+      await expect(dialog).toBeVisible()
+      await dialog.getByRole('link', { name: kind, exact: true }).focus()
+      await page.keyboard.press('Enter')
+      await expect(page).toHaveURL(
+        kind === 'Course' ? /\/catalog\?type=courses$/ : /\/catalog\?type=paths$/,
+      )
+      await expect(menu).toHaveAttribute('aria-expanded', 'false')
+      await expect(dialog).not.toBeVisible()
+      await expect(page.getByRole('main')).toBeFocused()
+    }
+
+    // Also retain the existing focus destination when the pathname changes.
+    await page
+      .getByRole('link', { name: 'Foundations Path', exact: true })
+      .click()
+    await expect(
+      page.getByRole('heading', { name: 'Foundations Path', level: 1 }),
+    ).toBeVisible()
+    await menu.focus()
+    await page.keyboard.press('Enter')
+    await dialog.getByRole('link', { name: 'Course', exact: true }).focus()
+    await page.keyboard.press('Enter')
+    await expect(page).toHaveURL(/\/catalog\?type=courses$/)
+    await expect(menu).toHaveAttribute('aria-expanded', 'false')
+    await expect(page.getByRole('main')).toBeFocused()
+  }
 })
 
 test('unsafe Markdown/media stay inert and mismatched/private links stay generic', async ({

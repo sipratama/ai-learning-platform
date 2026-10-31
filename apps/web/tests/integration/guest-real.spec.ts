@@ -2,6 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import AxeBuilder from '@axe-core/playwright'
 import { expect, test, type Page } from '@playwright/test'
+import { completedPublicRead } from '../support/completed-response'
 
 // No page.route/context.route/API interception is permitted in this suite.
 const evidence = resolve(
@@ -155,20 +156,34 @@ test('FT-001 / N07–11: search, membership and real signed cursor pagination', 
   await expect(
     page.getByRole('link', { name: 'Focused Practice', exact: true }),
   ).toBeVisible()
-  const initial = page.waitForResponse(
-    (r) =>
-      new URL(r.url()).pathname === '/api/v1/catalog/paths' &&
-      new URL(r.url()).searchParams.get('limit') === '1',
-  )
-  await page.goto('/catalog?limit=1')
+  const initialURL = new URL('/api/v1/catalog/paths?limit=1', page.url()).href
+  const [{ body: first }] = await Promise.all([
+    completedPublicRead(page, initialURL),
+    page.goto('/catalog?limit=1'),
+  ])
   await ready(page)
-  const cursor = (await (await initial).json()).page.nextCursor as string
+  expect(first.meta.snapshotId).toBe('pub-v1')
+  expect(first.data).toHaveLength(1)
+  expect(first.data[0].id).toBe('path-foundations')
+  await expect(
+    page.getByRole('link', { name: first.data[0].title, exact: true }),
+  ).toHaveAttribute('href', `/paths/${first.data[0].id}`)
+  await expect(page.getByText(first.data[0].summary, { exact: true })).toBeVisible()
+  const cursor = first.page.nextCursor as string
   expect(cursor).toMatch(/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/)
-  const next = page.waitForResponse(
-    (r) => new URL(r.url()).searchParams.get('cursor') === cursor,
-  )
-  await page.getByRole('button', { name: 'Muat lagi', exact: true }).click()
-  expect((await next).status()).toBe(200)
+  const nextURL = new URL(initialURL)
+  nextURL.searchParams.set('cursor', cursor)
+  const [{ body: second }] = await Promise.all([
+    completedPublicRead(page, nextURL.href),
+    page.getByRole('button', { name: 'Muat lagi', exact: true }).click(),
+  ])
+  expect(second.meta.snapshotId).toBe(first.meta.snapshotId)
+  expect(second.data).toHaveLength(1)
+  expect(second.data[0].id).toBe('path-practice')
+  expect(second.page.nextCursor).toBeNull()
+  await expect(
+    page.getByRole('link', { name: second.data[0].title, exact: true }),
+  ).toHaveAttribute('href', `/paths/${second.data[0].id}`)
   await expect(
     page.getByRole('link', { name: 'Practice Path', exact: true }),
   ).toBeVisible()

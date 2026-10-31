@@ -166,6 +166,8 @@ export function Catalog() {
     }
   }
   function reset() {
+    appendController.current?.abort()
+    setAppend({ key: '', busy: false })
     setExtra({ key: '', items: [], cursor: null })
     if (invalid || resource.error?.status === 400) setParams({ type: kind })
     else resource.retry()

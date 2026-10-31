@@ -1,0 +1,33 @@
+
+> ai-learning-platform-web@0.0.0 test:e2e:mock
+> playwright test
+
+
+Running 24 tests using 3 workers
+
+  ✓   3 [desktop] › tests/e2e/guest.spec.ts:134:1 › search, membership filtering, no-match reset, and history work (2.1s)
+  ✓   1 [desktop] › tests/e2e/guest.spec.ts:100:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.8s)
+  ✓   2 [desktop] › tests/e2e/guest.spec.ts:50:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (3.1s)
+  ✓   4 [desktop] › tests/e2e/guest.spec.ts:159:1 › opaque cursor pagination appends and a new query resets it (1.6s)
+  ✓   6 [desktop] › tests/e2e/guest.spec.ts:231:1 › keyboard skip link, focus and native mobile dialog are operable (1.4s)
+  ✓   7 [desktop] › tests/e2e/guest.spec.ts:263:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.0s)
+  ✓   5 [desktop] › tests/e2e/guest.spec.ts:188:1 › loading, error, empty, and invalid cursor preserve recovery (5.6s)
+  ✓   9 [tablet] › tests/e2e/guest.spec.ts:50:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.4s)
+  ✓  11 [tablet] › tests/e2e/guest.spec.ts:134:1 › search, membership filtering, no-match reset, and history work (1.8s)
+  ✓   8 [desktop] › tests/e2e/guest.spec.ts:329:1 › rendered screens pass automated accessibility and produce screenshot evidence (6.9s)
+  ✓  10 [tablet] › tests/e2e/guest.spec.ts:100:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.4s)
+  ✓  12 [tablet] › tests/e2e/guest.spec.ts:159:1 › opaque cursor pagination appends and a new query resets it (1.4s)
+  ✓  14 [tablet] › tests/e2e/guest.spec.ts:231:1 › keyboard skip link, focus and native mobile dialog are operable (1.7s)
+  ✓  15 [tablet] › tests/e2e/guest.spec.ts:263:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.7s)
+  ✓  13 [tablet] › tests/e2e/guest.spec.ts:188:1 › loading, error, empty, and invalid cursor preserve recovery (5.4s)
+  ✓  17 [mobile] › tests/e2e/guest.spec.ts:50:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.5s)
+  ✓  18 [mobile] › tests/e2e/guest.spec.ts:134:1 › search, membership filtering, no-match reset, and history work (1.7s)
+  ✓  16 [tablet] › tests/e2e/guest.spec.ts:329:1 › rendered screens pass automated accessibility and produce screenshot evidence (7.4s)
+  ✓  20 [mobile] › tests/e2e/guest.spec.ts:159:1 › opaque cursor pagination appends and a new query resets it (1.3s)
+  ✓  19 [mobile] › tests/e2e/guest.spec.ts:100:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.4s)
+  ✓  21 [mobile] › tests/e2e/guest.spec.ts:231:1 › keyboard skip link, focus and native mobile dialog are operable (1.7s)
+  ✓  22 [mobile] › tests/e2e/guest.spec.ts:263:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.5s)
+  ✓  23 [mobile] › tests/e2e/guest.spec.ts:188:1 › loading, error, empty, and invalid cursor preserve recovery (5.3s)
+  ✓  24 [mobile] › tests/e2e/guest.spec.ts:329:1 › rendered screens pass automated accessibility and produce screenshot evidence (5.0s)
+
+  24 passed (31.2s)

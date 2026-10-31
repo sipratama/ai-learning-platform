@@ -1,0 +1,630 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/22.23.4/x64/bin/node",
+      "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.integration.config.ts"
+    ],
+    "configFile": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/playwright.integration.config.ts",
+    "rootDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865",
+        "commitHash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+        "buildHref": "https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622"
+      },
+      "gitCommit": {
+        "shortHash": "339344e",
+        "hash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+        "subject": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration",
+        "body": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration\n\nfix(vs01a): preserve focus after closing mobile navigation",
+        "author": {
+          "name": "Singgih Pratama",
+          "email": "sp.mastama@gmail.com",
+          "time": 1793451421000
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "time": 1793451421000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/test-results/integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865",
+            "commitHash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "buildHref": "https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622"
+          },
+          "gitCommit": {
+            "shortHash": "339344e",
+            "hash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "subject": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration",
+            "body": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration\n\nfix(vs01a): preserve focus after closing mobile navigation",
+            "author": {
+              "name": "Singgih Pratama",
+              "email": "sp.mastama@gmail.com",
+              "time": 1793451421000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1793451421000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "real-desktop",
+        "name": "real-desktop",
+        "testDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/test-results/integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865",
+            "commitHash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "buildHref": "https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622"
+          },
+          "gitCommit": {
+            "shortHash": "339344e",
+            "hash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "subject": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration",
+            "body": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration\n\nfix(vs01a): preserve focus after closing mobile navigation",
+            "author": {
+              "name": "Singgih Pratama",
+              "email": "sp.mastama@gmail.com",
+              "time": 1793451421000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1793451421000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "id": "real-mobile",
+        "name": "real-mobile",
+        "testDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/test-results/integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865",
+            "commitHash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "buildHref": "https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622"
+          },
+          "gitCommit": {
+            "shortHash": "339344e",
+            "hash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "subject": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration",
+            "body": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration\n\nfix(vs01a): preserve focus after closing mobile navigation",
+            "author": {
+              "name": "Singgih Pratama",
+              "email": "sp.mastama@gmail.com",
+              "time": 1793451421000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1793451421000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "real-desktop",
+        "testDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "snapshotDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:15173",
+          "locale": "id-ID",
+          "timezoneId": "Asia/Jakarta",
+          "reducedMotion": "reduce",
+          "serviceWorkers": "block",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "launchOptions": {},
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "real-desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/test-results/integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865",
+            "commitHash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "buildHref": "https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622"
+          },
+          "gitCommit": {
+            "shortHash": "339344e",
+            "hash": "339344e654ea77817ecddf05094d1d55b7bf3865",
+            "subject": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration",
+            "body": "Merge pull request #5 from sipratama/fix/vs-01a-mobile-menu-focus-restoration\n\nfix(vs01a): preserve focus after closing mobile navigation",
+            "author": {
+              "name": "Singgih Pratama",
+              "email": "sp.mastama@gmail.com",
+              "time": 1793451421000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1793451421000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 2
+        },
+        "name": "real-mobile",
+        "testDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "snapshotDir": "/home/runner/work/ai-learning-platform/ai-learning-platform/apps/web/tests/integration",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:15173",
+          "locale": "id-ID",
+          "timezoneId": "Asia/Jakarta",
+          "reducedMotion": "reduce",
+          "serviceWorkers": "block",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "launchOptions": {},
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "real-mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/integration-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-integration-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "guest-real.spec.ts",
+      "file": "guest-real.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FT-001–003: actual Go public reads support the complete Guest journey",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-desktop",
+              "projectName": "real-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:08.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-392e721c3de63d6087af",
+          "file": "guest-real.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "FT-001 / N07–11: search, membership and real signed cursor pagination",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-desktop",
+              "projectName": "real-desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1671,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:08.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-0cfbf88b1929fe10d0d4",
+          "file": "guest-real.spec.ts",
+          "line": 139,
+          "column": 1
+        },
+        {
+          "title": "ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-desktop",
+              "projectName": "real-desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:10.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-ddbfff8b30f6bf6b9c2a",
+          "file": "guest-real.spec.ts",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "ST-013 / N12–13: real fixture rich content and public media stay safe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-desktop",
+              "projectName": "real-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:10.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-b1bd42c95995a3baa996",
+          "file": "guest-real.spec.ts",
+          "line": 276,
+          "column": 1
+        },
+        {
+          "title": "real desktop/mobile keyboard, layouts and screenshots preserve the original UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-desktop",
+              "projectName": "real-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:11.111Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-298420eecca3ccc9d31e",
+          "file": "guest-real.spec.ts",
+          "line": 316,
+          "column": 1
+        },
+        {
+          "title": "FT-001–003: actual Go public reads support the complete Guest journey",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-mobile",
+              "projectName": "real-mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:11.583Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-fdcd9a7854eab301e2b9",
+          "file": "guest-real.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "FT-001 / N07–11: search, membership and real signed cursor pagination",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-mobile",
+              "projectName": "real-mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1342,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:12.960Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-4d7c86fe2bba369f7c4b",
+          "file": "guest-real.spec.ts",
+          "line": 139,
+          "column": 1
+        },
+        {
+          "title": "ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-mobile",
+              "projectName": "real-mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:14.315Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-78aa134700b095029947",
+          "file": "guest-real.spec.ts",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "ST-013 / N12–13: real fixture rich content and public media stay safe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-mobile",
+              "projectName": "real-mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 601,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:15.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-218e2d42ed30aa3c2c4e",
+          "file": "guest-real.spec.ts",
+          "line": 276,
+          "column": 1
+        },
+        {
+          "title": "real desktop/mobile keyboard, layouts and screenshots preserve the original UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "real-mobile",
+              "projectName": "real-mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T12:58:16.079Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ddd237bf6f3d97c32a2-2e96c4e5cc3608770324",
+          "file": "guest-real.spec.ts",
+          "line": 316,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-31T12:58:06.525Z",
+    "duration": 12703.662,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -52,11 +52,9 @@ export function Shell() {
   const location = useLocation(),
     navigationType = useNavigationType()
   const main = useRef<HTMLElement>(null),
-    dialog = useRef<HTMLDialogElement>(null),
-    trigger = useRef<HTMLButtonElement>(null)
+    dialog = useRef<HTMLDialogElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
-  const lastPath = useRef(''),
-    leavingMenu = useRef(false)
+  const lastPath = useRef('')
   useEffect(() => {
     const key = location.key
     const restore = () => {
@@ -79,8 +77,9 @@ export function Shell() {
   }, [location.key, location.pathname, navigationType])
 
   const closeForNavigation = () => {
-    leavingMenu.current = true
     dialog.current?.close()
+    // A menu selection moves into content, including query-only Catalog routes.
+    main.current?.focus({ preventScroll: true })
   }
   return (
     <div className="app-shell">
@@ -116,12 +115,10 @@ export function Shell() {
           <div className="desktop-topbar-label">Ruang belajar terbuka</div>
           <span className="topbar-note">Baca materi gratis tanpa akun</span>
           <button
-            ref={trigger}
             className="button button--secondary menu-trigger"
             aria-haspopup="dialog"
             aria-expanded={menuOpen}
             onClick={() => {
-              leavingMenu.current = false
               dialog.current?.showModal()
               setMenuOpen(true)
             }}
@@ -146,8 +143,8 @@ export function Shell() {
         className="mobile-menu"
         aria-labelledby="menu-title"
         onClose={() => {
+          // Native dialog already restored focus before this queued event.
           setMenuOpen(false)
-          if (!leavingMenu.current) trigger.current?.focus()
         }}
       >
         <div className="drawer-heading">

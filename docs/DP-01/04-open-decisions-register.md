@@ -165,3 +165,11 @@ The later **VS01A-CLOSE-001** [decision record](03-decision-registry.md#17-vs-01
 | VS-02A implementation | **NOT AUTHORIZED** | Planning handoff exists; formal predecessor acceptance, its own DR-001 and explicit PO scope authorization still required. |
 
 These are pending closure conditions, not new product-policy GAPs. **GAP-001/002/003/007 remain OPEN** with VS-02C/04C/06C/06D/03B **Blocked**. No production publishing, deployment, beta or Student-data acceptance is granted. This addendum does not overwrite prior gate tables or invent reviewer identities, signatures or approvals.
+
+## 16. GOV-AI-001 proposal awaiting decision (2026-10-31)
+
+| Proposal reference | Status / next decision |
+|---|---|
+| [GOV-AI-001 — AI-assisted technical acceptance](05-gov-ai-001-ai-assisted-technical-acceptance-proposal.md) | **PROPOSED / NOT EFFECTIVE — AUTHORITY CLARIFICATION REQUIRED**. PO drafting authorization only. Establish amendment authority/concurrence, review alternatives and controls, then explicitly approve, reject or defer through existing change control. No approver, signature or effective date is inferred. |
+
+This is a proposal reference outside the historically approved snapshots, not a new approved policy or product GAP disposition. AG-01–AG-06 and existing QUAL outcomes are unchanged. VS01A-CLOSE-001/DD-001 remain **PENDING SIGN-OFF**; GAP-001/002/003/007 remain **Open** and their dependent increments **Blocked**. No VS-01A closure, waiver, deployment, beta or VS-02A implementation is authorized.

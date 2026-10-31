@@ -260,3 +260,7 @@ The Product Owner separately authorized the **Engineering Bootstrap** and this *
 | Next milestone | VS-02A remains **NOT AUTHORIZED**; predecessor formal acceptance and independent DR-001/explicit scope authorization still required. |
 
 This record changes the current evidence account for VS-01A; it does not close the slice, approve its documentation merge, grant Git writes or authorize later implementation. The Product Owner retains the final decision and all Git operations.
+
+## 18. GOV-AI-001 proposal reference (2026-10-31; not an approval)
+
+**GOV-AI-001 — PROPOSED / NOT EFFECTIVE. AUTHORITY CLARIFICATION REQUIRED.** The Product Owner authorized preparation of the [AI-assisted technical acceptance proposal](05-gov-ai-001-ai-assisted-technical-acceptance-proposal.md), not its adoption. It compares strict human review, risk-tiered AI-assisted acceptance and a hybrid pilot; the recommendation is not a decision. Existing §9 material-change approval/reviewer-sign-off requirements still apply. This additive reference is outside the historically approved snapshots and grants no new amendment authority. AG-01–AG-06, VS01A-CLOSE-001/DD-001 **PENDING SIGN-OFF**, QUAL outcomes and GAP-001/002/003/007 **Open** remain unchanged. No waiver, closure, deployment, beta or VS-02A implementation authorization is supplied.

@@ -1,18 +1,41 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { Shell } from '../components/Shell'
+import { ErrorState, PageTitle } from '../components/ui'
+import { PublicApiError } from '../lib/api/public'
+import { Catalog } from '../screens/Catalog'
+import { CourseDetailScreen, PathDetailScreen } from '../screens/Details'
+import { Reader } from '../screens/Reader'
+
+export function AppRoutes() {
+  return (
+    <Routes>
+      <Route element={<Shell />}>
+        <Route path="/" element={<Navigate to="/catalog" replace />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/paths/:pathId" element={<PathDetailScreen />} />
+        <Route path="/courses/:courseId" element={<CourseDetailScreen />} />
+        <Route
+          path="/courses/:courseId/lessons/:lessonId"
+          element={<Reader />}
+        />
+        <Route
+          path="*"
+          element={
+            <div className="page">
+              <PageTitle title="Halaman tidak tersedia" />
+              <h1>Halaman tidak tersedia</h1>
+              <ErrorState error={new PublicApiError(404)} />
+            </div>
+          }
+        />
+      </Route>
+    </Routes>
+  )
+}
 export function App() {
   return (
-    <div className="min-h-screen bg-slate-950 px-5 py-12 text-slate-100 sm:px-8">
-      <main className="mx-auto flex min-h-[70vh] w-full max-w-3xl flex-col justify-center">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-cyan-300">
-          Engineering bootstrap
-        </p>
-        <h1 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
-          AI Learning Platform
-        </h1>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-          This development placeholder confirms the application shell is running.
-          Learning features are awaiting separate implementation authorization.
-        </p>
-      </main>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }

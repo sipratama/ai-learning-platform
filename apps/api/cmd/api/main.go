@@ -20,6 +20,10 @@ func main() {
 		logger.Error("startup_failed", "reason", "invalid_configuration")
 		os.Exit(1)
 	}
+	if err := initializeFixture(cfg); err != nil {
+		logger.Error("startup_failed", "reason", "fixture_unavailable")
+		os.Exit(1)
+	}
 
 	listener, err := net.Listen("tcp", cfg.ListenAddress)
 	if err != nil {

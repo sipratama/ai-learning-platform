@@ -1,0 +1,151 @@
+{
+  "identity": "vs01a-guest-proof@1.0.0",
+  "version": "1.0.0",
+  "snapshotId": "pub-v1",
+  "draftId": "draft-v2",
+  "paths": [
+    {
+      "id": "path-foundations",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": true,
+      "title": "Foundations Path",
+      "summary": "A first route through the flagship course.",
+      "description": "Disposable development path for public reading checks.",
+      "courseIds": ["course-flagship"]
+    },
+    {
+      "id": "path-practice",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": true,
+      "title": "Practice Path",
+      "summary": "Flagship and focused practice together.",
+      "description": "Disposable development path for canonical Course reuse.",
+      "courseIds": ["course-flagship", "course-focus"]
+    },
+    {
+      "id": "path-hidden",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": false,
+      "title": "Private Path Marker",
+      "summary": "Must not appear in public projections.",
+      "description": "Synthetic hidden record.",
+      "courseIds": ["course-flagship"]
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-flagship",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": true,
+      "flagship": true,
+      "title": "Menguasai ChatGPT dari Nol",
+      "summary": "A small public development sample.",
+      "description": "Two free fixture Lessons; not the complete production flagship.",
+      "modules": [
+        {
+          "id": "module-flagship-1",
+          "title": "Getting Started",
+          "position": 1,
+          "lessons": [
+            {
+              "id": "lesson-flagship-1",
+              "title": "First Steps",
+              "position": 1,
+              "free": true,
+              "blocks": [
+                {"id": "block-rich-1", "type": "richText", "position": 1, "payload": {"markdown": "# Welcome\nThis is a safe fixture Lesson."}},
+                {"id": "block-code-1", "type": "code", "position": 2, "payload": {"language": "text", "text": "<script>alert('literal only')</script>"}},
+                {"id": "block-card-1", "type": "flashcard", "position": 3, "payload": {"front": "What is a prompt?", "back": "A request or instruction to an AI system."}},
+                {"id": "block-media-1", "type": "media", "position": 4, "payload": {"src": "/assets/fixture/diagram.svg", "alt": "Synthetic learning diagram"}}
+              ]
+            },
+            {
+              "id": "lesson-flagship-2",
+              "title": "Safe Practice",
+              "position": 2,
+              "free": true,
+              "blocks": [
+                {"id": "block-callout-1", "type": "callout", "position": 1, "payload": {"text": "Local practice never grants official completion."}}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-focus",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": true,
+      "flagship": false,
+      "title": "Focused Practice",
+      "summary": "A separate Course for filtering and search.",
+      "description": "Disposable public Course for membership checks.",
+      "modules": [
+        {
+          "id": "module-focus-1",
+          "title": "Focus",
+          "position": 1,
+          "lessons": [
+            {
+              "id": "lesson-focus-1",
+              "title": "Focus Lesson",
+              "position": 1,
+              "free": true,
+              "blocks": [
+                {"id": "block-focus-1", "type": "richText", "position": 1, "payload": {"markdown": "Focused practice fixture content."}}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-hidden",
+      "versionId": "pub-v1",
+      "state": "published",
+      "discoverable": false,
+      "flagship": false,
+      "title": "Private Course Marker",
+      "summary": "Must never appear publicly.",
+      "description": "Synthetic hidden record.",
+      "modules": []
+    },
+    {
+      "id": "course-flagship",
+      "versionId": "draft-v2",
+      "state": "draft",
+      "discoverable": false,
+      "flagship": false,
+      "title": "Draft Flagship Revision",
+      "summary": "Private draft version.",
+      "description": "Unsafe authoring probes remain private.",
+      "modules": [
+        {
+          "id": "module-draft-1",
+          "title": "Draft",
+          "position": 1,
+          "lessons": [
+            {
+              "id": "lesson-draft",
+              "title": "Unpublished Lesson",
+              "position": 1,
+              "free": true,
+              "blocks": [
+                {"id": "block-unsafe-markdown", "type": "richText", "position": 1, "payload": {"markdown": "<script>alert('draft only')</script> <img src=x onerror=alert(1)> [unsafe](javascript:alert(1))"}},
+                {"id": "block-unsafe-media", "type": "media", "position": 2, "payload": {"src": "javascript:alert(1)", "alt": "Unsafe draft URL probe"}}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answerKeys": [
+    {"assessmentId": "assessment-hidden", "key": "synthetic-private-answer-marker"}
+  ]
+}

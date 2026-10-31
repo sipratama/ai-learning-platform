@@ -167,7 +167,7 @@ export function Catalog() {
   }
   function reset() {
     setExtra({ key: '', items: [], cursor: null })
-    if (invalid) setParams({ type: kind })
+    if (invalid || resource.error?.status === 400) setParams({ type: kind })
     else resource.retry()
   }
   const filterTitle = options.value?.data.find(

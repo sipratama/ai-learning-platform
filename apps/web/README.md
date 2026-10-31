@@ -11,9 +11,9 @@ npm ci
 npm run dev
 ```
 
-Vite serves `http://127.0.0.1:5173`. `VITE_API_BASE_URL` defaults to `http://127.0.0.1:8080` in development and the page origin in a production build. The existing URL validator rejects credentials, query strings, fragments, and non-HTTP(S) schemes. Never put credentials into a `VITE_` variable.
+Vite serves `http://127.0.0.1:5173`. `VITE_API_BASE_URL` defaults to the page origin in development and production. Vite proxies public API and fixture-media reads to `http://127.0.0.1:8080`; `API_PROXY_TARGET` can select another HTTP loopback origin. The existing URL validator rejects credentials, query strings, fragments, and non-HTTP(S) schemes. Never put credentials into a `VITE_` variable.
 
-**Integration prerequisite:** the `main` baseline used for this change has only a Go health endpoint and an internal development fixture adapter. It does not serve API-001–005 or public fixture media. This frontend therefore displays a real unavailable/error state when run against that baseline. There is no embedded production demo dataset, mock mode, direct manifest import, or backend replacement. A separately authorized backend implementation must supply the existing public contracts; local cross-origin integration also needs the applicable backend origin configuration. No backend configuration was changed here.
+**Integration:** start the actual Go API from `apps/api` with `APP_ENV=local FIXTURE_MODE=vs01a go run -tags devfixture ./cmd/api`. The five existing read contracts and approved fixture media are now served in that explicit mode. Standard Go builds have no fixture and return safe unavailable content responses. There is no embedded frontend demo dataset, production mock fallback, direct manifest import, or browser database access. Same-origin proxying avoids adding a permissive CORS policy.
 
 ## Routes
 
@@ -40,10 +40,13 @@ npm run lint
 npm test
 npm run build
 npm run test:e2e
+npm run test:e2e:real
 ```
 
 Playwright runs Chrome/Chromium at desktop, tablet, and mobile viewports. On macOS it uses the existing Google Chrome executable when present; `PLAYWRIGHT_CHROMIUM_EXECUTABLE` selects another explicit installation. Otherwise install Playwright Chromium with `npx playwright install chromium`. The test server uses loopback only.
 
-The browser suite intercepts public HTTP reads with test-only DTO doubles from `tests/support/public-fixture.ts`. These doubles are never imported by application entry points. They cover UI behavior, state recovery, opaque cursor forwarding, safe rendering, accessibility automation, and responsive screenshots. **They do not prove real Go API behavior, cryptographic cursor signing, server visibility, CORS, or production integration.** Baseline tests had no Playwright suite; this change adds it.
+The existing `npm run test:e2e` / `npm run test:e2e:mock` suite intercepts reads with test-only DTO doubles from `tests/support/public-fixture.ts`; it remains a fast UI contract suite. These doubles are never imported by application entry points and do not prove server authorization or cryptographic behavior.
 
-`npm run test:e2e` writes the 12 normal screen captures to `docs/frontend/evidence` and puts transient reports/traces under ignored frontend output directories. Review screenshots directly; an automated axe pass alone does not establish WCAG 2.2 AA. See the [implementation/verification report](../../docs/frontend/2026-10-31-vs01a-ui-alignment.md) for actual results and remaining limitations.
+`npm run test:e2e:real` uses `playwright.integration.config.ts` and `tests/integration/guest-real.spec.ts`. It builds and starts the actual development Go artifact on `127.0.0.1:18081`, starts Vite on `127.0.0.1:15173`, and makes real public API/media requests through the proxy. There is no interception of the five product endpoints. Both processes are owned and stopped by the runner; the temporary Go binary is removed. Go 1.27.3 is required; set `GO_BIN` to an explicit executable when it is not on PATH. There are no production network/service dependencies during test execution.
+
+Mock screenshots now go to ignored `test-results/mock-evidence` so the earlier design evidence remains historical. Real screenshots and redacted HTTP metadata go to `docs/vs01a-integration/evidence`, with distinct integration report/trace output. Review screenshots directly; an automated axe pass alone does not establish WCAG 2.2 AA. The earlier [UI report](../../docs/frontend/2026-10-31-vs01a-ui-alignment.md) records that phase; the [real integration report](../../docs/vs01a-integration/2026-10-31-real-api-integration.md) records current API/browser results and remaining gates.

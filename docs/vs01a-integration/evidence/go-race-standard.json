@@ -1,0 +1,170 @@
+{
+  "passedTestEventsIncludingSubtests": 31,
+  "topLevelTests": 12,
+  "failedEvents": 0,
+  "packages": [
+    "internal/publiclearning",
+    "internal/platform/httpserver",
+    "internal/platform/config",
+    "cmd/api"
+  ],
+  "tests": [
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/default",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/custom",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/generated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/publiclearning",
+      "test": "TestCursorAuthenticationAndBindings",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/publiclearning",
+      "test": "TestStableTitleIDOrderingAndNormalizedQuery",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/propagated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/ipv6",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/missing_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/invalid_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/zero_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID/invalid_regenerated",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestHealthAndRequestID",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestSafeErrorsAndRedactedLogs",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestUnavailableContentHasNoSyntheticFallback",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestJSONAcceptNegotiation",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad/large_port",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestUnknownOfficialRoutesRemainAbsent",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestLoad",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/httpserver",
+      "test": "TestServeGracefulShutdown",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/disabled_default",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/local_explicit",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/test_explicit",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/missing_environment",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/staging",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/production",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/unknown",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/unknown_disabled",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed/malformed_mode",
+      "status": "PASS"
+    },
+    {
+      "package": "internal/platform/config",
+      "test": "TestFixtureConfigurationFailsClosed",
+      "status": "PASS"
+    },
+    {
+      "package": "cmd/api",
+      "test": "TestStandardArtifactRejectsFixture",
+      "status": "PASS"
+    },
+    {
+      "package": "cmd/api",
+      "test": "TestStandardArtifactHasNoContentRepository",
+      "status": "PASS"
+    }
+  ],
+  "startedAtUTC": "2026-10-31T08:45:41.972346Z",
+  "finishedAtUTC": "2026-10-31T08:45:43.361171Z"
+}

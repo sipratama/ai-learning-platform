@@ -1,8 +1,13 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { parseCourse, publicRead, PublicApiError } from './public'
+import { hasControlCharacters, parseCourse, publicRead, PublicApiError } from './public'
 
 afterEach(() => vi.unstubAllGlobals())
 describe('public read boundary', () => {
+  it('detects the same Unicode control category rejected by the Go query boundary', () => {
+    expect(hasControlCharacters('safe 😀 text')).toBe(false)
+    expect(hasControlCharacters('unsafe\u0085text')).toBe(true)
+    expect(hasControlCharacters('unsafe\ntext')).toBe(true)
+  })
   it('preserves an opaque signed cursor without decoding or interpreting its format', async () => {
     const cursor = 'opaque.payload~signature-123'
     vi.stubGlobal(

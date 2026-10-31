@@ -71,7 +71,7 @@ export class PublicApiError extends Error {
 
 export const apiBaseUrl = resolveApiBaseUrl(
   import.meta.env.VITE_API_BASE_URL,
-  import.meta.env.DEV ? 'http://127.0.0.1:8080' : window.location.origin,
+  window.location.origin,
 )
 
 const idPattern = /^[A-Za-z0-9][A-Za-z0-9._~-]{0,127}$/
@@ -79,10 +79,7 @@ export function validId(value: string): boolean {
   return idPattern.test(value) && value !== '.' && value !== '..'
 }
 export function hasControlCharacters(value: string): boolean {
-  return [...value].some(
-    (character) =>
-      character.charCodeAt(0) < 32 || character.charCodeAt(0) === 127,
-  )
+  return /\p{Cc}/u.test(value)
 }
 function record(value: unknown): Record<string, unknown> {
   if (!value || typeof value !== 'object' || Array.isArray(value))

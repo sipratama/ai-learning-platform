@@ -1,0 +1,34 @@
+Branch: feat/vs-01a-real-api-integration
+HEAD: 0e82158e812d4b50cef7fb187a44f7d4d54c81c4
+Staged changes: none
+Git status --short (read-only):
+ M .github/workflows/ci.yml
+ M README.md
+ M apps/api/cmd/api/fixture_dev.go
+ M apps/api/cmd/api/fixture_prod.go
+ M apps/api/cmd/api/fixture_prod_test.go
+ M apps/api/cmd/api/main.go
+ M apps/api/internal/devfixture/fixture.go
+ M apps/api/internal/platform/httpserver/handler.go
+ M apps/web/.env.example
+ M apps/web/.gitignore
+ M apps/web/README.md
+ M apps/web/eslint.config.mjs
+ M apps/web/package.json
+ M apps/web/src/lib/api/public.test.ts
+ M apps/web/src/lib/api/public.ts
+ M apps/web/src/main.tsx
+ M apps/web/src/screens/Catalog.tsx
+ M apps/web/tests/e2e/guest.spec.ts
+ M apps/web/tsconfig.json
+ M apps/web/vite.config.ts
+ M scripts/check-fixture-boundary.sh
+?? apps/api/internal/devfixture/repository.go
+?? apps/api/internal/devfixture/repository_test.go
+?? apps/api/internal/platform/httpserver/public.go
+?? apps/api/internal/platform/httpserver/public_fixture_test.go
+?? apps/api/internal/platform/httpserver/public_test.go
+?? apps/api/internal/publiclearning/
+?? apps/web/playwright.integration.config.ts
+?? apps/web/tests/integration/
+?? docs/vs01a-integration/

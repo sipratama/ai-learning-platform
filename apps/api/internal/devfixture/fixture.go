@@ -12,6 +12,8 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+
+	"github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning"
 )
 
 const (
@@ -97,65 +99,14 @@ type VersionInfo struct {
 	SnapshotID string `json:"snapshotId"`
 }
 
-type PathSummary struct {
-	ID          string `json:"id"`
-	VersionID   string `json:"versionId"`
-	Title       string `json:"title"`
-	Summary     string `json:"summary"`
-	CourseCount int    `json:"courseCount"`
-}
-
-type CourseSummary struct {
-	ID              string `json:"id"`
-	VersionID       string `json:"versionId"`
-	Title           string `json:"title"`
-	Summary         string `json:"summary"`
-	FreeLessonCount int    `json:"freeLessonCount"`
-}
-
-type PathDetail struct {
-	PathSummary
-	Description string          `json:"description"`
-	Courses     []CourseSummary `json:"courses"`
-}
-
-type LessonSummary struct {
-	ID       string `json:"id"`
-	Title    string `json:"title"`
-	Position int    `json:"position"`
-	IsFree   bool   `json:"isFree"`
-}
-
-type ModuleSummary struct {
-	ID       string          `json:"id"`
-	Title    string          `json:"title"`
-	Position int             `json:"position"`
-	Lessons  []LessonSummary `json:"lessons"`
-}
-
-type CourseDetail struct {
-	CourseSummary
-	Description string          `json:"description"`
-	Modules     []ModuleSummary `json:"modules"`
-}
-
-type PublicBlock struct {
-	ID       string `json:"id"`
-	Type     string `json:"type"`
-	Position int    `json:"position"`
-	Payload  any    `json:"payload"`
-}
-
-type LessonDetail struct {
-	ID              string        `json:"id"`
-	CourseID        string        `json:"courseId"`
-	CourseVersionID string        `json:"courseVersionId"`
-	ModuleID        string        `json:"moduleId"`
-	Title           string        `json:"title"`
-	Position        int           `json:"position"`
-	IsFree          bool          `json:"isFree"`
-	Blocks          []PublicBlock `json:"blocks"`
-}
+type PathSummary = publiclearning.PathSummary
+type CourseSummary = publiclearning.CourseSummary
+type PathDetail = publiclearning.PathDetail
+type LessonSummary = publiclearning.LessonSummary
+type ModuleSummary = publiclearning.ModuleSummary
+type CourseDetail = publiclearning.CourseDetail
+type PublicBlock = publiclearning.PublicBlock
+type LessonDetail = publiclearning.LessonDetail
 
 type richTextPayload struct {
 	Markdown string `json:"markdown"`

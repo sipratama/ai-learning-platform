@@ -242,3 +242,21 @@ GAP-001/002/003/007 remain **Open**; their dependent implementation remains bloc
 The §15 `AG-06 Not Approved` statement and the original DP-06 `Draft / Not Approved` metadata record their earlier snapshots. The Product Owner subsequently **conditionally approved AG-06** for the six DP-06 **v0.1.0** documents, establishing the 16-increment roadmap as a planning baseline subject to its stated conditions. This is the current AG-06 disposition supplied for the [VS-01A contract and fixture readiness bundle](../DP-06/06-execution-traceability-and-handoff-register.md#4-vs-01a-contract-and-fixture-readiness-handoff-2026-10-31-addendum); it does not retroactively alter those snapshots or verify otherwise unavailable historical primary evidence.
 
 The Product Owner separately authorized the **Engineering Bootstrap** and this **VS-01A Contract & Fixture Readiness documentation bundle**. Neither authorization grants VS-01A product-feature implementation, a merge, deployment, or beta release. Each increment still requires independent DR-001 verification and explicit Product Owner authorization naming the increment. AG-01 remains Approved; AG-02–AG-05 remain Conditionally Approved; FA-007 B and nonwaivable security/data-integrity hard gates remain effective. GAP-001/002/003/007 remain **Open**, and VS-02C/04C/06C/06D/03B remain **Blocked**. Material changes still follow the existing change-control process.
+
+## 17. VS-01A closure-preparation decision (2026-10-31 addendum)
+
+**VS01A-CLOSE-001 — VS-01A technical acceptance and pending formal closure.** This is an authorized preparation record with a pending acceptance decision, not an invented Product Owner approval. The original metadata and §§1–16 remain historical and unchanged. AG-01 through AG-06 retain their separately recorded dispositions; no architecture/product policy or open GAP is changed.
+
+| Decision field | Current record |
+|---|---|
+| Scope / preparation authority | Current explicit Product Owner “VS-01A Formal Closure & Acceptance Governance” task authorizes documentation/closure preparation only. Earlier supplied implementation and focus-remediation tasks authorize their bounded work; provenance limits are recorded in the [acceptance ledger](../DP-06/07-vs-01a-formal-closure-and-acceptance.md). |
+| Accepted implementation | `339344e654ea77817ecddf05094d1d55b7bf3865`; real API integration PR #4 and focus correction PR #5 are merged. |
+| Technical result | Accepted merged-main CI run `41203348622` successful: backend, frontend, secret-baseline; 24 unit/component, 24 mocked and 10 real browser cases. [Traceability](../DP-06/06-execution-traceability-and-handoff-register.md#5-vs-01a-accepted-implementation-and-closure-preparation-2026-10-31-addendum) defines applicability and limitations. |
+| Independent review | **PENDING**. No submitted reviews on PR #4/#5; #5 author’s unit-test-success comment is not independent human approval. No external sign-off supplied; Codex assistance/audit is not a human signature. |
+| Formal closure / DD-001 | **PENDING SIGN-OFF**. Product Owner final DD-001 PASS/closure decision is not supplied or inferred from preparation, CI or merge. |
+| Record date / effective date | Preparation recorded 2026-10-31; **formal closure effective date PENDING**. Reviewer identities, signed dispositions, PO authority reference and approval timestamp remain pending. |
+| Conditions / authority | Independent human domain/security/quality acceptance and residual-risk disposition, preserved evidence, then explicit PO decision for the exact accepted SHA. The [focused closure record](../DP-06/07-vs-01a-formal-closure-and-acceptance.md#51-decision-fields-for-vs01a-close-001) holds the pending decision fields. |
+| Exclusions | GAP-001/002/003/007 **OPEN**; no Student/Admin or official learning state, production authentication/CMS/database, deployment or beta authorization. No rewrite of historical approvals or waiver of hard gates. |
+| Next milestone | VS-02A remains **NOT AUTHORIZED**; predecessor formal acceptance and independent DR-001/explicit scope authorization still required. |
+
+This record changes the current evidence account for VS-01A; it does not close the slice, approve its documentation merge, grant Git writes or authorize later implementation. The Product Owner retains the final decision and all Git operations.

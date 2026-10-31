@@ -152,3 +152,16 @@ Material changes require the [Decision Registry change control](03-decision-regi
 ## 14. Subsequent AG-06 disposition (2026-10-31 administrative addendum)
 
 The §13 `AG-06 Not Approved` wording and the original AG-06 row above are historical pre-approval records. The current Product Owner disposition is **AG-06 Conditionally Approved** for the six DP-06 v0.1.0 documents and their 16-increment planning baseline, as recorded in the [Decision Registry §16](03-decision-registry.md#16-subsequent-product-owner-ag-06-disposition-2026-10-31-administrative-addendum). Engineering Bootstrap and the VS-01A Contract & Fixture Readiness bundle were separately authorized. VS-01A implementation, merge, deployment and beta release remain unauthorized. GAP-001/002/003/007 remain **Open**; the five GAP-dependent increments remain **Blocked**. No open GAP is disposed by this administrative update.
+
+## 15. VS-01A closure sign-off pending (2026-10-31 addendum)
+
+The later **VS01A-CLOSE-001** [decision record](03-decision-registry.md#17-vs-01a-closure-preparation-decision-2026-10-31-addendum) and [acceptance evidence ledger](../DP-06/07-vs-01a-formal-closure-and-acceptance.md) record the merged disposable Guest implementation at `339344e654ea77817ecddf05094d1d55b7bf3865`. Accepted CI succeeds, including the P2 focus regression coverage. Earlier “implementation not authorized/not present” text above is historical; supplied later PO tasks separately authorized bounded implementation and remediation. AG-01–AG-06 historical records are preserved.
+
+| Pending item | Current status | Evidence / next authority |
+|---|---|---|
+| Independent human domain/security/quality sign-off | **PENDING SIGN-OFF** | No submitted PR #4/#5 reviews or supplied external sign-off; author’s #5 unit-success comment is not independent approval. Product Owner appoints reviewer(s); reviewer records revision, findings/limitations and signed disposition. |
+| Formal VS-01A DD-001 decision | **PENDING — PO decision not granted** | Preparation authorization is not closure. After mandatory sign-off and condition disposition, PO explicitly decides for the accepted SHA and records authority/effective date. |
+| Evidence preservation / limitations | **OPEN follow-up** | Retain accepted-run artifacts before reported expiry; record bounded accessibility/dependency-risk disposition. Manual screen-reader remains NOT RUN; automated axe is not full WCAG certification. |
+| VS-02A implementation | **NOT AUTHORIZED** | Planning handoff exists; formal predecessor acceptance, its own DR-001 and explicit PO scope authorization still required. |
+
+These are pending closure conditions, not new product-policy GAPs. **GAP-001/002/003/007 remain OPEN** with VS-02C/04C/06C/06D/03B **Blocked**. No production publishing, deployment, beta or Student-data acceptance is granted. This addendum does not overwrite prior gate tables or invent reviewer identities, signatures or approvals.

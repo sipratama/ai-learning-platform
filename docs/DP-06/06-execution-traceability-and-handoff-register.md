@@ -79,3 +79,127 @@ Historical EG-001–EG-003 remain source-evidence limitations under AG-01-EG-B, 
 | QUAL-009 — CI plan and evidence | Relevant jobs plus executed results for the candidate | Bootstrap workflow exists; no VS-01A checks in the checkout; hosted run artifact **NOT VERIFIED** | Add affected contract/negative/browser jobs during authorized implementation; run and review CI; engineering/quality owners. |
 
 **Next decision:** review and accept this technical documentation bundle through the Product Owner's Git workflow, then reassess DR-001/QUAL-007–009 against an available disposable fixture environment. Do not infer that accepting documents alone satisfies QUAL-009 or authorizes VS-01A.
+
+## 5. VS-01A accepted implementation and closure preparation (2026-10-31 addendum)
+
+This later record updates **EXEC-001 only**. Sections 1–4, their original statuses and other EXEC rows remain historical and unchanged. The [closure evidence record](07-vs-01a-formal-closure-and-acceptance.md) supplies the ledger and pending decision **VS01A-CLOSE-001**. Formal closure is **PENDING SIGN-OFF**, not DD-001 PASS. No other slice becomes implementation-authorized.
+
+Accepted implementation: `339344e654ea77817ecddf05094d1d55b7bf3865` ([commit][accepted]); checked against clean documentation-branch HEAD and read-only remote main on 2026-10-31. [PR #4][pr4] integrated real Go reads; [PR #5][pr5] merged the focus correction. [Merged-main run 41203348622][ci] and all mandatory steps succeeded for that exact SHA.
+
+`TECHNICAL PASS`/`SCOPED PASS` below mean inspected source plus executed applicable coverage in the immutable synthetic proof. They are not independent human acceptance or formal closure. `SUPPORTED` denotes supplied authorization/readiness evidence with its provenance limits. `NOT APPLICABLE` and pending/manual coverage are never counted as passed runtime cases. CI columns refer to [backend B][B], [frontend F][F], [secret S][S] in the accepted run. Numeric evidence references map to `VS01A-EVID-001`–`017` in the closure ledger. Source/test links are pinned to the accepted SHA.
+
+### 5.1 Current EXEC-001 handoff
+
+| Field | Current evidence / boundary |
+|---|---|
+| Scope / authorization | Foundation and Disposable Guest Proof; supplied PO implementation and P2 tasks, followed by explicit closure-preparation task. Authorization provenance is recorded in closure §1; no final PO closure supplied. |
+| Source / fixture | Accepted SHA; Go-owned immutable `vs01a-guest-proof@1.0.0`, `pub-v1`, safe public projections/media and fresh process cursor key. |
+| Implementation | Five public GETs; original Guest Catalog/details/Reader/local flashcard; no Student/Admin writes or production publishing. |
+| Technical verification | Accepted B/F/S jobs successful; all local historical reports interpreted at their actual baseline. No runtime rerun in this docs task. |
+| P2 disposition | Focus defect technically remediated and covered by unit, strengthened tablet/mobile keyboard and real journey tests; independent acceptance disposition pending. |
+| Review / final authority | No PR review submissions; author’s #5 unit-success comment is not independent sign-off. Formal status PENDING SIGN-OFF; PO final DD-001 decision pending. |
+| Recovery / next handoff | Discard/reload the disposable snapshot and cursor key; no database rollback or production restore claim. VS-02A still needs predecessor acceptance, its own DR-001 and explicit PO authorization. |
+
+### 5.2 Behavior and API traceability
+
+| Requirement | Implemented source | Automated test / review evidence | Hosted CI / ledger | Acceptance status | Known limitation |
+|---|---|---|---|---|---|
+| AC-001 | [Catalog][catalog]; [Read][service] | `TestVS01AN01CatalogVisibilityAndFilters`; real search/membership scenario | B/F; 006/009 | TECHNICAL PASS | Active filter/query and discoverable results; archived branch excluded. |
+| AC-002 | [Catalog empty/reset][catalog] | App search/reset test; real search/no-match/reset scenario | F; 007/009 | TECHNICAL PASS | No recommendation feature required or implemented. |
+| AC-003 | [PublicPath][fixture]; [Path detail][details] | `TestManifestLoadsWithExactIdentityAndPublicHierarchy`; real Path→Course journey | B/F; 006/009 | TECHNICAL PASS | Same canonical Course reused; no completion records exist in this slice. |
+| AC-004 | [PublicLesson][fixture]; [Reader][reader]; [Flashcard][blocks] | Fixture free-hierarchy test; real FT journey opens both flagship Lessons and reveal/reload | B/F; 006/009 | TECHNICAL PASS | All flagship fixture Lessons only; not complete production flagship. |
+| AC-005 | [Absent official routes][http]; [local Flashcard][blocks] | `TestUnknownOfficialRoutesRemainAbsent`; real ST-008 tampered local flag and official POST denial | B/F; 009/010 | SCOPED PASS | No Guest official result; authentication/graded Student workflow is unimplemented, not passed. |
+| API-001 | [Read/catalog paths][service]; [transport][http] | `TestAPI001Through005Success`; catalog/filter and signed pagination tests | B/F; 006/009 | TECHNICAL PASS | GET paths, q/courseId/limit/cursor; snapshot and safe public DTOs. |
+| API-002 | [Read/catalog courses][service]; [transport][http] | Same success test; search/membership/pagination real scenario | B/F; 006/009 | TECHNICAL PASS | GET courses, q/pathId/limit/cursor; hidden membership returns empty. |
+| API-003 | [PublicPath][fixture]; [transport][http] | Success, hidden-ID and projection tests; real Path navigation | B/F; 006/009 | TECHNICAL PASS | Ordered public member summaries from the same immutable snapshot. |
+| API-004 | [PublicCourse][fixture]; [transport][http] | Success/DTO tests; real Course detail | B/F; 006/009 | TECHNICAL PASS | Public Modules/free Lesson hierarchy; no personal enrollment state. |
+| API-005 | [PublicLesson][fixture]; [Reader][reader] | Success/mismatch tests; `TestNonFreeLessonNeverProjects`; both free flagship Lessons in real journey | B/F; 006/009 | TECHNICAL PASS | Wrong Course, draft or nonfree Lesson unavailable; no future entitlement policy. |
+| FT-001 | [Catalog][catalog]; [Read/paginate][service] | Catalog Go tests; real search/filter/signed pagination scenario | B/F; 006/009 | TECHNICAL PASS | Visible search, empty/reset and pagination; GAP-001 archived branch excluded. |
+| FT-002 | [Public hierarchy][fixture]; [details/Reader][details] | Fixture hierarchy test; real full Guest journey | B/F; 006/009 | TECHNICAL PASS | Both fixture flagship Lessons and safe Blocks; no enrollment write. |
+| FT-003 | [Local Flashcard][blocks] | Flashcard component test; real reveal/reload and local-flag negatives | F; 007/009/010 | TECHNICAL PASS | No persisted authoritative participation/grade/completion; no Student database exists. |
+| ST-008 | [Typed public DTOs][model]; [public projections][fixture] | `TestHiddenDraftAndAnswerKeysNeverProject`; HTTP DTO/direct-ID tests; real ST-008 | B/F; 006/010 | TECHNICAL PASS | Selected Guest fixture boundaries; not future Student/archived access. |
+| ST-013 | [validatePayload][fixture]; [SafeMarkdown/Media][blocks] | Payload rejection tests; Block injection tests; real ST-013 | B/F; 006/010 | TECHNICAL PASS | Safe subset and controlled static asset; no arbitrary upload or code execution service. |
+
+### 5.3 VS01A-N01–N17 traceability
+
+Exact Go identifiers below are defined in the pinned [HTTP negative suite][http-tests], [fixture tests][fixture-tests], [nonfree projection test][nonfree-test], [cursor tests][cursor-tests] or [standard-route tests][standard-tests]. React and real-browser identifiers refer to the pinned [component tests][block-tests] and [real suite][real-tests]. Each row is backed by ledger 010 plus accepted CI; test existence alone is not treated as an execution result.
+
+| Requirement | Implemented source | Executed test identifier / evidence | Hosted CI | Acceptance status / actual result | Known limitation |
+|---|---|---|---|---|---|
+| VS01A-N01 | [PublicPaths/PublicCourses][fixture]; [Read][service] | `TestVS01AN01CatalogVisibilityAndFilters` | B/F | TECHNICAL PASS — Hidden/draft IDs, titles and counts absent | Pinned synthetic catalog only; archived listing remains GAP-001. |
+| VS01A-N02 | [PublicPath/PublicCourse][fixture] | `TestVS01AN02N03N04HiddenDraftAndMismatchedIDs` | B/F | TECHNICAL PASS — Hidden/missing direct IDs return generic 404 | Generic response/DTO boundary; no constant-time or future production oracle claim. |
+| VS01A-N03 | [PublicLesson][fixture] | `TestVS01AN02N03N04HiddenDraftAndMismatchedIDs; TestNonFreeLessonNeverProjects` | B/F | TECHNICAL PASS — Draft denied | Nonfree coverage uses a test-only repository record; no ordinary positive 403 fixture branch. |
+| VS01A-N04 | [PublicLesson relationship][fixture] | `TestVS01AN02N03N04HiddenDraftAndMismatchedIDs` | B/F | TECHNICAL PASS — Valid Lesson under wrong Course returns 404. | Fixture Course/version relationship only; future enrollment pins are out of scope. |
+| VS01A-N05 | [Allowlisted DTOs][model]; [Flashcard][blocks] | `TestVS01AN05N06AllowlistedDTOs; TestHiddenDraftAndAnswerKeysNeverProject` | B/F | TECHNICAL PASS — No private assessment key/rubric | Synthetic private assessment oracle; no production assessment/result-disclosure service. |
+| VS01A-N06 | [Public projections][fixture]; [safe problems][http] | `TestVS01AN05N06AllowlistedDTOs` | B/F | TECHNICAL PASS — Draft/author/private grant/evidence metadata excluded | Exact-key assertion covers Course DTO plus typed projections; future DTO changes need review. |
+| VS01A-N07 | [parseQuery/ValidID][service] | `TestVS01AN07N08N09QueryAndIDValidation` | B/F | TECHNICAL PASS — Unknown/duplicate/malformed/unsupported query and invalid UTF-8 rejected with 400. | Current public-read whitelist only; no protected mutation validation claim. |
+| VS01A-N08 | [Query bounds][service] | `TestVS01AN07N08N09QueryAndIDValidation` | B/F | TECHNICAL PASS — q, limit, cursor and ID bounds checked | Boundary validation and bounded fixture work; not a load/capacity measurement. |
+| VS01A-N09 | [Strict cursor decode][cursor] | `TestVS01AN07N08N09QueryAndIDValidation` | B/F | TECHNICAL PASS — Malformed cursor returns safe 400 with correlation. | Application cursor parsing only; malformed wire HTTP can be rejected earlier by Go. |
+| VS01A-N10 | [HMAC/binding][cursor]; [paginate][service] | `TestVS01AN10N11SignedPaginationAndReset; TestCursorAuthenticationAndBindings` | B/F | TECHNICAL PASS — Tamper/context/reset and authentic stale-snapshot use rejected | Reset intentionally invalidates process-local cursors; no production key-rotation policy. |
+| VS01A-N11 | [Stable pagination][service] | `TestVS01AN10N11SignedPaginationAndReset; TestStableTitleIDOrderingAndNormalizedQuery` | B/F | TECHNICAL PASS — Both visible IDs once at limit=1 | Immutable fixture generation; concurrent production publishing is not implemented. |
+| VS01A-N12 | [SafeMarkdown/Block][blocks]; [payload validation][fixture] | `TestVS01AN12N13SafeContentAndMedia; React safe Blocks tests; real ST-013` | B/F | TECHNICAL PASS — Literal code inert, raw HTML/unsafe links inactive | Supported safe Block subset; full production CMS/renderer coverage is deferred. |
+| VS01A-N13 | [PublicAsset][asset]; [media validation][fixture] | `TestVS01AN12N13SafeContentAndMedia; payload/media component negatives` | B/F | TECHNICAL PASS — Only approved SVG served | One controlled static asset; arbitrary SVG uploads/private Storage are not implemented. |
+| VS01A-N14 | [Request ID middleware][middleware] | `TestVS01AN14N15N16RequestIDsProblemsAndLogs` | B/F | TECHNICAL PASS — Valid IDs echoed, invalid/duplicate IDs regenerated | Handler invalid-value checks and printable wire probes; malformed headers may fail in Go parser. |
+| VS01A-N15 | [Problem mapping][http]; [panic recovery][middleware] | `TestVS01AN14N15N16RequestIDsProblemsAndLogs; TestVS01AN15Safe500AndBounded429` | B/F | TECHNICAL PASS — Safe 400/404/500 | Unexpected 500/saturated 429 injected in Go tests; no browser/production fault drill claim. |
+| VS01A-N16 | [Minimized logs][middleware] | `TestVS01AN14N15N16RequestIDsProblemsAndLogs` | B | TECHNICAL PASS — Synthetic sensitive query/header/body/rejected-ID markers absent | Synthetic minimized server-log checks; no production telemetry pipeline audit. |
+| VS01A-N17 | [Local Flashcard][blocks]; [absent official routes][http] | `Flashcard component test; TestUnknownOfficialRoutesRemainAbsent; real ST-008` | B/F | TECHNICAL PASS — Reveal/reload/tampered local state cannot issue official proof | Official routes are absent; Student authentication/grading workflow is not implemented. |
+
+### 5.4 Fixture, readiness and quality gates
+
+| Gate / requirement | Implemented source / normative boundary | Executed test or review evidence | Hosted CI / ledger | Acceptance status | Known limitation |
+|---|---|---|---|---|---|
+| DR-001 | [Source contracts](03-vertical-slice-backlog-and-acceptance-contracts.md#1-authority-scope-and-shared-gates); [fixture][fixture] | Supplied bounded PO authorization; actual environment/CI; no predecessor and open-GAP branches excluded | 001/002/005 | SUPPORTED FOR VS-01A | No retroactive approval of original readiness snapshot; authorization permalink limitation disclosed. |
+| VS01A-FX-001 | [Fixture loader/projections][fixture]; [boundary][boundary] | Manifest identity/hierarchy/isolation/invalid-input tests; standard composition and artifact checks | B; 006/011 | TECHNICAL PASS | Development/test snapshot vs01a-guest-proof@1.0.0 / pub-v1; no production publishing. |
+| DD-001 | [Applicable source/test matrix](#52-behavior-and-api-traceability); [closure decision](07-vs-01a-formal-closure-and-acceptance.md#51-decision-fields-for-vs01a-close-001) | Scoped technical checks pass; independent human and formal PO acceptance missing | 005–014 | PENDING SIGN-OFF | No DD-001 PASS inferred from CI, merge, assistant audit or this documentation task. |
+| QUAL-007 | [AG-06 disposition](../DP-01/03-decision-registry.md#16-subsequent-product-owner-ag-06-disposition-2026-10-31-administrative-addendum); supplied PO tasks | Named VS-01A implementation/remediation authorization; no selected GAP dependency | 001/002 | SUPPORTED FOR VS-01A | Conditional planning approval is unchanged; no authorization for another slice. |
+| QUAL-008 | [MOD-002/003](../DP-03/02-module-boundaries-and-dependencies.md); [API/SEC](../DP-04/01-api-contract-and-resource-design.md); matrix above | Source/DTO/query/visibility review; existing no-PostgreSQL clarification | 006/010/011 | TECHNICAL PASS | Material future contracts still need change control; production rollback/migrations not introduced. |
+| QUAL-009 | [Runner][real-runner]; [configuration][real-config]; [fixture][fixture] | Actual hosted disposable Go/Vite/fixture startup; no managed service credentials needed | B/F/S; 005–012 | TECHNICAL PASS | Synthetic only; not a production Supabase environment or permission to accept real Student data. |
+| QUAL-010 | [Go tests][http-tests]; [cursor tests][cursor-tests]; [fixture tests][fixture-tests] | Standard/tagged tests executed, inspected assertions and failure boundaries | B; 006 | TECHNICAL PASS | Deterministic Guest public-read scope, no future domain mutation claim. |
+| QUAL-011 | [Persistence clarification](01-implementation-roadmap-and-dependencies.md#5-vs-01a-persistence-clarification-2026-10-31-addendum) | No PostgreSQL/schema/migration implementation in authorized increment | 011 | NOT APPLICABLE | No PostgreSQL test PASS claimed; required when governed persistence is introduced. |
+| QUAL-012 | [Concurrent reads/admission tests][http-tests]; [snapshot tests][fixture-tests] | Both race variants; concurrent immutable reads and deterministic saturated 429/release | B; 006 | SCOPED PASS | Enrollment/publish/Attempt/completion/deletion races are not implemented or passed. |
+| QUAL-013 | [Read contracts][http]; [service][service]; [cursor][cursor] | API-001–005 success/input/protocol/DTO/version/cursor tests | B/F; 006/009/010 | SCOPED PASS | Mutation/ETag/idempotency and API-006 onward are outside this read-only increment. |
+| QUAL-014 | [App/Blocks][app-tests]; [focus regression][shell-test]; [mock][mock-tests]/[real][real-tests] | 24 component/unit, 24 mocked and 10 real tests; focus assertions and axe checks | F; 007–009 | SCOPED PASS | Manual screen-reader NOT RUN; automated axe is not full WCAG 2.2 AA acceptance. |
+| QUAL-015 | [Negative tests][http-tests]; [safe renderer][blocks]; [guard][secret] | N01–N17 selected coverage, media/log/error/private-field and secret-boundary checks | B/F/S; 010–013 | SCOPED PASS | Independent human security sign-off pending; future authentication/BOLA/private Storage are unimplemented. |
+| QUAL-016 | [Fixture reset/version contract](03-vertical-slice-backlog-and-acceptance-contracts.md#5-vs-01a-development-fixture-contract-2026-10-31-addendum) | Immutable snapshot and no official state; no schema, migration or personal records | 006/011 | NOT APPLICABLE to production lifecycle | No account deletion/restore/30–30–180-day execution or GAP-dependent migration PASS claimed. |
+| QUAL-017 | [Startup/config][startup]; [shutdown tests][server-tests]; [middleware][middleware]; [boundary][boundary] | Safe correlation/logs, startup guards, graceful shutdown and disposable reset boundary | B; 006/010/011 | SCOPED PASS | Production alerts, deployment rollback and backup/restore drills NOT RUN/not applicable to this proof; not QUAL-005/006 approval. |
+
+### 5.5 Remaining decision and exclusion boundary
+
+Independent human domain/security/quality review, its traceable disposition, and the explicit final PO DD-001 decision are still required. Reviewer identities, signatures and approval/effective dates remain pending. Preserve accepted-run evidence before artifact expiry; retain historical records at their original revision. The evidence package can move to READY FOR PO DECISION only after mandatory sign-off/condition disposition, and to DD-001 PASS only with explicit PO closure authority.
+
+GAP-001/002/003/007 remain **OPEN**, and VS-02C/04C/06C/06D/03B remain **Blocked**. No production authentication/CMS/database, official enrollment/progress/grade/completion, deployment, beta launch or VS-02A implementation is authorized. Follow the existing roadmap for any later synthetic identity preparation; this addendum supplies no implementation permission.
+
+[accepted]: https://github.com/sipratama/ai-learning-platform/commit/339344e654ea77817ecddf05094d1d55b7bf3865
+[pr4]: https://github.com/sipratama/ai-learning-platform/pull/4
+[pr5]: https://github.com/sipratama/ai-learning-platform/pull/5
+[ci]: https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622
+[B]: https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622/job/124543396028
+[F]: https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622/job/124543396251
+[S]: https://github.com/sipratama/ai-learning-platform/actions/runs/41203348622/job/124543396274
+[service]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/publiclearning/service.go
+[cursor]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/publiclearning/cursor.go
+[cursor-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/publiclearning/cursor_test.go
+[model]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/publiclearning/model.go
+[http]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/platform/httpserver/public.go
+[middleware]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/platform/httpserver/handler.go
+[http-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/platform/httpserver/public_fixture_test.go
+[standard-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/platform/httpserver/public_test.go
+[fixture]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/devfixture/fixture.go
+[fixture-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/devfixture/fixture_test.go
+[nonfree-test]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/devfixture/repository_test.go
+[asset]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/devfixture/repository.go
+[startup]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/cmd/api/main.go
+[server-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/api/internal/platform/httpserver/server_test.go
+[boundary]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/scripts/check-fixture-boundary.sh
+[secret]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/scripts/check-secrets.sh
+[catalog]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/screens/Catalog.tsx
+[details]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/screens/Details.tsx
+[reader]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/screens/Reader.tsx
+[blocks]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/components/Blocks.tsx
+[block-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/components/Blocks.test.tsx
+[app-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/app/App.test.tsx
+[shell-test]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/src/components/Shell.test.tsx
+[mock-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/tests/e2e/guest.spec.ts
+[real-tests]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/tests/integration/guest-real.spec.ts
+[real-config]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/playwright.integration.config.ts
+[real-runner]: https://github.com/sipratama/ai-learning-platform/blob/339344e654ea77817ecddf05094d1d55b7bf3865/apps/web/tests/integration/start-api.mjs

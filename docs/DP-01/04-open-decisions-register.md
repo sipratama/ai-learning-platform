@@ -4,13 +4,13 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Open Decisions Register |
-| Version | 0.1.4 — subsequent administrative governance synchronization |
-| Status | **Approved product baseline v0.1.2; v0.1.3 and v0.1.4 record later governance decisions** |
+| Version | 0.1.5 — subsequent administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.5 record later governance decisions** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01/FA-004 B/FA-005 B; v0.1.4 records AG-02 conditional approval and FA-006 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 record prior governance; v0.1.5 records AG-03 conditional approval, FA-006-B1 B and FA-008 B without changing that substance |
 | Prepared | 2026-10-31 |
 
-> **Rule:** FA-004 B, FA-005 B and FA-006 B are current explicit Product Owner approvals. Only FA-007 and FA-008 remain open among the FA items. AG-02 is conditionally approved for DP-02 v0.1.1; GAP-001/002/003/007 remain Open. Historical candidate approaches below are not additional approvals. This v0.1.4 administrative revision follows both the approved DP-01 v0.1.2 snapshot and the v0.1.3 governance record.
+> **Rule:** FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B and FA-008 B are current explicit Product Owner approvals; FA-007 remains Open. AG-02 and AG-03 are conditionally approved for their named snapshots; GAP-001/002/003/007 remain Open and dependent implementation unauthorized. This v0.1.5 administrative revision follows the approved DP-01 v0.1.2 snapshot; it does not replace historical source evidence.
 
 ## 1. Open decisions overview
 
@@ -19,10 +19,11 @@
 | FA-004 | P1 | Learning Path Participation | AG-02 contract review | **Approved — Option B** |
 | FA-005 | P1 | Publishing & Historical Access | AG-02 contract review | **Approved — Option B** |
 | FA-006 | P1 | Retention & Account Deletion Parameters | AG-03; consistency AG-04 | **Approved — Option B** |
+| FA-006-B1 | P1 | Student-linked learning-record disposition | AG-04 privacy consistency | **Approved — Option B** |
 | FA-007 | P1 | UX, Performance & Beta Thresholds | AG-05 | **Open** |
-| FA-008 | P1 | Infrastructure & Operational Parameters | AG-04 | **Open** |
+| FA-008 | P1 | Infrastructure & Operational Parameters | AG-04 | **Approved — Option B** |
 
-FA-004/005 Option B supplied approved DP-02 inputs; AG-02 has since been conditionally approved for v0.1.1. FA-006 B supplies the approved DP-03 privacy input. FA-007/008 remain open for their indicated later gates. The open AG-02 GAPs below do not receive implementation authorization.
+FA-004/005 supplied DP-02 inputs; FA-006 B supplied DP-03 privacy input; FA-006-B1 B and FA-008 B supply DP-04 inputs. FA-007 remains Open for AG-05. The open AG-02 GAPs below do not receive implementation authorization.
 
 ## 2. FA-004 — Learning Path Participation
 
@@ -58,7 +59,7 @@ FA-004/005 Option B supplied approved DP-02 inputs; AG-02 has since been conditi
 
 **Affected:** DP-03 database/data lifecycle; DP-04 operations/recovery/security; DP-05 privacy tests.
 
-**Decision status:** **Approved — Option B** by current explicit Product Owner approval. **AG-03** remains Not Approved; consistency with AG-04 remains required.
+**Decision status:** **Approved — Option B** by current explicit Product Owner approval. **AG-03** was subsequently conditionally approved for DP-03 v0.1.0; consistency with AG-04 remains required.
 
 ## 5. FA-007 — UX, Performance & Beta Thresholds
 
@@ -80,21 +81,13 @@ FA-004/005 Option B supplied approved DP-02 inputs; AG-02 has since been conditi
 
 ## 6. FA-008 — Infrastructure & Operational Parameters
 
-**Decision question:** Which managed hosting arrangement, capacities, expected costs, recovery objectives and operational monitoring targets are committed for MVP?
+**Resolved decision — Option B, Balanced Production MVP:** INF-01–INF-14 in the [Decision Registry](03-decision-registry.md) approve managed static frontend hosting/CDN, managed Go containers, Supabase PostgreSQL/Auth/Storage, isolated Local/Staging/Production, GitHub Actions with production approval, managed secrets, structured observability, lightweight worker capability, FA-006-compatible backup/restore, best-effort availability without commercial SLA, pragmatic horizontal scaling and budget/cost controls. Singapore is only a conditional preferred region pending legal and latency validation. No specific Go host, paid tier, instance size, numeric RPO/RTO or commercial SLA is approved.
 
-**Already approved:** isolated local/staging/production, Supabase managed Auth/PostgreSQL/Storage, Go API, GitHub Actions, secrets, monitoring, tested backup/restore, lean production infrastructure (G3-001/G3-004). No specific hosting vendor, currency budget, numeric RPO/RTO, or capacity is approved.
-
-**Must resolve:**
-- Managed application/frontend hosting and environment separation details.
-- Budget envelope and baseline traffic/concurrency assumptions.
-- Backup coverage/frequency and tested RPO/RTO.
-- Alerting, logging retention, ownership and incident response expectations.
-- Database migration/rollback strategy aligned with recoverability.
-- Supabase provider limits, storage media and failure modes.
+**Operational contract work:** DP-04 must define delivery, access, rollback, restore verification and cost-monitoring boundaries. A managed backup service alone does not prove FA-006 B or FA-006-B1 B compliance. FA-007 still owns quantitative performance and beta thresholds.
 
 **Affected:** DP-04 operations/security, DP-03 storage/recovery assumptions, DP-05 performance/reliability.
 
-**Blocking:** **AG-04**. **Owner:** product owner with engineering/operations input; **due:** before AG-04.
+**Decision status:** **Approved — Option B** by current explicit Product Owner approval. **AG-04** remains Not Approved.
 
 ## 7. Open decision workflow
 
@@ -120,7 +113,7 @@ These are **source evidence gaps, not product P1 decisions**:
 
 Reference: [03-decision-registry.md](03-decision-registry.md).
 
-PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003. FA-004/005/006 were separately approved as Option B; FA-007–FA-008 remain Open.
+PO-CLAR-D021, PO-CLAR-D018 and PO-CLAR-D010-Q001 are current Product Owner scope dispositions recorded in the Decision Registry. They do not resolve EG-001–EG-003. FA-004/005/006, FA-006-B1 and FA-008 were separately approved as Option B; FA-007 remains Open.
 
 AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001–EG-003 remain historically unresolved. AG-01 approval and DP-02 authoring authorization were separate later Product Owner actions.
 
@@ -128,14 +121,14 @@ AG-01-EG-B is the Product Owner's prospective evidence-gap disposition. EG-001�
 
 | Gate | Current status | Open decisions relevant |
 |---|---|---|
-| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3 and v0.1.4 are subsequent administrative records |
+| AG-01 | **Approved for DP-01 v0.1.2** | EG-001–EG-003 historically open with prospective disposition AG-01-EG-B; v0.1.3–v0.1.5 are subsequent administrative records |
 | AG-02 | **Conditionally Approved for six DP-02 v0.1.1 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
-| AG-03 | Not Approved | Review DP-03 against approved FA-006 B and conditional AG-02 boundaries |
-| AG-04 | Not Started | FA-008, FA-006 consistency |
+| AG-03 | **Conditionally Approved for six DP-03 v0.1.0 documents** | GAP-001/002/003/007 Open; dependent implementation unauthorized; material changes require change control |
+| AG-04 | Not Approved | Review DP-04 against approved FA-006 B, FA-006-B1 B and FA-008 B |
 | AG-05 | Not Started | FA-007 |
 | AG-06 | Not Started | Requires approved dependencies / governance plan |
 
-**Authoring boundary:** DP-03 documentation authoring is separately authorized after conditional AG-02 approval and FA-006 B. DP-04–DP-06 authoring, application code, DB schema and API contracts remain unauthorized. AG-03 is Not Approved.
+**Authoring boundary:** DP-04 documentation authoring is separately authorized after conditional AG-03 approval and FA-008 B. DP-05–DP-06 authoring and application code/configuration remain unauthorized. AG-04 is Not Approved.
 
 ## 10. Conditional AG-02 open GAPs
 
@@ -148,4 +141,10 @@ The Product Owner conditionally approved the six DP-02 v0.1.1 documents as a cur
 | GAP-003 | Evidence compatibility criteria, target eligibility beyond approved status, and abandonment trigger. | [DP-02 traceability](../DP-02/06-traceability-matrix.md) |
 | GAP-007 | Exact protected prerequisite action coverage and edge cases. | [DP-02 traceability](../DP-02/06-traceability-matrix.md) |
 
-Material changes require the [Decision Registry change control](03-decision-registry.md). Conditional AG-02 approval does not close these GAPs or grant AG-03 approval.
+Material changes require the [Decision Registry change control](03-decision-registry.md). Conditional AG-02/AG-03 approval does not close these GAPs or grant AG-04 approval.
+
+## 11. Subsequent FA-006-B1 and AG-03 disposition
+
+**FA-006-B1 — Approved B:** Delete or irreversibly de-identify individual Student-linked learning records during account deletion. Only genuinely anonymous aggregate statistics may be retained; replacing personal identifiers with pseudonymous identifiers alone is not anonymization. Historical learning-evidence protection does not override FA-006 B personal-data deletion. Active data deletion remains within 30 days of a valid request, backup expiry within 30 days, and security audit retention 180 days unless legitimate legal obligations require otherwise. These are Product Owner targets, not statutory claims.
+
+**AG-03 — Conditionally Approved:** The six DP-03 v0.1.0 documents are the approved baseline. Their original Draft/Not Approved metadata records the earlier snapshot. GAP-001/002/003/007 remain Open; dependent implementation is unauthorized. Material changes require change control. The later disposition does not approve AG-04.

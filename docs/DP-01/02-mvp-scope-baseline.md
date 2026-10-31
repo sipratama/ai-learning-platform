@@ -4,10 +4,10 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | MVP Scope Baseline |
-| Version | 0.1.4 — subsequent administrative governance synchronization |
+| Version | 0.1.5 — subsequent administrative governance synchronization |
 | Status | **Approved product baseline v0.1.2; later revisions record governance only** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3 recorded AG-01/FA-004 B/FA-005 B; v0.1.4 records AG-02 conditional approval/FA-006 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 recorded prior governance; v0.1.5 records AG-03 conditional approval/FA-006-B1 B/FA-008 B without changing that substance |
 | Last prepared | 2026-10-31 |
 
 > **Scope authority:** dokumen ini mencatat committed versus deferred capabilities dari discovery dan klarifikasi Product Owner saat ini (PO-CLAR-D021, PO-CLAR-D018, PO-CLAR-D010-Q001). Klarifikasi tersebut menetapkan scope sekarang, bukan membuktikan wording keputusan historis. Perilaku domain yang tepat, user journeys dan kebijakan P1 diselesaikan dalam DP-02. Stable requirement IDs **belum diterbitkan**; ID pada tabel adalah decision references yang telah ada.
@@ -15,6 +15,8 @@
 AG-01-EG-B menerima disposisi prospektif untuk kesenjangan bukti historis EG-001–EG-003. Isi historis yang belum diketahui tetap tidak terverifikasi. Persetujuan AG-01 untuk snapshot v0.1.2 dan otorisasi authoring DP-02 diberikan terpisah sesudah snapshot dibuat; revisi v0.1.3 ini mencatatnya.
 
 Revisi administratif v0.1.4 mencatat AG-02 Conditionally Approved untuk enam dokumen DP-02 v0.1.1 dan FA-006 B Approved. GAP-001/002/003/007 tetap Open dan implementasi yang bergantung padanya tidak diizinkan. Substansi scope v0.1.2 tidak berubah; AG-03 belum disetujui. Lihat [Decision Registry](03-decision-registry.md).
+
+Revisi administratif v0.1.5 mencatat AG-03 Conditionally Approved untuk enam dokumen DP-03 v0.1.0, FA-006-B1 B dan FA-008 B Approved. FA-007 dan GAP-001/002/003/007 tetap Open; implementasi yang bergantung pada GAP tersebut tidak diizinkan. Substansi scope v0.1.2 tetap tidak berubah; AG-04 belum disetujui.
 
 ## 1. MVP product release intent
 
@@ -40,7 +42,7 @@ Menghadirkan **satu flagship learning experience untuk pemula ChatGPT** yang ter
 | Admin content workflow | Hybrid visual editor + Markdown, draft/preview/publish/revisions | D-015, Q-007; FA-005 B | Enrollment dipin ke published Course version; migrasi manual dan terkontrol; retensi historis bergantung FA-006 |
 | Student workspace | Basic dashboard/progress, resume, bookmarks, notes, reading preferences | D-019, D-024 | Full analytics/gamification deferred |
 | Security/privacy | Go-side authz, ownership, audit, privacy controls, basic export/deletion lifecycle | D-025, G3-003 | Later FA-006 B policy recorded in governance revision; approved v0.1.2 scope substance unchanged |
-| Operability | Managed services, local/staging/prod separation, CI, monitoring, backups/restore checks | D-027, G3-004 | Vendor, budget and quantitative recovery targets FA-008 open |
+| Operability | Managed services, local/staging/prod separation, CI, monitoring, backups/restore checks | D-027, G3-004 | At v0.1.2, FA-008 was Open; later Option B is recorded in the v0.1.5 governance note, without selecting vendor/budget/numeric RPO/RTO |
 | Content | “Menguasai ChatGPT dari Nol”, seluruh lesson gratis bagi Guest, target ~4 modules / 12–16 lessons | G2-003; PO-CLAR-D010-Q001 | Content quality and sufficient coverage matter more than fixed count; no premium-locked flagship lessons in MVP |
 | Release governance | R0 documentation, R1 prototype, R2 private alpha, R3 beta, R4 public; explicit evidence-based approvals | D-028, G2-004 | Thresholds FA-007 open |
 
@@ -104,10 +106,12 @@ New features, different role models, new scoring methods, a requirement to run u
 - FA-005 B approved: version-pinned enrollment and controlled migration; DP-02 owns detailed contract. Historical retention still depends on FA-006.
 - FA-006 B later approved: lifecycle-based deletion/data minimization and Product Owner targets recorded in [Open Decisions Register](04-open-decisions-register.md); AG-03 review and AG-04 consistency remain.
 - FA-007 measurable UX/performance/beta goals; DP-05 blocker.
-- FA-008 capacity, hosting, RPO/RTO, costs and monitoring parameters; DP-04 blocker.
+- FA-008 B later approved: INF-01–INF-14 Balanced Production MVP; Singapore conditional preferred region pending legal/latency validation. Host, paid tier, instance size and numeric RPO/RTO are not approved. See [Decision Registry](03-decision-registry.md).
 
 ## 9. AG-01 approval record
 
 Product Owner explicitly approved the four DP-01 **v0.1.2** documents through AG-01 after that draft snapshot. FA-004 B and FA-005 B were approved later as current Product Owner decisions. This v0.1.3 administrative revision records those events; it is not a claim that the post-approval edits were in the approved v0.1.2 snapshot. Historical source limits EG-001–EG-003 remain under AG-01-EG-B.
 
 **Status of original v0.1.2 approval:** AG-01 Approved for the v0.1.2 product baseline. **Subsequent v0.1.4 governance status:** AG-02 Conditionally Approved for DP-02 v0.1.1 with GAP-001/002/003/007 Open; AG-03 Not Approved.
+
+**Current v0.1.5 governance:** AG-03 Conditionally Approved for DP-03 v0.1.0, FA-006-B1 B and FA-008 B Approved; AG-04 Not Approved. FA-007 and GAP-001/002/003/007 remain Open.

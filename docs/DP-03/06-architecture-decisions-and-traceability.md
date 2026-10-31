@@ -3,9 +3,9 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-03 — Domain-Aligned Architecture & Data Contracts |
-| Version | v0.1.0 |
-| Status | **Draft — Not Approved** |
-| Approval gate | AG-03 — **Not Approved** |
+| Version | v0.1.1 — administrative addendum after the six-document v0.1.0 snapshot |
+| Status | **DP-03 v0.1.0 Conditionally Approved; this addendum records later governance only** |
+| Approval gate | AG-03 — **Conditionally Approved for six v0.1.0 documents** |
 | Approved sources | [DP-01 Decision Registry](../DP-01/03-decision-registry.md), [Open Decisions Register](../DP-01/04-open-decisions-register.md), [DP-02 rules](../DP-02/02-domain-rules-and-invariants.md), [acceptance criteria](../DP-02/05-acceptance-criteria.md), [conditional AG-02 addendum](../DP-02/06-traceability-matrix.md) |
 
 `ADR` IDs below are **proposed architecture decisions for AG-03 review**, not additional approved product decisions. DP-01 v0.1.2 remains the approved prospective product baseline; DP-01 v0.1.4 and DP-02's v0.1.2 traceability addendum record later governance without retroactively changing approved snapshots. AG-02 is **Conditionally Approved** for the six DP-02 v0.1.1 documents. GAP-001/002/003/007 remain Open, and their dependent implementation is unauthorized. FA-006 B is approved; FA-007/008 remain Open.
@@ -64,3 +64,11 @@ The [architecture overview](01-architecture-overview.md) owns system/trust bound
 | FA-008 | Hosting, capacity, RPO/RTO, backup mechanisms and operational thresholds are not selected. FA-006's approved privacy targets still apply. | AG-04 downstream; DP-03 assumes only managed services. |
 
 **AG-03 decision requested:** Review the proposed architecture boundaries, logical ownership, privacy orchestration and transaction design. AG-03 remains **Not Approved** until the Product Owner decides. Conditional AG-02 does not authorize implementation of the four unresolved GAPs, and no DP-04 authoring or application implementation follows from this draft.
+
+## 5. Subsequent governance addendum — outside the approved v0.1.0 snapshot
+
+Sections 1–4 above retain the original Draft v0.1.0 review state. The Product Owner later **conditionally approved AG-03** for the six DP-03 v0.1.0 documents. The other five DP-03 files retain their original Draft/Not Approved metadata as a snapshot; this administrative v0.1.1 addendum changes no architecture contract. Material changes require [Decision Registry change control](../DP-01/03-decision-registry.md).
+
+FA-006-B1 B subsequently approved deletion or irreversible de-identification of individual Student-linked learning records during account deletion, permitting only genuinely anonymous aggregate retention; pseudonymous identifiers alone do not anonymize records. FA-008 B subsequently approved INF-01–INF-14 Balanced Production MVP. These later decisions are recorded in the [Decision Registry](../DP-01/03-decision-registry.md) and [Open Decisions Register](../DP-01/04-open-decisions-register.md). The §2–§4 statements that FA-008 was Open are historical; FA-006-B1 sets the minimum disposition without choosing delete versus irreversible de-identification for each class. FA-006 B's 30-day active-data, 30-day backup and 180-day security-audit targets remain effective. Singapore remains a conditional preferred region pending legal and latency validation.
+
+GAP-001/002/003/007 remain **Open** with dependent implementation unauthorized; FA-007 remains **Open**. AG-04 is **Not Approved** and DP-04 documentation authoring is separately authorized. Conditional AG-03 approval neither closes the GAPs nor verifies missing historical evidence.

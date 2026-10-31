@@ -3,8 +3,8 @@
 | Metadata | Value |
 |---|---|
 | Package | DP-02 — Comprehensive Domain & UX Contracts |
-| Version | 0.1.2 — administrative addendum after the six-document v0.1.1 snapshot |
-| Status | **DP-02 v0.1.1 Conditionally Approved; this addendum records later governance only** |
+| Version | 0.1.3 — subsequent administrative addendum after the six-document v0.1.1 snapshot |
+| Status | **DP-02 v0.1.1 Conditionally Approved; later addenda record governance only** |
 | Approval gate | AG-02 — **Conditionally Approved for six v0.1.1 documents** |
 | Source | [Approved DP-01 baseline and governance record](../DP-01/03-decision-registry.md) |
 
@@ -85,3 +85,7 @@ The Product Owner later **conditionally approved AG-02** for the six DP-02 v0.1.
 | FA-008 / GAP-006 | **Open** for AG-04. |
 
 Requirements depending on unresolved GAP-001/002/003/007 detail are **not authorized for implementation**. Conditional AG-02 approval does not approve those details, AG-03, or application work. Historical evidence gaps EG-001–EG-003 remain unverified.
+
+## 5. Later governance status — v0.1.3 administrative addendum
+
+The Product Owner later conditionally approved the six DP-03 v0.1.0 documents through AG-03 and approved FA-006-B1 B and FA-008 B. The §4 statement that AG-03 is unapproved and FA-008 is Open records its earlier state. FA-006-B1 B requires deletion or irreversible de-identification of individual Student-linked learning records; only genuinely anonymous aggregates may remain. FA-008 B approves INF-01–INF-14, with Singapore only conditionally preferred. See the current [Decision Registry](../DP-01/03-decision-registry.md). GAP-001/002/003/007 remain **Open**, FA-007 remains **Open**, and dependent implementation remains unauthorized. AG-04 is **Not Approved**. No DP-02 business rule or acceptance criterion is changed by this addendum.

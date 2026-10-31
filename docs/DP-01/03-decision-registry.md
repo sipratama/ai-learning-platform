@@ -4,10 +4,10 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Decision Registry |
-| Version | 0.1.4 — subsequent administrative governance synchronization |
-| Status | **Approved product baseline v0.1.2; v0.1.3 and v0.1.4 record later governance decisions** |
+| Version | 0.1.5 — subsequent administrative governance synchronization |
+| Status | **Approved product baseline v0.1.2; v0.1.3–v0.1.5 record later governance decisions** |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3 records AG-01/FA-004 B/FA-005 B; v0.1.4 records AG-02 conditional approval and FA-006 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 record prior governance; v0.1.5 records AG-03 conditional approval, FA-006-B1 B and FA-008 B without changing that substance |
 | Prepared | 2026-10-31 |
 | Source basis | Project conversation recap and reported user selections; current Product Owner clarifications and explicit AG-01-EG-B, AG-01, FA-004/005, AG-02 and FA-006 B dispositions |
 
@@ -145,16 +145,17 @@ These are current Product Owner dispositions supplied for DP-01 remediation, **n
 |---|---|---|---|
 | FA-004 | **B — Independent Path and Course Participation:** participation and enrollment independent; joining a Path does not enroll all member Courses; Course completion global and reusable; Path progress derives from member Course completion; official participation requires Student authentication. | Approved (current disposition, Option B) | DP-02 v0.1.1; AG-02 conditionally approved |
 | FA-005 | **B — Version-Pinned Learning with Controlled Migration:** existing enrollment stays on pinned published Course version; new enrollment uses latest eligible published version; no silent migration; historical progress/completion/passing preserved; MVP migration manual, Admin-controlled, explicitly authorized, audited and communicated appropriately to learners; no automatic migration engine; retention depends on FA-006. | Approved (current disposition, Option B) | DP-02 v0.1.1; AG-02 conditionally approved |
-| FA-006 | **B — Lifecycle-Based Deletion & Data Minimization:** valid authenticated Student deletion request starts controlled, idempotent, auditable, retry-safe lifecycle; invalidate access after acceptance; delete profile, notes and bookmarks; delete or irreversibly de-identify Student-linked learning data under applicable policy; protect active-account evidence without overriding deletion rights; security audit retention 180 days unless legitimate legal obligation requires otherwise; active data deletion within 30 days of valid request; backup expiry within 30 days; anonymous aggregates may remain; no self-service recovery after effective deletion begins; restored backups must not silently resurrect personal data. These are Product Owner targets, not statutory claims. | Approved (current disposition, Option B) | DP-03; AG-03 not approved; AG-04 consistency |
+| FA-006 | **B — Lifecycle-Based Deletion & Data Minimization:** valid authenticated Student deletion request starts controlled, idempotent, auditable, retry-safe lifecycle; invalidate access after acceptance; delete profile, notes and bookmarks; delete or irreversibly de-identify Student-linked learning data under applicable policy; protect active-account evidence without overriding deletion rights; security audit retention 180 days unless legitimate legal obligation requires otherwise; active data deletion within 30 days of valid request; backup expiry within 30 days; anonymous aggregates may remain; no self-service recovery after effective deletion begins; restored backups must not silently resurrect personal data. These are Product Owner targets, not statutory claims. | Approved (current disposition, Option B) | DP-03 v0.1.0; AG-03 conditionally approved; AG-04 consistency |
+| FA-006-B1 | **B — Individual Student-linked learning records:** delete or irreversibly de-identify each individual linked record during account deletion; retain only genuinely anonymous aggregates. Pseudonymous replacement alone is not anonymization; historical evidence protection does not override FA-006 B. Preserve its 30-day active-data and backup targets and 180-day security-audit target. | Approved (current disposition, Option B) | DP-04 privacy/security consistency; AG-04 not approved |
 | FA-007 | UX, accessibility verification, performance and beta thresholds | Open | AG-05 |
-| FA-008 | Hosting/capacity/costs, RPO/RTO, monitoring operational parameters | Open | AG-04 |
+| FA-008 | **B — Balanced Production MVP:** INF-01–INF-14 in §13 define managed frontend/Go/Supabase services, environment/delivery/security/observability/backup/cost controls; Singapore is only conditionally preferred after legal and latency validation; availability is best-effort without commercial SLA. No named Go host, paid tier, instance size or numeric RPO/RTO is approved. | Approved (current disposition, Option B) | DP-04; AG-04 not approved |
 
 Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisions-register.md).
 
 ## 9. Decision relations & change control
 
 - `refines`: FA-001 → Q-003/Q-004; FA-002 → Q-007/D-013; FA-003 → Q-005.
-- `depends on`: AG-02 conditionally approved for DP-02 v0.1.1, with GAP-001/002/003/007 Open and dependent implementation unauthorized; AG-03 → approved FA-006 B and DP-03 review; AG-04 → open FA-008 and FA-006 consistency; AG-05 → open FA-007.
+- `depends on`: AG-02 conditionally approved for DP-02 v0.1.1, with GAP-001/002/003/007 Open and dependent implementation unauthorized; AG-03 conditionally approved for DP-03 v0.1.0; AG-04 → approved FA-006 B/FA-006-B1 B/FA-008 B and DP-04 review; AG-05 → open FA-007.
 - `verified by`: future requirement/test IDs in DP-05; no test evidence exists yet.
 - `supersedes`: **none asserted** without explicit historical proof.
 
@@ -171,9 +172,9 @@ Detailed unresolved questions in [04-open-decisions-register.md](04-open-decisio
 
 ## 11. AG-01 approval record and limits
 
-AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 documents. v0.1.3 recorded later governance decisions; this v0.1.4 revision records still later AG-02 and FA-006 B decisions, neither part of the original approved snapshot. AG-01-EG-B remains effective; EG-001–EG-003 remain unverified historically. FA-004 B, FA-005 B and FA-006 B are current explicit approvals. FA-007–FA-008 remain Open. AG-02 is conditionally approved for the six DP-02 v0.1.1 documents; AG-03 and later gates remain unapproved.
+AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 documents. v0.1.3/v0.1.4 recorded later governance decisions; this v0.1.5 revision records still later AG-03, FA-006-B1 B and FA-008 B decisions, none part of the original approved snapshot. AG-01-EG-B remains effective; EG-001–EG-003 remain unverified historically. FA-004 B, FA-005 B, FA-006 B, FA-006-B1 B and FA-008 B are current explicit approvals. FA-007 remains Open. AG-02 and AG-03 are conditionally approved for their named snapshots; AG-04 and later gates remain unapproved.
 
-**Current disposition:** DP-01 v0.1.2 product baseline approved through AG-01; AG-02 conditionally approved for six DP-02 v0.1.1 documents with GAP-001/002/003/007 Open; DP-03 documentation authoring separately authorized; AG-03 not approved; DP-04–DP-06 authoring and application code unauthorized. Requirements depending on the four open GAPs are not authorized for implementation. Material changes require the change control above.
+**Current disposition:** DP-01 v0.1.2 product baseline approved through AG-01; AG-02 conditionally approved for six DP-02 v0.1.1 documents; AG-03 conditionally approved for six DP-03 v0.1.0 documents. GAP-001/002/003/007 remain Open and dependent implementation unauthorized. DP-04 documentation authoring is separately authorized; AG-04 not approved; DP-05–DP-06 authoring and application code unauthorized. Material changes require the change control above.
 
 ## 12. Subsequent Product Owner governance dispositions (v0.1.4 record)
 
@@ -182,4 +183,31 @@ AG-01 was explicitly approved by the Product Owner for the four DP-01 v0.1.2 doc
 | AG-02 | Conditionally approved for the six DP-02 **v0.1.1** documents. GAP-001, GAP-002, GAP-003 and GAP-007 remain Open; their dependent requirements are not authorized for implementation. Material changes require change control. | Conditionally Approved (current disposition) | C; later approval, not part of the v0.1.1 draft snapshot and not historical source verification |
 | FA-006 | Option B, Lifecycle-Based Deletion & Data Minimization, as specified in §8 and the [Open Decisions Register](04-open-decisions-register.md). | Approved (current disposition, Option B) | C; later Product Owner approval, not a statutory retention claim |
 
-AG-03 is Not Approved. FA-007 and FA-008 remain Open. The four AG-02 policy GAPs remain Open under conditional approval; no approval of their missing detail is implied.
+At the v0.1.4 record, AG-03 was Not Approved and FA-007/FA-008 remained Open. Current status follows in §13. The four AG-02 policy GAPs remain Open; no approval of their missing detail is implied.
+
+## 13. Subsequent Product Owner governance dispositions (v0.1.5 record)
+
+| ID | Current explicit disposition | Status / boundary |
+|---|---|---|
+| AG-03 | Conditionally approved for the six DP-03 **v0.1.0** documents. GAP-001/002/003/007 remain Open; dependent requirements are not implementation-authorized; material changes require change control. | Conditionally Approved, evidence `C`; later than the draft snapshot, not historical source verification |
+| FA-006-B1 | Option B: individual Student-linked learning records must be deleted or irreversibly de-identified during account deletion; only genuinely anonymous aggregates may remain. Pseudonymization alone is insufficient. FA-006 B and its 30/30/180-day targets remain effective. | Approved (current disposition, Option B), evidence `C` |
+| FA-008 | Option B: Balanced Production MVP as specified by INF-01–INF-14 below. | Approved (current disposition, Option B), evidence `C` |
+
+| ID | Approved FA-008 B operational direction |
+|---|---|
+| INF-01 | Managed static frontend hosting and CDN. |
+| INF-02 | Managed Go container deployment with pragmatic scaling; provider not selected. |
+| INF-03 | Supabase managed PostgreSQL. |
+| INF-04 | Supabase Auth and Storage. |
+| INF-05 | Singapore is a conditional preferred region pending legal and latency validation; no final region decision. |
+| INF-06 | Isolated Local, Staging and Production environments. |
+| INF-07 | GitHub Actions CI/CD with production deployment approval. |
+| INF-08 | Managed secrets; none in source control. |
+| INF-09 | Structured logs, request correlation, basic metrics and error alerts. |
+| INF-10 | Lightweight background worker capability. |
+| INF-11 | Backup and restoration policies compatible with FA-006 B and FA-006-B1 B; managed backup alone is not proof. |
+| INF-12 | Best-effort MVP availability without a commercial SLA. |
+| INF-13 | Pragmatic horizontal scaling where supported; no Kubernetes requirement. |
+| INF-14 | Budget alerts, resource controls and cost monitoring. |
+
+AG-04 is **Not Approved**. FA-007 remains **Open** for AG-05. No cloud provider for Go, paid tier, exact instance size or numeric RPO/RTO is approved. The three dispositions above are current explicit Product Owner decisions and do not repair EG-001–EG-003 historical evidence gaps.

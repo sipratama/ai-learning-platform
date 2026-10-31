@@ -4,15 +4,15 @@
 |---|---|
 | Package | DP-01 — Traceable Product Baseline |
 | Artifact | Product Charter |
-| Version | 0.1.4 — subsequent administrative governance synchronization |
+| Version | 0.1.5 — subsequent administrative governance synchronization |
 | Status | **Approved product baseline v0.1.2; later revisions record governance only** |
 | Authoring authorization | AAR-01 — explicitly authorized by product owner |
 | Approval gate | AG-01 — **Approved for v0.1.2 by current Product Owner approval** |
-| Revision boundary | v0.1.2 product substance approved; v0.1.3 recorded AG-01/FA-004 B/FA-005 B; v0.1.4 records AG-02 conditional approval/FA-006 B without changing that substance |
+| Revision boundary | v0.1.2 product substance approved; v0.1.3–v0.1.4 recorded prior governance; v0.1.5 records AG-03 conditional approval/FA-006-B1 B/FA-008 B without changing that substance |
 | Source-of-truth scope | Visi produk, audiens, positioning, prinsip dan sasaran produk |
 | Last prepared | 2026-10-31 |
 
-> **Governance notice.** Product Owner menyetujui empat dokumen DP-01 v0.1.2 melalui AG-01 sesudah snapshot draft dibuat. v0.1.3 mencatat AG-01/FA-004 B/FA-005 B; revisi administratif v0.1.4 ini mencatat AG-02 Conditionally Approved untuk enam dokumen DP-02 v0.1.1 dan FA-006 B. Substansi baseline v0.1.2 tidak berubah. AG-01-EG-B tetap berlaku; EG-001–EG-003 tetap keterbatasan bukti historis. GAP-001/002/003/007 tetap Open dan implementasi yang bergantung padanya tidak diizinkan. DP-03 authoring diizinkan terpisah; AG-03 belum disetujui. Lihat [Decision Registry](03-decision-registry.md).
+> **Governance notice.** Product Owner menyetujui empat dokumen DP-01 v0.1.2 melalui AG-01 sesudah snapshot draft dibuat. v0.1.3 mencatat AG-01/FA-004 B/FA-005 B; revisi administratif v0.1.4 kemudian mencatat AG-02 Conditionally Approved untuk enam dokumen DP-02 v0.1.1 dan FA-006 B. Substansi baseline v0.1.2 tidak berubah. AG-01-EG-B tetap berlaku; EG-001–EG-003 tetap keterbatasan bukti historis. Status terbaru terdapat pada catatan v0.1.5 di bawah dan [Decision Registry](03-decision-registry.md).
 
 ## 1. Product vision
 
@@ -102,8 +102,10 @@ Dokumen ini **tidak** menetapkan schema, state machine detail, endpoint HTTP, UX
 - **FA-005 — Approved B:** enrollment tetap pada published Course version yang dipin; enrollment baru memakai versi published terbaru yang eligible; migrasi MVP manual, terotorisasi dan diaudit. Retensi konten historis bergantung FA-006.
 - **FA-006 — Approved B:** lifecycle-based deletion dan data minimization, termasuk target deletion/retention yang dicatat di [Open Decisions Register](04-open-decisions-register.md); AG-03 tetap perlu review, AG-04 perlu konsistensi.
 - **FA-007:** UX/performance/beta thresholds belum final (blocks AG-05).
-- **FA-008:** operational vendor/capacity/RPO/RTO belum final (blocks AG-04).
+- **FA-008 — Approved B:** Balanced Production MVP (INF-01–INF-14); Singapore hanya preferensi kondisional; detail host, kapasitas dan RPO/RTO numerik belum diputuskan. Lihat [Decision Registry](03-decision-registry.md).
 
 **AG-01 status:** APPROVED untuk snapshot DP-01 v0.1.2, berdasarkan persetujuan eksplisit Product Owner setelah snapshot dibuat. AG-01-EG-B menerima disposisi prospektif EG-001–EG-003 tanpa memverifikasi wording historis. Revisi administratif v0.1.3 bukan bagian dari snapshot yang semula disetujui.
 
 **Later governance:** v0.1.4 mencatat AG-02 Conditionally Approved untuk DP-02 v0.1.1, dengan GAP-001/002/003/007 Open; FA-006 B Approved; FA-007/008 Open; AG-03 Not Approved. v0.1.4 juga bukan bagian dari snapshot DP-01 v0.1.2 yang disetujui.
+
+**Current v0.1.5 governance:** AG-03 Conditionally Approved untuk enam dokumen DP-03 v0.1.0; FA-006-B1 B dan FA-008 B Approved. FA-007 serta GAP-001/002/003/007 tetap Open; implementasi yang bergantung pada GAP tersebut tidak diizinkan. DP-04 authoring diizinkan terpisah, AG-04 Not Approved. v0.1.5 bukan bagian dari baseline v0.1.2.

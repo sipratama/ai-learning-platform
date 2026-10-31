@@ -2,6 +2,7 @@ import { mkdir } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import AxeBuilder from '@axe-core/playwright'
 import { expect, test, type Page } from '@playwright/test'
+import { completedPublicRead } from '../support/completed-response'
 import { envelope, fixtureResponse, lessons } from '../support/public-fixture'
 
 const readerUrl = '/courses/course-flagship/lessons/lesson-flagship-1'
@@ -221,8 +222,28 @@ test('loading, error, empty, and invalid cursor preserve recovery', async ({
   await expect(
     page.getByRole('link', { name: 'Foundations Path', exact: true }),
   ).toBeVisible()
-  await page.getByRole('button', { name: 'Muat ulang daftar' }).click()
+  const reloadURL = new URL('/api/v1/catalog/paths?limit=1', page.url()).href
+  const [{ body: reloaded }] = await Promise.all([
+    completedPublicRead(page, reloadURL),
+    page.getByRole('button', { name: 'Muat ulang daftar' }).click(),
+  ])
+  await loaded(page)
+  expect(reloaded.data[0].id).toBe('path-foundations')
+  await expect(
+    page.getByRole('status').filter({ hasText: '1 learning path ditampilkan' }),
+  ).toBeVisible()
   await expect(page.getByText('Daftar perlu dimuat ulang')).toHaveCount(0)
+  await expect(
+    page.getByRole('button', { name: 'Muat ulang daftar' }),
+  ).toHaveCount(0)
+  await page.unroute('**/api/v1/catalog/paths*cursor=*')
+  await page.getByRole('button', { name: 'Muat lagi', exact: true }).click()
+  await expect(
+    page.getByRole('link', { name: 'Practice Path', exact: true }),
+  ).toBeVisible()
+  await expect(
+    page.getByRole('button', { name: 'Muat lagi', exact: true }),
+  ).toHaveCount(0)
   await page.getByLabel('Cari judul atau ringkasan').fill('zznone')
   await page.getByRole('button', { name: 'Cari', exact: true }).click()
   await expect(page.getByText('Belum menemukan yang cocok?')).toBeVisible()

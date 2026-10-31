@@ -148,3 +148,7 @@ Material changes require the [Decision Registry change control](03-decision-regi
 ## 13. Subsequent AG-05 disposition
 
 **AG-05 — Conditionally Approved:** The six DP-05 v0.1.0 documents form the conditionally approved verification-plan baseline. Their original Draft/Not Approved metadata reports the earlier snapshot. This later administrative disposition approves strategy, scenarios, evidence requirements and release-gate design only; security and integrity hard gates remain nonwaivable. It supplies no executed evidence, technical readiness, slice implementation permission or beta release approval. FA-007 B stays Approved. GAP-001/002/003/007 stay Open with dependent implementation blocked; material changes require change control. AG-06 is Not Approved.
+
+## 14. Subsequent AG-06 disposition (2026-10-31 administrative addendum)
+
+The §13 `AG-06 Not Approved` wording and the original AG-06 row above are historical pre-approval records. The current Product Owner disposition is **AG-06 Conditionally Approved** for the six DP-06 v0.1.0 documents and their 16-increment planning baseline, as recorded in the [Decision Registry §16](03-decision-registry.md#16-subsequent-product-owner-ag-06-disposition-2026-10-31-administrative-addendum). Engineering Bootstrap and the VS-01A Contract & Fixture Readiness bundle were separately authorized. VS-01A implementation, merge, deployment and beta release remain unauthorized. GAP-001/002/003/007 remain **Open**; the five GAP-dependent increments remain **Blocked**. No open GAP is disposed by this administrative update.

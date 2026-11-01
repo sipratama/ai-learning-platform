@@ -7,8 +7,27 @@
   "matched_jwks_algorithm": "ES256",
   "matched_jwks_curve": "P-256",
   "evidence_limit": "Operator-assisted current-key identification; no independent settings API read or user-token signature test",
-  "signup_enabled": "NOT VERIFIED",
-  "anonymous_signins_enabled": "NOT VERIFIED",
+  "signup_enabled": false,
+  "anonymous_signins_enabled": false,
   "actual_region": "NOT VERIFIED",
-  "token_verification": "NOT RUN"
+  "token_verification": "NOT RUN",
+  "signup_observations": [
+    {
+      "source": "Operator Dashboard report in current conversation",
+      "signup_enabled": true,
+      "anonymous_signins_enabled": false,
+      "result": "FAIL: public signup enabled",
+      "remediation": "Operator instructed to turn off Allow new users to sign up and save; final state pending"
+    },
+    {
+      "source": "Operator confirmation after guided Dashboard change in current conversation",
+      "reported_statement": "ya semua sudah mati",
+      "signup_enabled": false,
+      "anonymous_signins_enabled": false,
+      "result": "PASS for operator-reported control states; no independent settings API or signup runtime test",
+      "action_owner": "operator",
+      "actual_signup_attempts": 0
+    }
+  ],
+  "settings_evidence_limit": "Operator-reported Dashboard states, not independently read through an Auth settings API"
 }

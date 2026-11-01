@@ -1,0 +1,16 @@
+# Allow only the inputs needed for the Go build; no repository root or secrets.
+**
+!go.mod
+!go.sum
+!cmd/
+!cmd/**
+!internal/
+!internal/**
+!Dockerfile.local
+!*.dockerignore
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.test
+**/coverage*

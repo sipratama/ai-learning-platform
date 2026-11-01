@@ -1,0 +1,26 @@
+# Keep typechecked source/tests, but exclude generated output and local secrets.
+**
+!package.json
+!package-lock.json
+!index.html
+!tsconfig.json
+!vite.config.ts
+!eslint.config.mjs
+!playwright*.config.ts
+!src/
+!src/**
+!tests/
+!tests/**
+!nginx.local.conf
+!Dockerfile.local
+!*.dockerignore
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/node_modules
+**/test-results
+**/playwright-report
+**/playwright-integration-report
+**/coverage
+**/dist

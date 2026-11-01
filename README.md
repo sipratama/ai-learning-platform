@@ -10,6 +10,10 @@ This repository implements the bounded **VS-01A disposable Guest proof**: the or
 
 No Supabase project, PostgreSQL server, production credentials, or Student data is needed for this slice.
 
+## Local Docker preview
+
+For a loopback-only synthetic Guest preview, run `docker compose -f compose.local.yaml up --build -d` and open **http://127.0.0.1:8088/catalog**. See the [local preview guide](docs/local-preview/README.md) for health checks, stop/rebuild commands and Docker Desktop notes, and the [feature inventory](docs/product-status/2026-11-01-feature-inventory.md) for implemented versus planned capabilities. This fixture-enabled stack must never be deployed to staging or production; it provides no login, official Student state or Admin publishing.
+
 ## Run locally
 
 From `apps/api`, run `go run ./cmd/api`. The API listens on `127.0.0.1:8080` by default. Set `HTTP_LISTEN_ADDR` to another valid host and port when needed; see `apps/api/.env.example`. The process reads environment variables directly and does not auto-load `.env` files. `GET http://127.0.0.1:8080/healthz` is a liveness check only, not proof of database or provider readiness.

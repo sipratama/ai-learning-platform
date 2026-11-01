@@ -1,0 +1,56 @@
+# LOCAL SYNTHETIC PREVIEW ONLY. Never deploy this fixture-enabled stack.
+name: ai-learning-local-preview
+
+services:
+  api:
+    image: ai-learning-platform-api:local-preview
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile.local
+    environment:
+      APP_ENV: local
+      FIXTURE_MODE: vs01a
+      HTTP_LISTEN_ADDR: 0.0.0.0:8080
+    expose:
+      - "8080"
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    networks: [preview]
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, "http://127.0.0.1:8080/healthz"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  web:
+    image: ai-learning-platform-web:local-preview
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile.local
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8088:8080"
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,mode=1777
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    networks: [preview]
+    healthcheck:
+      test: [CMD, wget, -q, --spider, "http://127.0.0.1:8080/"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+networks:
+  preview:
+    driver: bridge

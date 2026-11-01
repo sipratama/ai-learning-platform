@@ -1,0 +1,28 @@
+{
+  "script_sha256": "5feac8050ebb4a4595db72249aa375092fbbb8495ff9b4f34520eca4308dd0be",
+  "before_command": [
+    "node",
+    "scripts/check-minimatch-tooling.mjs"
+  ],
+  "after_command": [
+    "node",
+    "scripts/check-minimatch-tooling.mjs",
+    "--expect-version",
+    "11.0.3",
+    "--compare",
+    "<baseline-compatibility-json>"
+  ],
+  "before_completed_log_mtime_utc": "2026-11-01T06:09:55.319356+00:00",
+  "after_completed_log_mtime_utc": "2026-11-01T06:11:33.254318+00:00",
+  "timing_limit": "Log filesystem timestamps, not retained process start/end timers for these two one-time comparisons; subsequent npm run test:tooling has timed command evidence.",
+  "status": "PASS",
+  "identical_behavior_sha256": "f82e6f03484cf4995d206db69abdffcd9ece58ca3a8cb75a4723772328b07c4e",
+  "linted_files": 30,
+  "glob_patterns": 12,
+  "per_file_effective_config_matches": 30,
+  "ignore_cases": 8,
+  "lint_diagnostic_fixtures": 4,
+  "typed_default_project_fixture": true,
+  "windows_coverage": "Explicit platform:win32 matching option only, not a native Windows runtime",
+  "general_glob_api_equivalence": "NOT CLAIMED; v11 includes intentional upstream breaking API/semantic changes outside scoped usage"
+}

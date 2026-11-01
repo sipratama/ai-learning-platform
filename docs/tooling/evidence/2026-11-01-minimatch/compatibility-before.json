@@ -1,0 +1,706 @@
+{
+  "status": "PASS",
+  "node": "v22.23.4",
+  "resolution": [
+    {
+      "consumer": "eslint",
+      "minimatch": "10.2.6"
+    },
+    {
+      "consumer": "@eslint/config-array",
+      "minimatch": "10.2.6"
+    },
+    {
+      "consumer": "@typescript-eslint/typescript-estree",
+      "minimatch": "10.2.6"
+    }
+  ],
+  "behavior_sha256": "f82e6f03484cf4995d206db69abdffcd9ece58ca3a8cb75a4723772328b07c4e",
+  "behavior": {
+    "lintFiles": [
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      "playwright.integration.config.ts",
+      "playwright.local.config.ts",
+      "src/app/App.test.tsx",
+      "src/app/App.tsx",
+      "src/components/Blocks.test.tsx",
+      "src/components/Blocks.tsx",
+      "src/components/ContentCards.tsx",
+      "src/components/Shell.test.tsx",
+      "src/components/Shell.tsx",
+      "src/components/ui.tsx",
+      "src/lib/api/config.test.ts",
+      "src/lib/api/config.ts",
+      "src/lib/api/public.test.ts",
+      "src/lib/api/public.ts",
+      "src/lib/useResource.ts",
+      "src/main.tsx",
+      "src/screens/Catalog.tsx",
+      "src/screens/Details.tsx",
+      "src/screens/Reader.tsx",
+      "src/test/setup.ts",
+      "tests/e2e/guest.spec.ts",
+      "tests/integration/guest-real.spec.ts",
+      "tests/integration/pagination-recovery.spec.ts",
+      "tests/integration/start-api.mjs",
+      "tests/local-preview/guest-docker.spec.ts",
+      "tests/support/completed-response.ts",
+      "tests/support/public-fixture.ts",
+      "vite.config.ts"
+    ],
+    "configs": [
+      {
+        "file": "eslint.config.mjs",
+        "rules": "6be1aab0baaa96ff0333cb3714646a9bd2ad3f675b6e6b84eda65a4c925cec9b",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.integration.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.local.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/app/App.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/app/App.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Blocks.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Blocks.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/ContentCards.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Shell.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Shell.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/ui.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/config.test.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/public.test.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/public.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/useResource.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/main.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Catalog.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Details.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Reader.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/test/setup.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/e2e/guest.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/guest-real.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/pagination-recovery.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/start-api.mjs",
+        "rules": "6be1aab0baaa96ff0333cb3714646a9bd2ad3f675b6e6b84eda65a4c925cec9b",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/local-preview/guest-docker.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/support/completed-response.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/support/public-fixture.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "vite.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "globMatrix": [
+      {
+        "pattern": "**/*.{js,mjs,cjs}",
+        "matches": [
+          "eslint.config.mjs",
+          "node_modules/pkg/index.js",
+          "playwright-integration-report/index.js",
+          "playwright-report/index.js",
+          "tests/integration/start-api.mjs"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "**/*.{ts,tsx}",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx",
+          "distinguished/example.ts",
+          "playwright.config.ts",
+          "playwright.integration.config.ts",
+          "playwright.local.config.ts",
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.test.tsx",
+          "src/app/App.tsx",
+          "src/components/Blocks.test.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.test.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.test.ts",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.test.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts",
+          "test-results/nested/example.ts",
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts",
+          "tests/local-preview/guest-docker.spec.ts",
+          "tests/support/completed-response.ts",
+          "tests/support/public-fixture.ts",
+          "vite.config.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "src/**/*.{ts,tsx}",
+        "matches": [
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.test.tsx",
+          "src/app/App.tsx",
+          "src/components/Blocks.test.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.test.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.test.ts",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.test.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden"
+        ]
+      },
+      {
+        "pattern": "tests/{e2e,integration}/**/*.spec.ts",
+        "matches": [
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts"
+        ],
+        "partialDirectories": [
+          "tests",
+          "tests/e2e",
+          "tests/integration"
+        ]
+      },
+      {
+        "pattern": "**/*.d.ts",
+        "matches": [],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "dist/**",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx"
+        ],
+        "partialDirectories": [
+          "dist"
+        ]
+      },
+      {
+        "pattern": "node_modules/**",
+        "matches": [
+          "node_modules/pkg/index.js"
+        ],
+        "partialDirectories": [
+          "node_modules/pkg"
+        ]
+      },
+      {
+        "pattern": "test-results/**",
+        "matches": [
+          "test-results/nested/example.ts"
+        ],
+        "partialDirectories": [
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "playwright-report/**",
+        "matches": [
+          "playwright-report/index.js"
+        ],
+        "partialDirectories": []
+      },
+      {
+        "pattern": "playwright-integration-report/**",
+        "matches": [
+          "playwright-integration-report/index.js"
+        ],
+        "partialDirectories": []
+      },
+      {
+        "pattern": "**/!(*.test).{ts,tsx}",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx",
+          "distinguished/example.ts",
+          "playwright.config.ts",
+          "playwright.integration.config.ts",
+          "playwright.local.config.ts",
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts",
+          "test-results/nested/example.ts",
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts",
+          "tests/local-preview/guest-docker.spec.ts",
+          "tests/support/completed-response.ts",
+          "tests/support/public-fixture.ts",
+          "vite.config.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "src/\\[literal\\].ts",
+        "matches": [
+          "src/[literal].ts"
+        ],
+        "partialDirectories": [
+          "src"
+        ]
+      }
+    ],
+    "ignored": [
+      {
+        "file": "dist/example.ts",
+        "ignored": true
+      },
+      {
+        "file": "node_modules/example.js",
+        "ignored": true
+      },
+      {
+        "file": "test-results/example.ts",
+        "ignored": true
+      },
+      {
+        "file": "playwright-report/example.js",
+        "ignored": true
+      },
+      {
+        "file": "playwright-integration-report/example.js",
+        "ignored": true
+      },
+      {
+        "file": "distinguished/example.ts",
+        "ignored": false
+      },
+      {
+        "file": "src/example.ts",
+        "ignored": false
+      },
+      {
+        "file": "tests/e2e/example.spec.ts",
+        "ignored": false
+      }
+    ],
+    "diagnostics": [
+      {
+        "name": "valid-tsx",
+        "messages": []
+      },
+      {
+        "name": "invalid-tsx",
+        "messages": [
+          {
+            "ruleId": null,
+            "severity": 2,
+            "fatal": true,
+            "messageId": null,
+            "line": 1,
+            "column": 23
+          }
+        ]
+      },
+      {
+        "name": "typescript-rules",
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unusedVar",
+            "line": 1,
+            "column": 7
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpectedAny",
+            "line": 1,
+            "column": 15
+          },
+          {
+            "ruleId": "no-debugger",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpected",
+            "line": 1,
+            "column": 24
+          }
+        ]
+      },
+      {
+        "name": "javascript-rules",
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unusedVar",
+            "line": 1,
+            "column": 7
+          },
+          {
+            "ruleId": "no-undef",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "undef",
+            "line": 1,
+            "column": 16
+          },
+          {
+            "ruleId": "no-debugger",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpected",
+            "line": 1,
+            "column": 25
+          }
+        ]
+      }
+    ],
+    "typescript": {
+      "ast": "f21383650462821d610a4c052381fedc56c5a3f8342d1d124e3ca9730a79841d",
+      "program": true
+    }
+  }
+}

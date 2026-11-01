@@ -1,0 +1,14 @@
+[
+  {
+    "path": "node_modules/@isaacs/nonrecursive-glob-match",
+    "before": null,
+    "after": "1.0.3",
+    "dev": true
+  },
+  {
+    "path": "node_modules/minimatch",
+    "before": "10.2.6",
+    "after": "11.0.3",
+    "dev": true
+  }
+]

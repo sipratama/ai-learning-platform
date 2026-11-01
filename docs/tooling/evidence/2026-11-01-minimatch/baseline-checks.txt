@@ -1,0 +1,21 @@
+Command: node-version
+v22.23.4
+
+Command: npm-version
+10.9.9
+
+Command: baseline-ci
+added 297 packages, and audited 298 packages in 4s
+
+121 packages are looking for funding
+  run `npm fund` for details
+
+11 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.

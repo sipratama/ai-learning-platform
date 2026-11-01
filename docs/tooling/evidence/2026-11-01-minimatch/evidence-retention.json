@@ -1,0 +1,23 @@
+{
+  "text_normalization": "Only trim trailing whitespace/final empty lines and replace task workspace roots with markers; raw log/separate-stderr SHA-256 retained in commands.json. No diagnostic lines omitted.",
+  "source_input_manifest": "All execution input bytes verified against implementation commit 7eccd9a; tests executed before that commit, with no application-source edits afterward.",
+  "initial_shell": "Node 26.13.0/npm 11.20.0 detected; baseline repeated under Node 22.23.4/npm 10.9.9. Initial exploratory raw logs retained locally, not used as Node 22 proof.",
+  "lock_generation": {
+    "command": [
+      "/opt/homebrew/opt/node@22/bin/node",
+      "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+      "install",
+      "--package-lock-only",
+      "--ignore-scripts",
+      "--prefix",
+      "apps/web"
+    ],
+    "node": "22.23.4",
+    "npm": "11.20.0",
+    "result": "PASS; final lock changes exactly minimatch plus required dev-only matcher. npm 10 libc-field churn discarded.",
+    "subsequent_clean_install": "npm 10.9.9, lock bytes unchanged",
+    "timing": "Exact start/end timers not retained; successful tool exit 0 and local combined log retained"
+  },
+  "screenshots": "Existing browser tests executed in disposable copy; no old screenshot/evidence bytes overwritten in maintenance or PR17 worktree. Fresh CI artifact captures final head separately.",
+  "independent_security_approval": "NOT SUPPLIED"
+}

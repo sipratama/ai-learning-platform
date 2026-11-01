@@ -1,0 +1,22 @@
+{
+  "base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+  "implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+  "checked_at_utc": "2026-11-01T06:40:16.279038+00:00",
+  "baseline_files": 197,
+  "unchanged_baseline_files": 194,
+  "allowed_baseline_changes": [
+    ".github/workflows/ci.yml",
+    "apps/web/package-lock.json",
+    "apps/web/package.json"
+  ],
+  "lock_nodes_changed": [
+    "node_modules/@isaacs/nonrecursive-glob-match",
+    "node_modules/minimatch"
+  ],
+  "existing_ci_preserved": true,
+  "lint_files_before_after": 30,
+  "artifact_digests_checked": 28,
+  "secret_baseline_exit": 0,
+  "errors": [],
+  "status": "PASS"
+}

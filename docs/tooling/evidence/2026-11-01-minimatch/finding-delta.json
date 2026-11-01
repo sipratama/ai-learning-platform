@@ -1,0 +1,167 @@
+{
+  "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+  "reference_only_pr17_sha": "fae0b2a5072b552898f45fc9fe0bdb30d338bffd",
+  "before_vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 11,
+    "high": 0,
+    "critical": 0,
+    "total": 11
+  },
+  "after_vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "all_11_reported_findings_eliminated": true,
+  "production_dependencies_unchanged": true,
+  "findings": [
+    {
+      "package": "@eslint-community/eslint-utils",
+      "before_version": "4.10.1",
+      "after_version": "4.10.1",
+      "before_via": [
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@eslint/config-array",
+      "before_version": "0.23.5",
+      "after_version": "0.23.5",
+      "before_via": [
+        "minimatch"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@eslint/js",
+      "before_version": "10.0.1",
+      "after_version": "10.0.1",
+      "before_via": [
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@typescript-eslint/eslint-plugin",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "@typescript-eslint/parser",
+        "@typescript-eslint/type-utils",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@typescript-eslint/parser",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "@typescript-eslint/typescript-estree",
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@typescript-eslint/type-utils",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "@typescript-eslint/typescript-estree",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@typescript-eslint/typescript-estree",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "minimatch"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "@typescript-eslint/utils",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "@eslint-community/eslint-utils",
+        "@typescript-eslint/typescript-estree",
+        "eslint"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "eslint",
+      "before_version": "10.14.0",
+      "after_version": "10.14.0",
+      "before_via": [
+        "@eslint-community/eslint-utils",
+        "@eslint/config-array",
+        "minimatch"
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "minimatch",
+      "before_version": "10.2.6",
+      "after_version": "11.0.3",
+      "before_via": [
+        {
+          "source": 1244012,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has potential denial of service via globparts amplification",
+          "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-405"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<11.0.1"
+        }
+      ],
+      "after_reported": false
+    },
+    {
+      "package": "typescript-eslint",
+      "before_version": "8.72.1",
+      "after_version": "8.72.1",
+      "before_via": [
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "@typescript-eslint/typescript-estree",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "after_reported": false
+    }
+  ],
+  "changed_nodes": [
+    {
+      "path": "node_modules/@isaacs/nonrecursive-glob-match",
+      "before": null,
+      "after": "1.0.3",
+      "dev": true
+    },
+    {
+      "path": "node_modules/minimatch",
+      "before": "10.2.6",
+      "after": "11.0.3",
+      "dev": true
+    }
+  ],
+  "glob_breaking_changes": "Known upstream 11.x removals/semantic fixes reviewed; only constructor, match and minimatch APIs used by scoped consumers; compatibility claims limited to tested actual file set/configuration and finite corpus."
+}

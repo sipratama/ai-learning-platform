@@ -1,0 +1,659 @@
+[
+  {
+    "id": "node-version",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "started_at_utc": "2026-11-01T06:09:21.112143+00:00",
+    "completed_at_utc": "2026-11-01T06:09:21.152334+00:00",
+    "exit_code": 0,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-checks.txt",
+    "original_log_sha256": "2266957ed9a639bd7264d714bfa798a961510bf2e50695c668ab8fc0c3f4e906",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "npm-version",
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "started_at_utc": "2026-11-01T06:09:21.152374+00:00",
+    "completed_at_utc": "2026-11-01T06:09:21.338655+00:00",
+    "exit_code": 0,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-checks.txt",
+    "original_log_sha256": "d49bd31f65cb736f4045946e1c8365657cfed300dc0e4f173af5e93ab4500e1a",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "baseline-ci",
+    "command": [
+      "npm",
+      "ci"
+    ],
+    "started_at_utc": "2026-11-01T06:09:21.338694+00:00",
+    "completed_at_utc": "2026-11-01T06:09:25.825439+00:00",
+    "exit_code": 0,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-checks.txt",
+    "original_log_sha256": "a7eaa40c9d436542ecabb16ffd132d01408358818c88fd29ce42866c33d6853d",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "baseline-audit",
+    "command": [
+      "npm",
+      "audit",
+      "--json"
+    ],
+    "started_at_utc": "2026-11-01T06:09:25.825496+00:00",
+    "completed_at_utc": "2026-11-01T06:09:27.687333+00:00",
+    "exit_code": 1,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-audit.json",
+    "original_log_sha256": "a30cf66cbdf81123cebea8eaca4cc65383168981f6566742b66d368d9082902e",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "baseline-audit-production",
+    "command": [
+      "npm",
+      "audit",
+      "--omit=dev",
+      "--json"
+    ],
+    "started_at_utc": "2026-11-01T06:09:27.687379+00:00",
+    "completed_at_utc": "2026-11-01T06:09:28.385996+00:00",
+    "exit_code": 0,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-audit-production.json",
+    "original_log_sha256": "91a5b6d1130d5faa1aa00682c2e65a1fe14f34140d897b98a016e1faca23599a",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "baseline-tree",
+    "command": [
+      "npm",
+      "ls",
+      "minimatch",
+      "eslint",
+      "@eslint/config-array",
+      "@eslint/js",
+      "typescript-eslint",
+      "@typescript-eslint/parser",
+      "@typescript-eslint/typescript-estree",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/utils",
+      "@typescript-eslint/type-utils",
+      "@eslint-community/eslint-utils",
+      "--all",
+      "--json"
+    ],
+    "started_at_utc": "2026-11-01T06:09:28.386062+00:00",
+    "completed_at_utc": "2026-11-01T06:09:28.922870+00:00",
+    "exit_code": 0,
+    "phase": "baseline",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "retained_log": "baseline-tree.json",
+    "original_log_sha256": "842919ecec701608b01f698b1d52990124aa1481ced51a36e8cd5b3ec8fa55d0",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr",
+    "executed_dependency_state": "baseline origin/main without overrides"
+  },
+  {
+    "id": "after-ci",
+    "command": [
+      "npm",
+      "ci"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:49.901507+00:00",
+    "completed_at_utc": "2026-11-01T06:13:53.283493+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "6ea05e904148bd57fe8ba57571a538a56673ce68b919a148fa11f879f599d3ca",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "after-audit",
+    "command": [
+      "npm",
+      "audit",
+      "--json"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:53.284333+00:00",
+    "completed_at_utc": "2026-11-01T06:13:53.988647+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "after-audit.json",
+    "original_log_sha256": "e88d7fa32d12e3f1301c66d652243f4f011f45f28ec9605eb22028e870c7ef53",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "after-audit-production",
+    "command": [
+      "npm",
+      "audit",
+      "--omit=dev",
+      "--json"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:53.989121+00:00",
+    "completed_at_utc": "2026-11-01T06:13:54.988844+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "after-audit-production.json",
+    "original_log_sha256": "e88d7fa32d12e3f1301c66d652243f4f011f45f28ec9605eb22028e870c7ef53",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "after-minimatch-tree",
+    "command": [
+      "npm",
+      "ls",
+      "minimatch",
+      "--all"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:54.989126+00:00",
+    "completed_at_utc": "2026-11-01T06:13:55.405131+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "after-minimatch-tree.txt",
+    "original_log_sha256": "21130440472c1b5888e3c4e74efdfdc69eaa97450af248dc4b63016d32f143a6",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "after-tree",
+    "command": [
+      "npm",
+      "ls",
+      "minimatch",
+      "eslint",
+      "@eslint/config-array",
+      "@eslint/js",
+      "typescript-eslint",
+      "@typescript-eslint/parser",
+      "@typescript-eslint/typescript-estree",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/utils",
+      "@typescript-eslint/type-utils",
+      "@eslint-community/eslint-utils",
+      "--all",
+      "--json"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:55.405377+00:00",
+    "completed_at_utc": "2026-11-01T06:13:55.926072+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "after-tree.json",
+    "original_log_sha256": "f4ab67305774133b923642edc0ee89a96d42bb4ed0d64a648c55b66743be62b3",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:55.926358+00:00",
+    "completed_at_utc": "2026-11-01T06:13:57.828081+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "79599dcadb0f8eb76df2b2f17f6ba56c8821ca51e56b206395ba8f99e5ff5d4e",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "tooling-guards",
+    "command": [
+      "npm",
+      "run",
+      "test:tooling"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:13:57.828370+00:00",
+    "completed_at_utc": "2026-11-01T06:14:00.777402+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "fb02cb6c7058048ab1e0f53e954c2e5c11eef399a0bdfe72ec31ded32ef9d361",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:14:00.777976+00:00",
+    "completed_at_utc": "2026-11-01T06:14:03.332147+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "4a977d722e841afd5232a2d052bce3fcb1902fd56fe60531744d5aae2b96c2e3",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "unit",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:14:03.332563+00:00",
+    "completed_at_utc": "2026-11-01T06:14:06.606835+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "51b21cb537df91bed0f83999ac93a5497203dd5013dcb37f5b249fcced618ba4",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:14:06.607145+00:00",
+    "completed_at_utc": "2026-11-01T06:14:09.660415+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "671d123bfb13404cf823ae220e88acc9c6deea3a51408c0c1ae3b6848e8c00be",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "browser-mocked",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:mock"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:14:09.660861+00:00",
+    "completed_at_utc": "2026-11-01T06:14:52.688251+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "616d280e6a9c6a856c706e1e76b4804fd753a428f790522a08d8a0d2f0eb8302",
+    "separate_stderr_sha256": "a4ce7c58eccbe49df8103d22b1b47d0c53f8825461a53d354a1a09af07963b6e",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "browser-real",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:real"
+    ],
+    "context": "disposable validation copy; source manifest retained",
+    "started_at_utc": "2026-11-01T06:14:52.688669+00:00",
+    "completed_at_utc": "2026-11-01T06:15:16.060460+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "frontend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "frontend-checks.txt",
+    "original_log_sha256": "df85610bb7f009ca865a842b668459277e915f4041d1008f1d1d1cb66f435bfc",
+    "separate_stderr_sha256": "ce1c30e963b58231974de5c03d82dd51a25316d98597ee1caa70bbaa8c7ed5e8",
+    "source_log_capture": "stdout plus separate stderr"
+  },
+  {
+    "id": "go-version",
+    "command": [
+      "go",
+      "version"
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:49.901399+00:00",
+    "completed_at_utc": "2026-11-01T06:13:49.944591+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "70f94d37a097ca424ec1a1c0d5a81288ec60b4ceeae67edc3a75aeb6ce378600",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-vet",
+    "command": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:49.945003+00:00",
+    "completed_at_utc": "2026-11-01T06:13:50.658557+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-vet-fixture",
+    "command": [
+      "go",
+      "vet",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:50.659044+00:00",
+    "completed_at_utc": "2026-11-01T06:13:51.109908+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-test",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:51.110307+00:00",
+    "completed_at_utc": "2026-11-01T06:13:52.672005+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "5a3c2e489f30310f90f53e51ed7e5c423477275582a108cd09a11bbfc00de6c3",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-test-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:52.672512+00:00",
+    "completed_at_utc": "2026-11-01T06:13:53.819613+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "184075fae8fe94206404089111a0da43a7a220da4f6f0eb7585a2ed272358637",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-race",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:53.819909+00:00",
+    "completed_at_utc": "2026-11-01T06:13:56.346828+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "66a156aa663e12ece25ebd4232e024ee0353d3b7e095a8eda74a233a474fdb5b",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-race-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:56.347130+00:00",
+    "completed_at_utc": "2026-11-01T06:13:58.870179+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "cbabe63f1635121e6cc74eb5d19dcaa4083ff35de1c4fea50e4acd21cc7c8d54",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-build",
+    "command": [
+      "go",
+      "build",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:58.870702+00:00",
+    "completed_at_utc": "2026-11-01T06:13:59.509491+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "go-build-fixture",
+    "command": [
+      "go",
+      "build",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:13:59.509942+00:00",
+    "completed_at_utc": "2026-11-01T06:14:00.061148+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "fixture-boundary",
+    "command": [
+      "bash",
+      "../../scripts/check-fixture-boundary.sh"
+    ],
+    "context": "disposable validation copy; backend source unchanged",
+    "started_at_utc": "2026-11-01T06:14:00.061634+00:00",
+    "completed_at_utc": "2026-11-01T06:14:02.787463+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "backend",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "backend-checks.txt",
+    "original_log_sha256": "13a8511fa0b24da7b0a357c64a8c7406d86e98daca6d0bea71e3cd823d7cd10e",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "lock-generator-version",
+    "command": [
+      "/opt/homebrew/opt/node@22/bin/node",
+      "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "started_at_utc": "2026-11-01T06:16:02.273216+00:00",
+    "completed_at_utc": "2026-11-01T06:16:02.457377+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "repository",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "repository-checks.txt",
+    "original_log_sha256": "6784d6c924df1c8341f9f841f5b5b20c37255de3d34f923baebc0a557d5d5201",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "tooling-syntax",
+    "command": [
+      "/opt/homebrew/opt/node@22/bin/node",
+      "--check",
+      "scripts/check-minimatch-tooling.mjs"
+    ],
+    "started_at_utc": "2026-11-01T06:16:02.457397+00:00",
+    "completed_at_utc": "2026-11-01T06:16:02.536640+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "repository",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "repository-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "secret-baseline",
+    "command": [
+      "bash",
+      "scripts/check-secrets.sh"
+    ],
+    "started_at_utc": "2026-11-01T06:16:02.536663+00:00",
+    "completed_at_utc": "2026-11-01T06:16:02.830620+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "repository",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "repository-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  },
+  {
+    "id": "whitespace",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "started_at_utc": "2026-11-01T06:16:02.830647+00:00",
+    "completed_at_utc": "2026-11-01T06:16:02.851807+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "phase": "repository",
+    "source_base_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "verified_implementation_sha": "7eccd9a2c9144ca5aa4dedc5c229628cf2668d92",
+    "retained_log": "repository-checks.txt",
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "separate_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_log_capture": "combined stdout then stderr"
+  }
+]

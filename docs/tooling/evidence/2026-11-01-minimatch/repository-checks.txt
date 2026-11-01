@@ -1,0 +1,10 @@
+Command: lock-generator-version
+11.20.0
+
+Command: tooling-syntax
+
+
+Command: secret-baseline
+
+
+Command: whitespace

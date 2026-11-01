@@ -1,0 +1,11 @@
+{
+  "id": "VCP-POST-DB",
+  "observed_at_utc": "2026-11-01T04:48:57Z",
+  "source": "authenticated project-scoped Supabase execute_sql, read-only aggregate",
+  "status": "PASS",
+  "provider_user_count": 3,
+  "approved_confirmed_fixture_count": 3,
+  "remaining_provider_sessions": 0,
+  "identity_schema_present": false,
+  "query": "SELECT count(*)::integer AS provider_user_count, count(*) FILTER (WHERE email IN ('vs02a-student-a@vs02a.invalid','vs02a-student-b@vs02a.invalid','vs02a-candidate-c@vs02a.invalid') AND role = 'authenticated' AND is_anonymous = false AND email_confirmed_at IS NOT NULL)::integer AS approved_confirmed_fixture_count, (SELECT count(*)::integer FROM auth.sessions) AS remaining_provider_sessions, EXISTS (SELECT 1 FROM pg_catalog.pg_namespace WHERE nspname = 'identity') AS identity_schema_present FROM auth.users"
+}

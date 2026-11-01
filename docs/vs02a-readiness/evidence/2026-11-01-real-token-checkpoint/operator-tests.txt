@@ -1,0 +1,20 @@
+test_approval_cannot_widen_roster_or_provider_actions (__main__.OperatorSafety) ... ok
+test_invalid_verifier_proof_cannot_leak_token_in_a_hash_field (__main__.OperatorSafety) ... ok
+test_no_admin_secret_prompt_with_unapproved_state_or_nonterminal (__main__.OperatorSafety) ... ok
+test_operator_env_local_setup_never_echoes_or_exports_key (__main__.OperatorSafety) ... ok
+test_operator_env_rejects_repository_links_and_loose_permissions (__main__.OperatorSafety) ... ok
+test_operator_env_rejects_shell_syntax_and_unexpected_variables (__main__.OperatorSafety) ... ok
+test_partial_creation_is_retained_and_not_blindly_retried (__main__.OperatorSafety) ... ok
+test_pending_approval_blocks_before_any_network_or_local_secret (__main__.OperatorSafety) ... ok
+test_prepared_credentials_are_private_distinct_and_not_printed (__main__.OperatorSafety) ... ok
+test_provider_errors_never_echo_response_or_key (__main__.OperatorSafety) ... ok
+test_provision_does_not_read_env_when_project_is_not_empty (__main__.OperatorSafety) ... ok
+test_successful_flow_logs_out_locally_and_never_retains_tokens (__main__.OperatorSafety) ... ok
+test_two_operator_processes_cannot_use_the_same_ledger (__main__.OperatorSafety) ... ok
+test_verification_failure_still_logs_out_and_preserves_partial_evidence (__main__.OperatorSafety) ... ok
+test_wrong_destination_or_method_never_opens_network (__main__.OperatorSafety) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK

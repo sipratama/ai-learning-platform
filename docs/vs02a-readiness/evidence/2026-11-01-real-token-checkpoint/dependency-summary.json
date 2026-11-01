@@ -1,0 +1,22 @@
+{
+  "scanner": "govulncheck v1.9.0",
+  "scope": "isolated operator Go module only",
+  "exit_code": 0,
+  "finding_records": 0,
+  "osv_metadata_records": 188,
+  "config": {
+    "protocol_version": "v1.0.0",
+    "scanner_name": "govulncheck",
+    "scanner_version": "v1.9.0",
+    "db": "https://vuln.go.dev",
+    "db_last_modified": "2026-10-27T21:16:18Z",
+    "go_version": "go1.27.3",
+    "scan_level": "symbol",
+    "scan_mode": "source"
+  },
+  "application_dependencies_changed": false,
+  "npm_full_audit_status": "FAIL",
+  "npm_full_moderate": 11,
+  "npm_production_audit_status": "PASS",
+  "npm_production_findings": 0
+}

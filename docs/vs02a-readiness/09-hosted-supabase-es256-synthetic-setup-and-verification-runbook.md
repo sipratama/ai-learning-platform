@@ -83,3 +83,8 @@ The [environment/MCP assessment and executable public-JWKS probe](10-environment
 ### Subsequent connected-project checkpoint
 
 The [connected MCP/public-JWKS checkpoint](14-connected-supabase-public-jwks-checkpoint-2026-11-01.md) records later successful OAuth, actual compatible public key metadata, operator isolation attestation and read-only database observations. Full environment/token and implementation gates remain unresolved. The earlier blocked evidence remains an accurate historical checkpoint.
+
+
+## Bounded real-user checkpoint — later 2026-11-01 addendum
+
+The explicitly approved [R1 roster](15-synthetic-roster-and-token-checkpoint-approval-2026-11-01.md) was created and its three real ES256 access JWTs verified. [Executed evidence and remaining gates](17-real-token-checkpoint-evidence-2026-11-01.md) supersede earlier NOT RUN statements only for the named bounded checks. Actual lifetime is 3600 seconds; same-token offline verification after local logout succeeds. [O05 remains a proposal](16-bounded-token-checkpoint-and-o05-decision-2026-11-01.md), and Auth Bundle 1 remains unauthorized. Historical evidence above is preserved.

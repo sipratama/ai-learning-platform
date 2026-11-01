@@ -1,0 +1,31 @@
+{
+  "base_source_sha": "8ebcffb8903899714326946ce443d4e2c76772ac",
+  "reviewable_tooling_sha": "22c04ea1e5a2b0f097780ed3ae0a83fe79659fe6",
+  "live_execution_source": "working tree based on base_source_sha before tooling commit; final Go verifier sources unchanged; operator env enhancement added after live run",
+  "live_binary_sha256": "dd9b809a52419e27f7a11927b9168efa8659c179b78260c916f448387a3ca7a5",
+  "binary_build_metadata": [
+    "path\tgithub.com/sipratama/ai-learning-platform/scripts/vs02a-jwt-checkpoint",
+    "mod\tgithub.com/sipratama/ai-learning-platform/scripts/vs02a-jwt-checkpoint\t(devel)",
+    "dep\tgithub.com/golang-jwt/jwt/v5\tv5.3.1\th1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=",
+    "build\t-buildmode=exe",
+    "build\t-compiler=gc",
+    "build\tCGO_ENABLED=1",
+    "build\tCGO_CFLAGS=",
+    "build\tCGO_CPPFLAGS=",
+    "build\tCGO_CXXFLAGS=",
+    "build\tCGO_LDFLAGS=",
+    "build\tGOARCH=arm64",
+    "build\tGOOS=darwin",
+    "build\tGOARM64=v8.0",
+    "build\tvcs=git",
+    "build\tvcs.revision=8ebcffb8903899714326946ce443d4e2c76772ac",
+    "build\tvcs.time=2026-11-01T03:56:23Z",
+    "build\tvcs.modified=true"
+  ],
+  "source_files_sha256": {
+    "scripts/vs02a-jwt-checkpoint/main.go": "383226fe499d77fc8f27b9a9c30bf7592e804d4a2405ce2a5e7109e6896f0ad5",
+    "scripts/vs02a-jwt-checkpoint/main_test.go": "586d9cc614b3cceba91f569fa839719bc6ac4e7291d4e69d748d0399dd2a0a11"
+  },
+  "live_wrapper_pre_env_source_snapshot": "NOT RETAINED; final wrapper has later env-only additions; do not claim byte-identical live wrapper attestation",
+  "raw_token_or_private_key_retained": false
+}

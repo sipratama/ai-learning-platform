@@ -18,5 +18,6 @@
   "npm_full_audit_status": "FAIL",
   "npm_full_moderate": 11,
   "npm_production_audit_status": "PASS",
-  "npm_production_findings": 0
+  "npm_production_findings": 0,
+  "retained_scanner_stream": "Bulk OSV advisory metadata omitted; retention_summary records original digest/count; finding events are never omitted"
 }

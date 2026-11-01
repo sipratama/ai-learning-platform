@@ -67,3 +67,13 @@ Readiness work such as provider comparison, threat review, and decision drafting
 > VS-02A design decision (date/time UTC): I, [role/identity], approve/revise/reject the explicitly named options O04 [choice], O05 [choice], O06 [choice]. Evidence reviewed: [permalinks]. Exceptions/risks: [items, owners, milestones]. Independent reviewer [identity, role, separation] disposition: [link]. This decision does not authorize implementation unless G0–G4 are independently satisfied and a separate scoped implementation approval is recorded.
 
 **No boxes or approvals in this pack are pre-checked.** The next PR is documentation-only; merging it means the decision pack is available, **not** that VS-02A is approved or VS-01A formally closed.
+
+## 7. Addendum — PO platform/algorithm selection (2026-11-01)
+
+Following this pack's creation, the Product Owner explicitly agreed to use **a dedicated hosted Supabase synthetic test project with ES256** and requested further GitHub readiness work. This is recorded in [VSA-DEC-001](08-po-supabase-hosted-es256-platform-selection-2026-11-01.md) and the [setup/verification runbook](09-hosted-supabase-es256-synthetic-setup-and-verification-runbook.md).
+
+- **SELECTED:** hosted Supabase for VS-02A synthetic identity testing; ES256/P-256 as the intended only accepted user JWT signature algorithm (part of O03/O04).
+- **NOT SELECTED/VERIFIED:** actual test tenant, region, billing, credentials, issuer, audience, public keys, JOSE dependency/defaults, logout replay/session policy, account provisioning UX, or database privileges.
+- **NOT AUTHORIZED:** Auth implementation, migration, privileged grants, provider key changes or production. **G0–G4 remain open** and VSA-O01/O02/O05/O06 require separate dispositions. Retain the earlier decision matrix as history: later selection of two items does not imply wholesale approval.
+
+The runbook has executable-looking **operator instructions, not executed tests**. Neither this addendum nor the merge of its documentation PR constitutes independent human review or a formal VS-01A closure decision.

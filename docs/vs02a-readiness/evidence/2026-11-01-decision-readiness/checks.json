@@ -1,0 +1,88 @@
+[
+  {
+    "id": "checkpoint-race",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "-json",
+      "./..."
+    ],
+    "started_at_utc": "2026-11-01T05:47:54.541720+00:00",
+    "completed_at_utc": "2026-11-01T05:47:57.167378+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "checkpoint-race.jsonl"
+  },
+  {
+    "id": "checkpoint-vet",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "started_at_utc": "2026-11-01T05:47:57.167407+00:00",
+    "completed_at_utc": "2026-11-01T05:47:57.332093+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "checkpoint-vet.txt"
+  },
+  {
+    "id": "operator-tests",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "python3",
+      "scripts/test_vs02a_checkpoint_operator.py"
+    ],
+    "started_at_utc": "2026-11-01T05:47:57.332111+00:00",
+    "completed_at_utc": "2026-11-01T05:47:57.539310+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "operator-tests.txt"
+  },
+  {
+    "id": "probe-tests",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "python3",
+      "scripts/test-verify-supabase-jwks.py"
+    ],
+    "started_at_utc": "2026-11-01T05:47:57.539329+00:00",
+    "completed_at_utc": "2026-11-01T05:47:57.708227+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "probe-tests.txt"
+  },
+  {
+    "id": "secret-baseline",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "bash",
+      "scripts/check-secrets.sh"
+    ],
+    "started_at_utc": "2026-11-01T05:47:57.708249+00:00",
+    "completed_at_utc": "2026-11-01T05:47:58.031102+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "secret-baseline.txt"
+  },
+  {
+    "id": "frontend-lint",
+    "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "started_at_utc": "2026-11-01T05:47:58.031122+00:00",
+    "completed_at_utc": "2026-11-01T05:47:59.515930+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-lint.txt",
+    "raw_log_sha256": "79599dcadb0f8eb76df2b2f17f6ba56c8821ca51e56b206395ba8f99e5ff5d4e",
+    "retained_log_normalization": "See log-normalization.json; trailing blank line removed"
+  }
+]

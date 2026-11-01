@@ -1,0 +1,8 @@
+{
+  "artifact": "frontend-lint.txt",
+  "original_stdout_sha256": "79599dcadb0f8eb76df2b2f17f6ba56c8821ca51e56b206395ba8f99e5ff5d4e",
+  "retained_log_sha256": "9b139362ccfbfaea1927d7b822160c4d5a682976732ddc5796855ff225749571",
+  "change": "Removed trailing blank line only for Git whitespace check; command exit and nonblank output unchanged",
+  "first_document_check": "FAIL: new blank line at EOF in retained npm lint output; retained in preparation-first.json",
+  "retest": "Recorded separately in preparation-checks.json"
+}

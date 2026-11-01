@@ -46,6 +46,18 @@ class ProbeGuards(unittest.TestCase):
             with self.subTest(keys_type=type(keys).__name__), self.assertRaises(probe.ProbeError):
                 self.inspect(keys)
 
+    def test_extractability_metadata_is_boolean_and_cannot_override_trust(self):
+        for flag in (True, False):
+            self.assertEqual(self.inspect([public_key(ext=flag)])["key_count"], 1)
+            for changes in ({"alg": "HS256"}, {"d": "sensitive-marker"},
+                            {"crv": "P-384"}, {"jku": "https://example.invalid"}):
+                with self.subTest(ext=flag, fields=list(changes)), self.assertRaises(probe.ProbeError):
+                    self.inspect([public_key(ext=flag, **changes)])
+        for invalid in (None, "true", 1, 0, [], {}):
+            with self.subTest(value_type=type(invalid).__name__), self.assertRaisesRegex(
+                    probe.ProbeError, "invalid_extractability_metadata"):
+                self.inspect([public_key(ext=invalid)])
+
     def test_incompatible_and_private_material_deny(self):
         for changes in ({"alg": "HS256"}, {"alg": "RS256"}, {"kty": "oct"},
                         {"crv": "P-384"}, {"d": "sensitive-marker"}, {"k": "sensitive-marker"},

@@ -1,0 +1,14 @@
+{
+  "source": "Operator response to guided Current key inspection in this project conversation",
+  "recorded_date_local": "2026-11-01 Asia/Jakarta",
+  "reported_value_type": "key ID, not algorithm name or secret",
+  "reported_kid_sha256": "e137f5ed6be6015e8008964d85407fc37c41d1ae0dbb8f05efde42891bd701ad",
+  "matches_observed_public_key": true,
+  "matched_jwks_algorithm": "ES256",
+  "matched_jwks_curve": "P-256",
+  "evidence_limit": "Operator-assisted current-key identification; no independent settings API read or user-token signature test",
+  "signup_enabled": "NOT VERIFIED",
+  "anonymous_signins_enabled": "NOT VERIFIED",
+  "actual_region": "NOT VERIFIED",
+  "token_verification": "NOT RUN"
+}

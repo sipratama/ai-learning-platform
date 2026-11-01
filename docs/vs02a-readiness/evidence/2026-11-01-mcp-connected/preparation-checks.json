@@ -1,0 +1,18 @@
+{
+  "source_sha": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+  "files": 14,
+  "relative_links_and_fragments": 177,
+  "unique_external_links": 29,
+  "canonical_ids_including_ranges": 107,
+  "local_test_definitions": 33,
+  "local_open_item_definitions": 14,
+  "initially_tracked_files": 197,
+  "unchanged_tracked_files": 196,
+  "allowed_tracked_changes": [
+    "docs/vs02a-readiness/09-hosted-supabase-es256-synthetic-setup-and-verification-runbook.md"
+  ],
+  "secret_baseline_exit": 0,
+  "secret_pattern_scan": "PASS",
+  "errors": [],
+  "status": "PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "executed_at_utc": "2026-11-01T03:43:26.784323+00:00",
+  "http_status": 200,
+  "tls_certificate_verified": true,
+  "environment_alias": "vs02a-synthetic-candidate",
+  "issuer_sha256": "6bbc53576144f2de6f6099639010fa5603394de404f16dcb324b1c0e22debd9a",
+  "key_metadata": [
+    {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "ES256",
+      "use": "sig",
+      "key_ops": [
+        "verify"
+      ],
+      "ext": true,
+      "private_fields_present": false,
+      "kid_sha256": "e137f5ed6be6015e8008964d85407fc37c41d1ae0dbb8f05efde42891bd701ad"
+    }
+  ],
+  "active_signer_verification": "NOT RUN",
+  "token_verification": "NOT RUN"
+}

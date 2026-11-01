@@ -79,3 +79,7 @@ When an authorized operator supplies the verified **redacted** environment evide
 ## 2026-11-01 verification addendum
 
 The [environment/MCP assessment and executable public-JWKS probe](10-environment-verification-and-mcp-assessment-2026-11-01.md), [Go verifier recommendations](11-go-jwt-security-review-2026-11-01.md), [O01–O14 dispositions](12-readiness-dispositions-and-bundle-1-handoff-2026-11-01.md), and [actual evidence matrix](13-verification-evidence-2026-11-01.md) continue this procedure. Hosted checks are **BLOCKED** pending operator authentication and an approved project; no actual tenant/signing/token PASS is asserted. The earlier procedure remains historical, unexecuted provider instructions.
+
+### Subsequent connected-project checkpoint
+
+The [connected MCP/public-JWKS checkpoint](14-connected-supabase-public-jwks-checkpoint-2026-11-01.md) records later successful OAuth, actual compatible public key metadata, operator isolation attestation and read-only database observations. Full environment/token and implementation gates remain unresolved. The earlier blocked evidence remains an accurate historical checkpoint.

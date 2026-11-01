@@ -1,0 +1,58 @@
+[
+  {
+    "id": "probe-before",
+    "command": [
+      "python3",
+      "<7164b7a-probe-source>",
+      "--environment-alias",
+      "vs02a-synthetic-candidate"
+    ],
+    "source_commit": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+    "script_source": "original committed version",
+    "started_at_utc": "2026-11-01T03:40:11.368846+00:00",
+    "finished_at_utc": "2026-11-01T03:40:12.036217+00:00",
+    "exit_code": 1,
+    "actual": "{\"environment_alias\": \"vs02a-synthetic-candidate\", \"executed_at_utc\": \"2026-11-01T03:40:11.448479+00:00\", \"probe\": \"public-jwks-shape-only\", \"reason\": \"unreviewed_jwk_extension\", \"status\": \"FAIL\", \"token_verification\": \"NOT RUN\"}\n",
+    "evidence": "probe-before.json"
+  },
+  {
+    "id": "probe-guards",
+    "command": [
+      "python3",
+      "scripts/test-verify-supabase-jwks.py"
+    ],
+    "source_commit": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+    "script_source": "working revision identified by script SHA-256",
+    "started_at_utc": "2026-11-01T03:40:12.036262+00:00",
+    "finished_at_utc": "2026-11-01T03:40:12.214725+00:00",
+    "exit_code": 0,
+    "actual": [
+      "----------------------------------------------------------------------",
+      "Ran 10 tests in 0.016s",
+      "",
+      "OK"
+    ],
+    "evidence": "probe-guards.txt",
+    "script_sha256": {
+      "verify-supabase-jwks.py": "d57b9c091255c8f1ab5754d865fa1c0a4c7bcbbaf023b5206c38b3e568d77223",
+      "test-verify-supabase-jwks.py": "54450c14363a7506b464ddd9f39f0b5f0921aa5f80e8a2076b88e93ec94ce78a"
+    }
+  },
+  {
+    "id": "public-jwks",
+    "command": [
+      "python3",
+      "scripts/verify-supabase-jwks.py",
+      "--environment-alias",
+      "vs02a-synthetic-candidate"
+    ],
+    "source_commit": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+    "script_source": "working revision identified by script SHA-256",
+    "started_at_utc": "2026-11-01T03:40:12.214756+00:00",
+    "finished_at_utc": "2026-11-01T03:40:12.411171+00:00",
+    "exit_code": 0,
+    "actual": "{\"algorithm_metadata\": \"ES256-or-absent\", \"environment_alias\": \"vs02a-synthetic-candidate\", \"executed_at_utc\": \"2026-11-01T03:40:12.288304+00:00\", \"http_status\": 200, \"issuer_sha256\": \"6bbc53576144f2de6f6099639010fa5603394de404f16dcb324b1c0e22debd9a\", \"key_count\": 1, \"key_shape\": \"EC/P-256\", \"kid_sha256\": [\"e137f5ed6be6015e8008964d85407fc37c41d1ae0dbb8f05efde42891bd701ad\"], \"probe\": \"public-jwks-shape-only\", \"status\": \"PASS\", \"tls_certificate_verified\": true, \"token_verification\": \"NOT RUN\"}\n",
+    "evidence": "public-jwks.json",
+    "script_sha256": "d57b9c091255c8f1ab5754d865fa1c0a4c7bcbbaf023b5206c38b3e568d77223"
+  }
+]

@@ -84,8 +84,11 @@ def inspect_jwks(body):
             raise ProbeError("incompatible_key_use")
         if "key_ops" in key and key["key_ops"] != ["verify"]:
             raise ProbeError("incompatible_key_operations")
+        # Web Crypto's registered public extractability metadata conveys no trust.
+        if "ext" in key and not isinstance(key["ext"], bool):
+            raise ProbeError("invalid_extractability_metadata")
         # Unexpected extensions require inspection, never new trust locations.
-        if set(key) - {"kty", "crv", "kid", "x", "y", "alg", "use", "key_ops"}:
+        if set(key) - {"kty", "crv", "kid", "x", "y", "alg", "use", "key_ops", "ext"}:
             raise ProbeError("unreviewed_jwk_extension")
         kid = key.get("kid")
         if not isinstance(kid, str) or not re.fullmatch(r"[\x21-\x7e]{1,128}", kid):

@@ -1,0 +1,15 @@
+test_compatible_public_shape_with_optional_metadata (__main__.ProbeGuards) ... ok
+test_empty_excess_duplicate_and_nonobject_keys_deny (__main__.ProbeGuards) ... ok
+test_errors_do_not_echo_remote_body_issuer_or_secrets (__main__.ProbeGuards) ... ok
+test_extractability_metadata_is_boolean_and_cannot_override_trust (__main__.ProbeGuards) ... ok
+test_incompatible_and_private_material_deny (__main__.ProbeGuards) ... ok
+test_issuer_cannot_select_other_destinations (__main__.ProbeGuards) ... ok
+test_malformed_duplicate_nonfinite_and_oversize_json_deny (__main__.ProbeGuards) ... ok
+test_missing_configuration_blocks_without_network (__main__.ProbeGuards) ... ok
+test_redirect_is_rejected (__main__.ProbeGuards) ... ok
+test_transport_requires_tls_no_proxy_bounded_read_and_deadline (__main__.ProbeGuards) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.016s
+
+OK

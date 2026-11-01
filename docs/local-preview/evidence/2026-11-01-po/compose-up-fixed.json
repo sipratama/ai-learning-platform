@@ -1,0 +1,18 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-f",
+    "compose.local.yaml",
+    "up",
+    "--build",
+    "-d",
+    "--wait",
+    "--wait-timeout",
+    "120"
+  ],
+  "started_at_utc": "2026-11-01T08:43:39.512561+00:00",
+  "completed_at_utc": "2026-11-01T08:43:52.593519+00:00",
+  "exit_code": 0,
+  "status": "PASS"
+}

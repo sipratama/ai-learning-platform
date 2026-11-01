@@ -1,0 +1,37 @@
+{
+  "source_base_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+  "reviewable_fix_sha": "e5b09f5a0fa7e775c2e0f530c27d4a51df09d4e3",
+  "docker_browser_stats": {
+    "startTime": "2026-11-01T08:45:22.997Z",
+    "duration": 10390.491,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "automatic_docker_cases_passed": 8,
+  "unexpected_docker_cases": 0,
+  "normal_flow_observation_status": "PASS",
+  "normal_flow_page_count": 12,
+  "console_or_page_errors": [],
+  "external_origins": [],
+  "manual_cases": "NOT RUN",
+  "manual_result_not_filled_by_agent": true,
+  "full_npm_audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "production_npm_audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "warnings": "Nonfatal NO_COLOR/FORCE_COLOR Playwright runner warnings retained in raw logs, not application console errors"
+}

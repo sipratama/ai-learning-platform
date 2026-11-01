@@ -1,0 +1,51 @@
+file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:599
+			const error = /* @__PURE__ */ new Error("Cannot find native binding. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.");
+			                              ^
+
+Error: Cannot find native binding. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:599:34
+    at file:///app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs:9:49
+    ... 4 lines matching cause stack trace ...
+    at Module._compile (node:internal/modules/cjs/loader:1763:5)
+    at Object..js (node:internal/modules/cjs/loader:1913:10)
+    at Module.load (node:internal/modules/cjs/loader:1505:32)
+    at Function._load (node:internal/modules/cjs/loader:1309:12) {
+  cause: Error: Cannot find module '@rolldown/binding-wasm32-wasi'
+  Require stack:
+  - /app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs
+      at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:487:18
+      ... 8 lines matching cause stack trace ...
+      at Module._compile (node:internal/modules/cjs/loader:1763:5) {
+    cause: Error: Cannot find module './rolldown-binding.wasi.cjs'
+    Require stack:
+    - /app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs
+        at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:487:18
+        ... 8 lines matching cause stack trace ...
+        at Module._compile (node:internal/modules/cjs/loader:1763:5) {
+      cause: Error: Cannot find module '@rolldown/binding-linux-arm64-musl'
+      Require stack:
+      - /app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs
+          at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:487:18
+          ... 8 lines matching cause stack trace ...
+          at Module._compile (node:internal/modules/cjs/loader:1763:5) {
+        cause: Error: Cannot find module './rolldown-binding.linux-arm64-musl.node'
+        Require stack:
+        - /app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs
+            at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:487:18
+            at Array.reduce (<anonymous>)
+            at createLoadErrorChain (file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:480:17)
+            at file:///app/node_modules/rolldown/dist/shared/binding-BXYS21Tf.mjs:600:18
+            at file:///app/node_modules/rolldown/dist/shared/rolldown-runtime-DYf_mQCB.mjs:9:49
+            at file:///app/node_modules/rolldown/dist/shared/normalize-string-or-regex-B8U5_Ikr.mjs:5:46
+            at ModuleJobSync.runSync (node:internal/modules/esm/module_job:454:37)
+            at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:445:47)
+            at loadESMFromCJS (node:internal/modules/cjs/loader:1600:24)
+            at Module._compile (node:internal/modules/cjs/loader:1763:5) {
+          cause: null
+        }
+      }
+    }
+  }
+}
+
+Node.js v22.23.4

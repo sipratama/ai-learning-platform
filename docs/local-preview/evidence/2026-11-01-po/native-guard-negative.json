@@ -1,0 +1,19 @@
+{
+  "id": "native-guard-rejects-incomplete-cached-install",
+  "started_at_utc": "2026-11-01T08:43:38.734130+00:00",
+  "completed_at_utc": "2026-11-01T08:43:39.346522+00:00",
+  "expected_exit_nonzero": true,
+  "actual_exit_code": 1,
+  "status": "PASS",
+  "fixture": "Actual failed npm-ci BuildKit layer; missing required native optional dependencies",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--entrypoint",
+    "node",
+    "367f516e5c866c5c7a2a73aa349f2eeda7c1476b3d1b629a4c2e94ea26e14347",
+    "-e",
+    "const { createRequire } = require('node:module'); require('rolldown'); require('@tailwindcss/oxide'); require('lightningcss'); createRequire(require.resolve('vite/package.json'))('lightningcss')"
+  ]
+}

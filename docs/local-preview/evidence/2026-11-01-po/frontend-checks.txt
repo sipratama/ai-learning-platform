@@ -1,0 +1,849 @@
+Command: node-version
+v22.23.4
+
+Command: npm-version
+10.9.9
+
+Command: npm-ci
+added 298 packages, and audited 299 packages in 3s
+
+121 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Command: typecheck
+> ai-learning-platform-web@0.0.0 typecheck
+> tsc --noEmit
+
+Command: lint
+> ai-learning-platform-web@0.0.0 lint
+> eslint .
+
+Command: tooling
+> ai-learning-platform-web@0.0.0 test:tooling
+> node ../../scripts/check-minimatch-tooling.mjs --expect-version 11.0.3
+
+{
+  "status": "PASS",
+  "node": "v22.23.4",
+  "resolution": [
+    {
+      "consumer": "eslint",
+      "minimatch": "11.0.3"
+    },
+    {
+      "consumer": "@eslint/config-array",
+      "minimatch": "11.0.3"
+    },
+    {
+      "consumer": "@typescript-eslint/typescript-estree",
+      "minimatch": "11.0.3"
+    }
+  ],
+  "behavior_sha256": "f82e6f03484cf4995d206db69abdffcd9ece58ca3a8cb75a4723772328b07c4e",
+  "behavior": {
+    "lintFiles": [
+      "eslint.config.mjs",
+      "playwright.config.ts",
+      "playwright.integration.config.ts",
+      "playwright.local.config.ts",
+      "src/app/App.test.tsx",
+      "src/app/App.tsx",
+      "src/components/Blocks.test.tsx",
+      "src/components/Blocks.tsx",
+      "src/components/ContentCards.tsx",
+      "src/components/Shell.test.tsx",
+      "src/components/Shell.tsx",
+      "src/components/ui.tsx",
+      "src/lib/api/config.test.ts",
+      "src/lib/api/config.ts",
+      "src/lib/api/public.test.ts",
+      "src/lib/api/public.ts",
+      "src/lib/useResource.ts",
+      "src/main.tsx",
+      "src/screens/Catalog.tsx",
+      "src/screens/Details.tsx",
+      "src/screens/Reader.tsx",
+      "src/test/setup.ts",
+      "tests/e2e/guest.spec.ts",
+      "tests/integration/guest-real.spec.ts",
+      "tests/integration/pagination-recovery.spec.ts",
+      "tests/integration/start-api.mjs",
+      "tests/local-preview/guest-docker.spec.ts",
+      "tests/support/completed-response.ts",
+      "tests/support/public-fixture.ts",
+      "vite.config.ts"
+    ],
+    "configs": [
+      {
+        "file": "eslint.config.mjs",
+        "rules": "6be1aab0baaa96ff0333cb3714646a9bd2ad3f675b6e6b84eda65a4c925cec9b",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.integration.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "playwright.local.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/app/App.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/app/App.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Blocks.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Blocks.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/ContentCards.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Shell.test.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/Shell.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/components/ui.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/config.test.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/public.test.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/api/public.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/lib/useResource.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/main.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Catalog.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Details.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/screens/Reader.tsx",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "src/test/setup.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/e2e/guest.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/guest-real.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/pagination-recovery.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/integration/start-api.mjs",
+        "rules": "6be1aab0baaa96ff0333cb3714646a9bd2ad3f675b6e6b84eda65a4c925cec9b",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/local-preview/guest-docker.spec.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/support/completed-response.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "tests/support/public-fixture.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "file": "vite.config.ts",
+        "rules": "3b53e68fbff1461ddfbe05dd0abff4f84d829c23915a9449ed2cd0c6502288c9",
+        "language": "4e32300f85fdd432b18bcf9c393162859da15ac73bdde3d349bea2c88d9acc2f",
+        "plugins": [
+          "@",
+          "@typescript-eslint"
+        ],
+        "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "globMatrix": [
+      {
+        "pattern": "**/*.{js,mjs,cjs}",
+        "matches": [
+          "eslint.config.mjs",
+          "node_modules/pkg/index.js",
+          "playwright-integration-report/index.js",
+          "playwright-report/index.js",
+          "tests/integration/start-api.mjs"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "**/*.{ts,tsx}",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx",
+          "distinguished/example.ts",
+          "playwright.config.ts",
+          "playwright.integration.config.ts",
+          "playwright.local.config.ts",
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.test.tsx",
+          "src/app/App.tsx",
+          "src/components/Blocks.test.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.test.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.test.ts",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.test.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts",
+          "test-results/nested/example.ts",
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts",
+          "tests/local-preview/guest-docker.spec.ts",
+          "tests/support/completed-response.ts",
+          "tests/support/public-fixture.ts",
+          "vite.config.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "src/**/*.{ts,tsx}",
+        "matches": [
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.test.tsx",
+          "src/app/App.tsx",
+          "src/components/Blocks.test.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.test.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.test.ts",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.test.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden"
+        ]
+      },
+      {
+        "pattern": "tests/{e2e,integration}/**/*.spec.ts",
+        "matches": [
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts"
+        ],
+        "partialDirectories": [
+          "tests",
+          "tests/e2e",
+          "tests/integration"
+        ]
+      },
+      {
+        "pattern": "**/*.d.ts",
+        "matches": [],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "dist/**",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx"
+        ],
+        "partialDirectories": [
+          "dist"
+        ]
+      },
+      {
+        "pattern": "node_modules/**",
+        "matches": [
+          "node_modules/pkg/index.js"
+        ],
+        "partialDirectories": [
+          "node_modules/pkg"
+        ]
+      },
+      {
+        "pattern": "test-results/**",
+        "matches": [
+          "test-results/nested/example.ts"
+        ],
+        "partialDirectories": [
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "playwright-report/**",
+        "matches": [
+          "playwright-report/index.js"
+        ],
+        "partialDirectories": []
+      },
+      {
+        "pattern": "playwright-integration-report/**",
+        "matches": [
+          "playwright-integration-report/index.js"
+        ],
+        "partialDirectories": []
+      },
+      {
+        "pattern": "**/!(*.test).{ts,tsx}",
+        "matches": [
+          "dist/example.ts",
+          "dist/nested/example.tsx",
+          "distinguished/example.ts",
+          "playwright.config.ts",
+          "playwright.integration.config.ts",
+          "playwright.local.config.ts",
+          "src/.hidden.ts",
+          "src/[literal].ts",
+          "src/app/App.tsx",
+          "src/components/Blocks.tsx",
+          "src/components/ContentCards.tsx",
+          "src/components/Shell.tsx",
+          "src/components/ui.tsx",
+          "src/lib/api/config.ts",
+          "src/lib/api/public.ts",
+          "src/lib/useResource.ts",
+          "src/main.tsx",
+          "src/nested/example.tsx",
+          "src/screens/Catalog.tsx",
+          "src/screens/Details.tsx",
+          "src/screens/Reader.tsx",
+          "src/test/setup.ts",
+          "src/élève.ts",
+          "test-results/nested/example.ts",
+          "tests/e2e/guest.spec.ts",
+          "tests/e2e/nested/example.spec.ts",
+          "tests/integration/guest-real.spec.ts",
+          "tests/integration/pagination-recovery.spec.ts",
+          "tests/local-preview/guest-docker.spec.ts",
+          "tests/support/completed-response.ts",
+          "tests/support/public-fixture.ts",
+          "vite.config.ts"
+        ],
+        "partialDirectories": [
+          "src",
+          "src/nested",
+          "src/.hidden",
+          "tests",
+          "tests/e2e",
+          "tests/integration",
+          "dist",
+          "node_modules/pkg",
+          "test-results/nested"
+        ]
+      },
+      {
+        "pattern": "src/\\[literal\\].ts",
+        "matches": [
+          "src/[literal].ts"
+        ],
+        "partialDirectories": [
+          "src"
+        ]
+      }
+    ],
+    "ignored": [
+      {
+        "file": "dist/example.ts",
+        "ignored": true
+      },
+      {
+        "file": "node_modules/example.js",
+        "ignored": true
+      },
+      {
+        "file": "test-results/example.ts",
+        "ignored": true
+      },
+      {
+        "file": "playwright-report/example.js",
+        "ignored": true
+      },
+      {
+        "file": "playwright-integration-report/example.js",
+        "ignored": true
+      },
+      {
+        "file": "distinguished/example.ts",
+        "ignored": false
+      },
+      {
+        "file": "src/example.ts",
+        "ignored": false
+      },
+      {
+        "file": "tests/e2e/example.spec.ts",
+        "ignored": false
+      }
+    ],
+    "diagnostics": [
+      {
+        "name": "valid-tsx",
+        "messages": []
+      },
+      {
+        "name": "invalid-tsx",
+        "messages": [
+          {
+            "ruleId": null,
+            "severity": 2,
+            "fatal": true,
+            "messageId": null,
+            "line": 1,
+            "column": 23
+          }
+        ]
+      },
+      {
+        "name": "typescript-rules",
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unusedVar",
+            "line": 1,
+            "column": 7
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpectedAny",
+            "line": 1,
+            "column": 15
+          },
+          {
+            "ruleId": "no-debugger",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpected",
+            "line": 1,
+            "column": 24
+          }
+        ]
+      },
+      {
+        "name": "javascript-rules",
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unusedVar",
+            "line": 1,
+            "column": 7
+          },
+          {
+            "ruleId": "no-undef",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "undef",
+            "line": 1,
+            "column": 16
+          },
+          {
+            "ruleId": "no-debugger",
+            "severity": 2,
+            "fatal": false,
+            "messageId": "unexpected",
+            "line": 1,
+            "column": 25
+          }
+        ]
+      }
+    ],
+    "typescript": {
+      "ast": "f21383650462821d610a4c052381fedc56c5a3f8342d1d124e3ca9730a79841d",
+      "program": true
+    }
+  }
+}
+
+Command: unit
+> ai-learning-platform-web@0.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 <validation-source>/apps/web
+
+
+ Test Files  5 passed (5)
+      Tests  26 passed (26)
+   Start at  15:31:43
+   Duration  2.68s (environment 66%, tests 14%, setup 9%, transform 6%, import 4%)
+
+Command: build
+> ai-learning-platform-web@0.0.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 190 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                  0.61 kB │ gzip:   0.38 kB
+dist/assets/public-sans-vietnamese-wght-normal-CtlIRbEm.woff2    7.71 kB
+dist/assets/public-sans-latin-ext-wght-normal-MQgHevqp.woff2    18.47 kB
+dist/assets/public-sans-latin-wght-normal-DdeTHZLK.woff2        26.83 kB
+dist/assets/index-CGCVY44V.css                                  31.93 kB │ gzip:   7.42 kB
+dist/assets/index-C73yga0R.js                                  411.93 kB │ gzip: 127.54 kB
+
+✓ built in 345ms
+
+Command: browser-mocked
+> ai-learning-platform-web@0.0.0 test:e2e:mock
+> playwright test
+
+
+Running 24 tests using 3 workers
+
+  ✓   1 [desktop] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (2.4s)
+  ✓   3 [desktop] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (3.0s)
+  ✓   2 [desktop] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (3.3s)
+  ✓   4 [desktop] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.6s)
+  ✓   6 [desktop] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (1.3s)
+  ✓   7 [desktop] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.4s)
+  ✓   5 [desktop] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (6.7s)
+  ✓   9 [tablet] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.2s)
+  ✓  10 [tablet] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (1.6s)
+  ✓   8 [desktop] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (7.2s)
+  ✓  12 [tablet] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.4s)
+  ✓  11 [tablet] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.3s)
+  ✓  15 [tablet] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.5s)
+  ✓  14 [tablet] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (4.0s)
+  ✓  17 [mobile] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.1s)
+  ✓  13 [tablet] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (7.2s)
+  ✓  18 [mobile] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.2s)
+  ✓  16 [tablet] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (6.7s)
+  ✓  19 [mobile] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (1.8s)
+  ✓  20 [mobile] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.3s)
+  ✓  23 [mobile] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.7s)
+  ✓  21 [mobile] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (4.0s)
+  ✓  22 [mobile] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (6.8s)
+  ✓  24 [mobile] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (5.5s)
+
+  24 passed (35.0s)
+[WebServer] (node:20240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:20242) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20243) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20310) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20330) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20350) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20381) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20401) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Command: browser-real
+> ai-learning-platform-web@0.0.0 test:e2e:real
+> playwright test --config playwright.integration.config.ts
+
+
+Running 12 tests using 2 workers
+
+  ✓   1 [real-desktop] › tests/integration/guest-real.spec.ts:34:1 › FT-001–003: actual Go public reads support the complete Guest journey (2.1s)
+  ✓   2 [real-desktop] › tests/integration/guest-real.spec.ts:140:1 › FT-001 / N07–11: search, membership and real signed cursor pagination (2.4s)
+  ✓   4 [real-desktop] › tests/integration/guest-real.spec.ts:291:1 › ST-013 / N12–13: real fixture rich content and public media stay safe (971ms)
+  ✓   3 [real-desktop] › tests/integration/guest-real.spec.ts:214:1 › ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable (1.6s)
+  ✓   6 [real-desktop] › tests/integration/pagination-recovery.spec.ts:10:1 › AI-F01: actual API restart recovery replaces the error, results and signed cursor repeatedly (3.3s)
+  ✓   5 [real-desktop] › tests/integration/guest-real.spec.ts:331:1 › real desktop/mobile keyboard, layouts and screenshots preserve the original UI (4.9s)
+  ✓   7 [real-mobile] › tests/integration/guest-real.spec.ts:34:1 › FT-001–003: actual Go public reads support the complete Guest journey (1.9s)
+  ✓   9 [real-mobile] › tests/integration/guest-real.spec.ts:214:1 › ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable (1.4s)
+  ✓   8 [real-mobile] › tests/integration/guest-real.spec.ts:140:1 › FT-001 / N07–11: search, membership and real signed cursor pagination (2.1s)
+  ✓  10 [real-mobile] › tests/integration/guest-real.spec.ts:291:1 › ST-013 / N12–13: real fixture rich content and public media stay safe (932ms)
+  ✓  12 [real-mobile] › tests/integration/pagination-recovery.spec.ts:10:1 › AI-F01: actual API restart recovery replaces the error, results and signed cursor repeatedly (3.3s)
+  ✓  11 [real-mobile] › tests/integration/guest-real.spec.ts:331:1 › real desktop/mobile keyboard, layouts and screenshots preserve the original UI (4.7s)
+
+  12 passed (20.3s)
+[WebServer] (node:20512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:20513) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20514) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20587) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

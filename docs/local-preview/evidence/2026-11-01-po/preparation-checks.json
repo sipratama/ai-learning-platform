@@ -1,0 +1,19 @@
+{
+  "source_base_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+  "fix_sha": "e5b09f5a0fa7e775c2e0f530c27d4a51df09d4e3",
+  "checked_at_host_utc": "2026-11-01T09:05:58.020758+00:00",
+  "baseline_files": 318,
+  "unchanged_baseline_files": 315,
+  "allowed_existing_changes": [
+    ".github/workflows/ci.yml",
+    "apps/web/Dockerfile.local",
+    "docs/local-preview/README.md"
+  ],
+  "relative_links": 37,
+  "artifact_digests_checked": 43,
+  "manual_tests_not_run": 8,
+  "docker_browser_tests_passed": 8,
+  "secret_baseline_exit": 0,
+  "errors": [],
+  "status": "PASS"
+}

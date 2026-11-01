@@ -1,0 +1,105 @@
+{
+  "name": "ai-learning-local-preview",
+  "networks": {
+    "preview": {
+      "name": "ai-learning-local-preview_preview",
+      "driver": "bridge",
+      "ipam": {}
+    }
+  },
+  "services": {
+    "api": {
+      "build": {
+        "context": "<repo-root>/apps/api",
+        "dockerfile": "Dockerfile.local"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": null,
+      "entrypoint": null,
+      "environment": {
+        "APP_ENV": "local",
+        "FIXTURE_MODE": "vs01a",
+        "HTTP_LISTEN_ADDR": "0.0.0.0:8080"
+      },
+      "expose": [
+        "8080"
+      ],
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "wget",
+          "-q",
+          "-O",
+          "/dev/null",
+          "http://127.0.0.1:8080/healthz"
+        ],
+        "timeout": "3s",
+        "interval": "5s",
+        "retries": 10,
+        "start_period": "5s"
+      },
+      "image": "ai-learning-platform-api:local-preview",
+      "init": true,
+      "networks": {
+        "preview": null
+      },
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "web": {
+      "build": {
+        "context": "<repo-root>/apps/web",
+        "dockerfile": "Dockerfile.local"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": null,
+      "depends_on": {
+        "api": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "wget",
+          "-q",
+          "--spider",
+          "http://127.0.0.1:8080/"
+        ],
+        "timeout": "3s",
+        "interval": "5s",
+        "retries": 10,
+        "start_period": "5s"
+      },
+      "image": "ai-learning-platform-web:local-preview",
+      "init": true,
+      "networks": {
+        "preview": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "host_ip": "127.0.0.1",
+          "target": 8080,
+          "published": "8088",
+          "protocol": "tcp"
+        }
+      ],
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "tmpfs": [
+        "/tmp:rw,noexec,nosuid,size=16m,mode=1777"
+      ]
+    }
+  }
+}

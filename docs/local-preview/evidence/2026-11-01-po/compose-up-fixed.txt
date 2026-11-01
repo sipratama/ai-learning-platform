@@ -1,0 +1,177 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.20kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile.local
+#2 transferring dockerfile: 1.18kB done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile.local
+#3 transferring dockerfile: 812B done
+#3 DONE 0.0s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.27.3-alpine3.24@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb
+#4 ...
+
+#5 [web internal] load metadata for docker.io/library/node:22.23.4-alpine3.24@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914
+#5 DONE 1.6s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.27.3-alpine3.24@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb
+#4 DONE 1.6s
+
+#6 [web internal] load metadata for docker.io/library/nginx:1.30.6-alpine3.24@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949
+#6 DONE 1.6s
+
+#7 [api internal] load metadata for docker.io/library/alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
+#7 DONE 1.6s
+
+#8 [web internal] load .dockerignore
+#8 transferring context: 470B done
+#8 DONE 0.0s
+
+#9 [api internal] load .dockerignore
+#9 transferring context: 272B done
+#9 DONE 0.0s
+
+#10 [web internal] load build context
+#10 DONE 0.0s
+
+#11 [api internal] load build context
+#11 DONE 0.0s
+
+#12 [web build 1/6] FROM docker.io/library/node:22.23.4-alpine3.24@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914
+#12 resolve docker.io/library/node:22.23.4-alpine3.24@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914 0.1s done
+#12 DONE 0.1s
+
+#13 [api build 1/6] FROM docker.io/library/golang:1.27.3-alpine3.24@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb
+#13 resolve docker.io/library/golang:1.27.3-alpine3.24@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb 0.1s done
+#13 DONE 0.1s
+
+#14 [web stage-1 1/3] FROM docker.io/library/nginx:1.30.6-alpine3.24@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949
+#14 resolve docker.io/library/nginx:1.30.6-alpine3.24@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949 0.1s done
+#14 DONE 0.1s
+
+#15 [api stage-1 1/3] FROM docker.io/library/alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
+#15 resolve docker.io/library/alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6 0.1s done
+#15 DONE 0.1s
+
+#11 [api internal] load build context
+#11 transferring context: 1.67kB done
+#11 DONE 0.0s
+
+#16 [api build 6/6] RUN go build -trimpath -tags devfixture -o /out/api ./cmd/api
+#16 CACHED
+
+#17 [api stage-1 2/3] RUN addgroup -S -g 10001 preview && adduser -S -D -H -u 10001 -G preview preview
+#17 CACHED
+
+#18 [api build 2/6] WORKDIR /src
+#18 CACHED
+
+#19 [api build 5/6] COPY internal/ ./internal/
+#19 CACHED
+
+#20 [api build 3/6] COPY go.mod ./
+#20 CACHED
+
+#21 [api build 4/6] COPY cmd/ ./cmd/
+#21 CACHED
+
+#22 [api stage-1 3/3] COPY --from=build --chmod=0555 /out/api /usr/local/bin/api
+#22 CACHED
+
+#23 [api] exporting to image
+#23 exporting layers done
+#23 exporting manifest sha256:46e7f4aa3c038107638e51f48e15f7f12263a49d220ae787ee194b307524809f done
+#23 exporting config sha256:f53b121acdffb032567889ac9ca914ef3c60a6f9c45610464e0656bfd768e660 done
+#23 exporting attestation manifest sha256:6c03ed5b60b97d4a6cb03ea2afc72d0094ff3a048eed081c7d4599aee8324b71 0.0s done
+#23 exporting manifest list sha256:6e0c08b196351f556ddc2b277c92165c0801dd893d67ab3366d56bcd515f92e1 0.0s done
+#23 naming to docker.io/library/ai-learning-platform-api:local-preview
+#23 naming to docker.io/library/ai-learning-platform-api:local-preview done
+#23 unpacking to docker.io/library/ai-learning-platform-api:local-preview 0.0s done
+#23 DONE 0.1s
+
+#10 [web internal] load build context
+#10 ...
+
+#24 [api] resolving provenance for metadata file
+#24 DONE 0.0s
+
+#10 [web internal] load build context
+#10 transferring context: 176.77kB 0.6s done
+#10 DONE 0.7s
+
+#25 [web build 2/6] WORKDIR /app
+#25 CACHED
+
+#26 [web build 3/6] COPY package.json package-lock.json ./
+#26 CACHED
+
+#27 [web build 4/6] RUN npm ci     && node -e "const { createRequire } = require('node:module'); require('rolldown'); require('@tailwindcss/oxide'); require('lightningcss'); createRequire(require.resolve('vite/package.json'))('lightningcss')"
+#27 4.922
+#27 4.922 added 297 packages, and audited 298 packages in 5s
+#27 4.922
+#27 4.922 121 packages are looking for funding
+#27 4.922   run `npm fund` for details
+#27 4.923
+#27 4.923 found 0 vulnerabilities
+#27 4.924 npm notice
+#27 4.924 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+#27 4.924 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#27 4.924 npm notice To update run: npm install -g npm@12.2.1
+#27 4.924 npm notice
+#27 DONE 5.2s
+
+#28 [web build 5/6] COPY . .
+#28 DONE 0.1s
+
+#29 [web build 6/6] RUN npm run build
+#29 0.229
+#29 0.229 > ai-learning-platform-web@0.0.0 build
+#29 0.229 > tsc --noEmit && vite build
+#29 0.229
+#29 2.901 vite v8.3.5 building client environment for production...
+#29 2.913 transforming...
+#29 3.081 ✓ 190 modules transformed.
+#29 3.116 rendering chunks...
+#29 3.179 computing gzip size...
+#29 3.186 dist/index.html                                                  0.61 kB │ gzip:   0.38 kB
+#29 3.186 dist/assets/public-sans-vietnamese-wght-normal-CtlIRbEm.woff2    7.71 kB
+#29 3.186 dist/assets/public-sans-latin-ext-wght-normal-MQgHevqp.woff2    18.47 kB
+#29 3.186 dist/assets/public-sans-latin-wght-normal-DdeTHZLK.woff2        26.83 kB
+#29 3.186 dist/assets/index-CGCVY44V.css                                  31.93 kB │ gzip:   7.42 kB
+#29 3.186 dist/assets/index-DWsxCBW-.js                                  411.92 kB │ gzip: 127.54 kB
+#29 3.186
+#29 3.187 ✓ built in 286ms
+#29 DONE 3.3s
+
+#30 [web stage-1 2/3] COPY nginx.local.conf /etc/nginx/nginx.conf
+#30 CACHED
+
+#31 [web stage-1 3/3] COPY --from=build /app/dist/ /usr/share/nginx/html/
+#31 CACHED
+
+#32 [web] exporting to image
+#32 exporting layers done
+#32 exporting manifest sha256:8ac972fcce83ccd6fe274534d8e16cd6569eb965473273020622d8e75b1594e3 done
+#32 exporting config sha256:c331fc0329e21355ad03e4b9875cac9ac12713f96dc70480d90bef3ef7c51be1 done
+#32 exporting attestation manifest sha256:94b9199ef8695d40f4ae3c85f105b0f78d3d85dd67b36c0c42660b1d5888b4e6 0.0s done
+#32 exporting manifest list sha256:c6e4eec809374a49fe4651ec01ddea3830f10c4a9976e682e53b66e90bf523b1 0.0s done
+#32 naming to docker.io/library/ai-learning-platform-web:local-preview done
+#32 unpacking to docker.io/library/ai-learning-platform-web:local-preview done
+#32 DONE 0.1s
+
+#33 [web] resolving provenance for metadata file
+#33 DONE 0.0s
+ Image ai-learning-platform-api:local-preview Building
+ Image ai-learning-platform-web:local-preview Building
+ Image ai-learning-platform-api:local-preview Built
+ Image ai-learning-platform-web:local-preview Built
+ Container ai-learning-local-preview-api-1 Running
+ Container ai-learning-local-preview-web-1 Running
+ Container ai-learning-local-preview-api-1 Waiting
+ Container ai-learning-local-preview-api-1 Healthy
+ Container ai-learning-local-preview-api-1 Waiting
+ Container ai-learning-local-preview-web-1 Waiting
+ Container ai-learning-local-preview-web-1 Healthy
+ Container ai-learning-local-preview-api-1 Healthy

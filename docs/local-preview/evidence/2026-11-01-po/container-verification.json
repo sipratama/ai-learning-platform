@@ -1,0 +1,86 @@
+{
+  "observed_at_utc": "2026-11-01T08:47:14.567135+00:00",
+  "engine": "OrbStack approved by operator",
+  "containers": [
+    {
+      "name": "ai-learning-local-preview-api-1",
+      "service": "api",
+      "status": "running",
+      "health": "healthy",
+      "image_ref": "ai-learning-platform-api:local-preview",
+      "image_architecture": "arm64",
+      "image_os": "linux",
+      "user": "10001:10001",
+      "read_only": true,
+      "privileged": false,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "host_ports": {},
+      "mounts": [],
+      "environment_keys_only": [
+        "HTTP_LISTEN_ADDR",
+        "APP_ENV",
+        "FIXTURE_MODE",
+        "PATH"
+      ],
+      "secret_environment_key_detected": false,
+      "restart_count": 0,
+      "initial_config_digest_vs_index_id_equal": false,
+      "container_config_digest": "sha256:3aabb043af0c0a53ad88c8d4c6b22c1f504a812c4923561a54fb9b7792d2056a",
+      "built_index_digest": "sha256:6e0c08b196351f556ddc2b277c92165c0801dd893d67ab3366d56bcd515f92e1",
+      "running_platform_manifest_digest": "sha256:46e7f4aa3c038107638e51f48e15f7f12263a49d220ae787ee194b307524809f",
+      "built_platform_manifest_digest": "sha256:46e7f4aa3c038107638e51f48e15f7f12263a49d220ae787ee194b307524809f",
+      "platform_manifest_matches_built_tag": true,
+      "identity_note": "OCI config digest, image index digest and platform manifest digest are different identifiers. Compare the same linux/arm64 platform manifest; runtime image bits match the current build. Cached identical platform layers were reused."
+    },
+    {
+      "name": "ai-learning-local-preview-web-1",
+      "service": "web",
+      "status": "running",
+      "health": "healthy",
+      "image_ref": "ai-learning-platform-web:local-preview",
+      "image_architecture": "arm64",
+      "image_os": "linux",
+      "user": "101:101",
+      "read_only": true,
+      "privileged": false,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "host_ports": {
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8088"
+          }
+        ]
+      },
+      "mounts": [],
+      "environment_keys_only": [
+        "PATH",
+        "NGINX_VERSION",
+        "PKG_RELEASE",
+        "DYNPKG_RELEASE",
+        "NJS_VERSION",
+        "NJS_RELEASE",
+        "ACME_VERSION"
+      ],
+      "secret_environment_key_detected": false,
+      "restart_count": 0,
+      "initial_config_digest_vs_index_id_equal": false,
+      "container_config_digest": "sha256:892ac07252256008dae07499433b69226659bddd4a60bd511610136401ea84ee",
+      "built_index_digest": "sha256:c6e4eec809374a49fe4651ec01ddea3830f10c4a9976e682e53b66e90bf523b1",
+      "running_platform_manifest_digest": "sha256:8ac972fcce83ccd6fe274534d8e16cd6569eb965473273020622d8e75b1594e3",
+      "built_platform_manifest_digest": "sha256:8ac972fcce83ccd6fe274534d8e16cd6569eb965473273020622d8e75b1594e3",
+      "platform_manifest_matches_built_tag": true,
+      "identity_note": "OCI config digest, image index digest and platform manifest digest are different identifiers. Compare the same linux/arm64 platform manifest; runtime image bits match the current build. Cached identical platform layers were reused."
+    }
+  ]
+}

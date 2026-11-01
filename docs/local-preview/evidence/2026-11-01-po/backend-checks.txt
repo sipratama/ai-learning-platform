@@ -1,0 +1,84 @@
+Command: go-version
+go version go1.27.3 darwin/arm64
+
+Command: go-vet
+
+
+Command: go-vet-fixture
+
+
+Command: go-tests
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	0.849s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	0.825s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	0.886s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	0.848s
+
+Command: go-tests-fixture
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	0.339s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/devfixture	0.331s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	0.319s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	0.379s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	0.342s
+
+Command: go-race
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	1.381s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	1.354s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	1.420s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	1.357s
+
+Command: go-race-fixture
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	1.398s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/devfixture	1.429s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	1.329s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	1.451s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	1.343s
+
+Command: fixture-boundary
+Fixture build and startup boundaries verified.
+
+Command: checkpoint-race
+ok  	github.com/sipratama/ai-learning-platform/scripts/vs02a-jwt-checkpoint	1.250s
+
+Command: checkpoint-vet
+
+
+Command: operator-guards
+test_approval_cannot_widen_roster_or_provider_actions (__main__.OperatorSafety) ... ok
+test_invalid_verifier_proof_cannot_leak_token_in_a_hash_field (__main__.OperatorSafety) ... ok
+test_no_admin_secret_prompt_with_unapproved_state_or_nonterminal (__main__.OperatorSafety) ... ok
+test_operator_env_local_setup_never_echoes_or_exports_key (__main__.OperatorSafety) ... ok
+test_operator_env_rejects_repository_links_and_loose_permissions (__main__.OperatorSafety) ... ok
+test_operator_env_rejects_shell_syntax_and_unexpected_variables (__main__.OperatorSafety) ... ok
+test_partial_creation_is_retained_and_not_blindly_retried (__main__.OperatorSafety) ... ok
+test_pending_approval_blocks_before_any_network_or_local_secret (__main__.OperatorSafety) ... ok
+test_prepared_credentials_are_private_distinct_and_not_printed (__main__.OperatorSafety) ... ok
+test_provider_errors_never_echo_response_or_key (__main__.OperatorSafety) ... ok
+test_provision_does_not_read_env_when_project_is_not_empty (__main__.OperatorSafety) ... ok
+test_successful_flow_logs_out_locally_and_never_retains_tokens (__main__.OperatorSafety) ... ok
+test_two_operator_processes_cannot_use_the_same_ledger (__main__.OperatorSafety) ... ok
+test_verification_failure_still_logs_out_and_preserves_partial_evidence (__main__.OperatorSafety) ... ok
+test_wrong_destination_or_method_never_opens_network (__main__.OperatorSafety) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.072s
+
+OK
+
+Command: jwks-guards
+test_compatible_public_shape_with_optional_metadata (__main__.ProbeGuards) ... ok
+test_empty_excess_duplicate_and_nonobject_keys_deny (__main__.ProbeGuards) ... ok
+test_errors_do_not_echo_remote_body_issuer_or_secrets (__main__.ProbeGuards) ... ok
+test_extractability_metadata_is_boolean_and_cannot_override_trust (__main__.ProbeGuards) ... ok
+test_incompatible_and_private_material_deny (__main__.ProbeGuards) ... ok
+test_issuer_cannot_select_other_destinations (__main__.ProbeGuards) ... ok
+test_malformed_duplicate_nonfinite_and_oversize_json_deny (__main__.ProbeGuards) ... ok
+test_missing_configuration_blocks_without_network (__main__.ProbeGuards) ... ok
+test_redirect_is_rejected (__main__.ProbeGuards) ... ok
+test_transport_requires_tls_no_proxy_bounded_read_and_deadline (__main__.ProbeGuards) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.032s
+
+OK
+
+Command: secret-check

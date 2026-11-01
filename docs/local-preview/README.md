@@ -134,3 +134,8 @@ The evidence folder retains the preflight date in its name; it was not renamed o
 Remaining limits: Docker Desktop/other architectures and independent LAN-device access need verification; development dependency advisories need a separately scoped triage; complete manual accessibility, production volume/performance, real content, persistence, identity, CMS, assessment, recovery and production release checks are absent. A separate CI follow-up could validate Compose config, build both images, run the loopback suite and always tear down; the existing workflow is intentionally unchanged.
 
 This work is ready for PO code review as local-preview support. VS-01A/DD-001 remains **PENDING SIGN-OFF**; GOV-AI-001 remains **PROPOSED / NOT EFFECTIVE**. No beta/production approval or VS-02A implementation authorization follows from these checks.
+
+
+## Current-main PO manual testing package — 2026-11-01 addendum
+
+The [current verification](2026-11-01-docker-manual-acceptance-verification.md) records merged PRs #17/#18, the native-build-layer fix, operator-approved OrbStack execution, actual healthy loopback stack and fresh regression/audit results. The prior verification above remains historical. Start with the [Indonesian PO guide](PO-TESTING-ID.md), run [MT-01–MT-08](PO-MANUAL-TEST-PLAN.md), and record actual human outcomes in the [manual sheet](manual-test-results.json). All manual cases start NOT RUN; no Auth implementation or independent sign-off is inferred.

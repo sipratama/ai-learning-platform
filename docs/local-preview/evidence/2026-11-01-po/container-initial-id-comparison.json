@@ -1,0 +1,78 @@
+{
+  "observed_at_utc": "2026-11-01T08:45:21.797802+00:00",
+  "engine": "OrbStack approved by operator",
+  "containers": [
+    {
+      "name": "ai-learning-local-preview-api-1",
+      "service": "api",
+      "status": "running",
+      "health": "healthy",
+      "image_ref": "ai-learning-platform-api:local-preview",
+      "container_image_id": "sha256:3aabb043af0c0a53ad88c8d4c6b22c1f504a812c4923561a54fb9b7792d2056a",
+      "built_image_id": "sha256:6e0c08b196351f556ddc2b277c92165c0801dd893d67ab3366d56bcd515f92e1",
+      "image_matches_built_tag": false,
+      "image_architecture": "arm64",
+      "image_os": "linux",
+      "user": "10001:10001",
+      "read_only": true,
+      "privileged": false,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "host_ports": {},
+      "mounts": [],
+      "environment_keys_only": [
+        "HTTP_LISTEN_ADDR",
+        "APP_ENV",
+        "FIXTURE_MODE",
+        "PATH"
+      ],
+      "secret_environment_key_detected": false,
+      "restart_count": 0
+    },
+    {
+      "name": "ai-learning-local-preview-web-1",
+      "service": "web",
+      "status": "running",
+      "health": "healthy",
+      "image_ref": "ai-learning-platform-web:local-preview",
+      "container_image_id": "sha256:892ac07252256008dae07499433b69226659bddd4a60bd511610136401ea84ee",
+      "built_image_id": "sha256:c6e4eec809374a49fe4651ec01ddea3830f10c4a9976e682e53b66e90bf523b1",
+      "image_matches_built_tag": false,
+      "image_architecture": "arm64",
+      "image_os": "linux",
+      "user": "101:101",
+      "read_only": true,
+      "privileged": false,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_options": [
+        "no-new-privileges:true"
+      ],
+      "host_ports": {
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8088"
+          }
+        ]
+      },
+      "mounts": [],
+      "environment_keys_only": [
+        "PATH",
+        "NGINX_VERSION",
+        "PKG_RELEASE",
+        "DYNPKG_RELEASE",
+        "NJS_VERSION",
+        "NJS_RELEASE",
+        "ACME_VERSION"
+      ],
+      "secret_environment_key_detected": false,
+      "restart_count": 0
+    }
+  ]
+}

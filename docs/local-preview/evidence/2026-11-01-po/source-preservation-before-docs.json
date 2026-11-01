@@ -1,0 +1,12 @@
+{
+  "source_base_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+  "observed_at_utc": "2026-11-01T08:52:39.364218+00:00",
+  "baseline_files": 318,
+  "allowed_existing_changes": [
+    ".github/workflows/ci.yml",
+    "apps/web/Dockerfile.local"
+  ],
+  "all_other_existing_files_unchanged": true,
+  "app_auth_implemented": false,
+  "dependency_or_lock_changes": false
+}

@@ -1,0 +1,408 @@
+[
+  {
+    "id": "node-version",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:27.565770+00:00",
+    "completed_at_utc": "2026-11-01T08:31:27.608694+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "2266957ed9a639bd7264d714bfa798a961510bf2e50695c668ab8fc0c3f4e906",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "npm-version",
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:27.609057+00:00",
+    "completed_at_utc": "2026-11-01T08:31:27.840585+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "d49bd31f65cb736f4045946e1c8365657cfed300dc0e4f173af5e93ab4500e1a",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "npm-ci",
+    "command": [
+      "npm",
+      "ci"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:27.840925+00:00",
+    "completed_at_utc": "2026-11-01T08:31:30.773942+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "6ea05e904148bd57fe8ba57571a538a56673ce68b919a148fa11f879f599d3ca",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "npm-audit",
+    "command": [
+      "npm",
+      "audit",
+      "--json"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:30.774224+00:00",
+    "completed_at_utc": "2026-11-01T08:31:31.711534+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "e88d7fa32d12e3f1301c66d652243f4f011f45f28ec9605eb22028e870c7ef53",
+    "retained_log": "npm-audit.json"
+  },
+  {
+    "id": "npm-audit-production",
+    "command": [
+      "npm",
+      "audit",
+      "--omit=dev",
+      "--json"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:31.711810+00:00",
+    "completed_at_utc": "2026-11-01T08:31:32.451071+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "e88d7fa32d12e3f1301c66d652243f4f011f45f28ec9605eb22028e870c7ef53",
+    "retained_log": "npm-audit-production.json"
+  },
+  {
+    "id": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:32.451364+00:00",
+    "completed_at_utc": "2026-11-01T08:31:35.129763+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "4a977d722e841afd5232a2d052bce3fcb1902fd56fe60531744d5aae2b96c2e3",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:35.130395+00:00",
+    "completed_at_utc": "2026-11-01T08:31:36.843642+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "79599dcadb0f8eb76df2b2f17f6ba56c8821ca51e56b206395ba8f99e5ff5d4e",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "tooling",
+    "command": [
+      "npm",
+      "run",
+      "test:tooling"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:36.844073+00:00",
+    "completed_at_utc": "2026-11-01T08:31:39.800564+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "fb02cb6c7058048ab1e0f53e954c2e5c11eef399a0bdfe72ec31ded32ef9d361",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "unit",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:39.800930+00:00",
+    "completed_at_utc": "2026-11-01T08:31:46.518711+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "977d6833c4410d536e5a20bcf29059da79ed5469d7db7c46dd44d07f4efd47d5",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:46.519118+00:00",
+    "completed_at_utc": "2026-11-01T08:31:49.179691+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "305062f61df9fe8042c97c7fed4c2df762f038971f363c8518157094baeb7240",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "browser-mocked",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:mock"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:49.180072+00:00",
+    "completed_at_utc": "2026-11-01T08:32:25.054247+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "1ea03542be6c8682d2c73dc047ae9bc6c183e7d97e794cf1359ebb0c7b30802a",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "browser-real",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:real"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:32:25.054705+00:00",
+    "completed_at_utc": "2026-11-01T08:32:46.143484+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "frontend",
+    "raw_log_sha256": "10788a4a5d5c7e4e07129ede33c22f0c477d33b862feda34479615d65432a0ec",
+    "retained_log": "frontend-checks.txt"
+  },
+  {
+    "id": "go-version",
+    "command": [
+      "go",
+      "version"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:27.565747+00:00",
+    "completed_at_utc": "2026-11-01T08:31:27.624395+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "70f94d37a097ca424ec1a1c0d5a81288ec60b4ceeae67edc3a75aeb6ce378600",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-vet",
+    "command": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:27.624610+00:00",
+    "completed_at_utc": "2026-11-01T08:31:28.344772+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-vet-fixture",
+    "command": [
+      "go",
+      "vet",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:28.345107+00:00",
+    "completed_at_utc": "2026-11-01T08:31:28.742348+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-tests",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:28.742684+00:00",
+    "completed_at_utc": "2026-11-01T08:31:30.773783+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "669173af7078f88e4fbef314414b23102ffbb2e03d1ad62dd8171352c4f64b73",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-tests-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:30.774082+00:00",
+    "completed_at_utc": "2026-11-01T08:31:31.802139+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "3f7742195453f8de9d2ba4cac8588869c2fcf96cab26a02c3fd72c5b52aeb169",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-race",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:31.802462+00:00",
+    "completed_at_utc": "2026-11-01T08:31:34.052984+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "90ac668f7d6297c0fcadfb5f34257e0d2b2854fa458f663da4d031bdd6437a5f",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "go-race-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:34.053330+00:00",
+    "completed_at_utc": "2026-11-01T08:31:36.675253+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "d8b19d2006d6323142733a521e4d102fee235c3cc77e09b9d2b18e23e02ceabe",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "fixture-boundary",
+    "command": [
+      "bash",
+      "scripts/check-fixture-boundary.sh"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:36.675653+00:00",
+    "completed_at_utc": "2026-11-01T08:31:42.014425+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "13a8511fa0b24da7b0a357c64a8c7406d86e98daca6d0bea71e3cd823d7cd10e",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "checkpoint-race",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:42.014741+00:00",
+    "completed_at_utc": "2026-11-01T08:31:43.755536+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "784f72b0b1904d77a833f74d208e05c96a904ae83d5ab52041e23b240a7df760",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "checkpoint-vet",
+    "command": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:43.755869+00:00",
+    "completed_at_utc": "2026-11-01T08:31:43.953291+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "operator-guards",
+    "command": [
+      "python3",
+      "scripts/test_vs02a_checkpoint_operator.py"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:43.953872+00:00",
+    "completed_at_utc": "2026-11-01T08:31:44.430139+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "cdf0298a4e0e15fd37ae29c2c96c0e5a8126e136699ae53e714f2d7af3a76f84",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "jwks-guards",
+    "command": [
+      "python3",
+      "scripts/test-verify-supabase-jwks.py"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:44.431132+00:00",
+    "completed_at_utc": "2026-11-01T08:31:44.764231+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "7bb4411c832e4ec9c314650f68fe5363f47418bd348e1949a7b74a42393ba2b4",
+    "retained_log": "backend-checks.txt"
+  },
+  {
+    "id": "secret-check",
+    "command": [
+      "bash",
+      "scripts/check-secrets.sh"
+    ],
+    "source_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "started_at_utc": "2026-11-01T08:31:44.765015+00:00",
+    "completed_at_utc": "2026-11-01T08:31:45.417759+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "group": "backend",
+    "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_log": "backend-checks.txt"
+  }
+]

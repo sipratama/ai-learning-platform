@@ -1,0 +1,10 @@
+{
+  "text_normalization": "Only trim trailing whitespace/final empty lines, replace operator/task roots and redact opaque pagination cursor query values; actual test outcomes and warnings retained. Raw host command log digests retained.",
+  "initial_build": "FAIL retained, not overwritten by final PASS",
+  "diagnostic_probe_1": "INVALID diagnostic quoting after successful install; not a native-binding verdict. Actual output/exit 1 retained, corrected mounted probe PASS separately.",
+  "container_identity_check": "Initial config-vs-index comparison retained and labeled; final compares identical platform-manifest kind, not a fabricated image recreation.",
+  "manual_acceptance": "All MT-01\u2013MT-08 NOT RUN; automatic screenshots not human acceptance.",
+  "source_time_limit": "Host execution timestamps and remote GitHub metadata clocks differ; no calibrated clock/authentication timing assurance claimed.",
+  "docker_desktop": "NOT RUN; OrbStack explicitly accepted by operator.",
+  "local_stack_cleanup": "None; operator stack remains running. New CI cleanup applies only to its own runner."
+}

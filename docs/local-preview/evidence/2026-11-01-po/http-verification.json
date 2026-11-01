@@ -1,0 +1,99 @@
+{
+  "observed_at_utc": "2026-11-01T08:45:21.482329+00:00",
+  "base_url": "http://127.0.0.1:8088",
+  "checks": [
+    {
+      "path": "/healthz",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "application/json",
+      "response_sha256": "019b1a1b30e7072b8fdd7c9376c2000540aa4282da2ac826a35ecd14421568a7",
+      "status": "PASS",
+      "liveness_status": "ok"
+    },
+    {
+      "path": "/catalog",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "text/html",
+      "response_sha256": "62f71cf7deac61f8b5ccba1426744b4eb2e0807753de4f58b24091fc4596f455",
+      "status": "PASS"
+    },
+    {
+      "path": "/paths/path-foundations",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "text/html",
+      "response_sha256": "62f71cf7deac61f8b5ccba1426744b4eb2e0807753de4f58b24091fc4596f455",
+      "status": "PASS"
+    },
+    {
+      "path": "/courses/course-flagship/lessons/lesson-flagship-1",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "text/html",
+      "response_sha256": "62f71cf7deac61f8b5ccba1426744b4eb2e0807753de4f58b24091fc4596f455",
+      "status": "PASS"
+    },
+    {
+      "path": "/api/v1/catalog/paths",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "application/json",
+      "response_sha256": "670b6a6dca314a8f8ff4c5ed517e5f33e137ebcac06210537267e769545369cc",
+      "status": "PASS",
+      "public_ids": [
+        "path-foundations",
+        "path-practice"
+      ]
+    },
+    {
+      "path": "/api/v1/catalog/courses",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "application/json",
+      "response_sha256": "37ee162ee20ac2d938f3e8aa201793c107dd5c30e3133ba2ba6bb69b213f8eef",
+      "status": "PASS"
+    },
+    {
+      "path": "/assets/fixture/diagram.svg",
+      "http_status": 200,
+      "expected": 200,
+      "content_type": "image/svg+xml",
+      "response_sha256": "3c1838297d4c7964c837e2fa00e924564ddb7820a2ca39e7a7c50bfe8299a00b",
+      "status": "PASS"
+    },
+    {
+      "path": "/api/v1/catalog/paths?cursor=<redacted-pagination-cursor>",
+      "http_status": 400,
+      "expected": 400,
+      "content_type": "application/problem+json",
+      "response_sha256": "4f90b9e0db93f201edc60958a371065d294c5352796d65e7d6f0baff8a357bf4",
+      "status": "PASS"
+    },
+    {
+      "path": "/api/v1/me",
+      "http_status": 404,
+      "expected": 404,
+      "content_type": "application/problem+json",
+      "response_sha256": "ec74dec028b870c7810a8e0c98b8a7dd06fd03a1bda8c130073b9029845ab259",
+      "status": "PASS"
+    },
+    {
+      "path": "/api/v1/admin/courses",
+      "http_status": 404,
+      "expected": 404,
+      "content_type": "application/problem+json",
+      "response_sha256": "43fc674bac21ca29b802cf76c8836ffa63782a01c911a86cea218d3f8fa3c5d5",
+      "status": "PASS"
+    },
+    {
+      "path": "/api/v1/courses/course-hidden",
+      "http_status": 404,
+      "expected": 404,
+      "content_type": "application/problem+json",
+      "response_sha256": "2b8888b158a7942defffe5d5192f7d3d4fcdde4df2fb5b4ffdacd2dc0294a8f8",
+      "status": "PASS"
+    }
+  ]
+}

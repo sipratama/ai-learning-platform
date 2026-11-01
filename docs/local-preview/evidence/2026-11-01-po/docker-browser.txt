@@ -1,0 +1,20 @@
+Running 8 tests using 2 workers
+
+  ✓  1 [preview-desktop] › tests/local-preview/guest-docker.spec.ts:13:1 › proxy preserves public contracts, signed cursors and safe errors (128ms)
+  ✓  2 [preview-desktop] › tests/local-preview/guest-docker.spec.ts:71:1 › Guest journey, local practice, media and nested refresh work (1.5s)
+  ✓  3 [preview-desktop] › tests/local-preview/guest-docker.spec.ts:109:1 › catalog switches, search, membership, empty state and pagination work (1.6s)
+  ✓  5 [preview-mobile] › tests/local-preview/guest-docker.spec.ts:13:1 › proxy preserves public contracts, signed cursors and safe errors (126ms)
+  ✓  6 [preview-mobile] › tests/local-preview/guest-docker.spec.ts:71:1 › Guest journey, local practice, media and nested refresh work (1.4s)
+  ✓  4 [preview-desktop] › tests/local-preview/guest-docker.spec.ts:142:1 › desktop/mobile layouts, keyboard, automated accessibility and screenshots (3.5s)
+  ✓  7 [preview-mobile] › tests/local-preview/guest-docker.spec.ts:109:1 › catalog switches, search, membership, empty state and pagination work (1.0s)
+  ✓  8 [preview-mobile] › tests/local-preview/guest-docker.spec.ts:142:1 › desktop/mobile layouts, keyboard, automated accessibility and screenshots (2.7s)
+
+  8 passed (10.4s)
+(node:20855) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20886) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20909) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

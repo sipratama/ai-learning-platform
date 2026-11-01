@@ -1,0 +1,10 @@
+{
+  "observed_at_utc": "2026-11-01T09:04:06.472138+00:00",
+  "log_scope": "Last 30 minutes/tail 140 per service after deliberate negative browser requests",
+  "fatal_or_panic_lines": 0,
+  "nginx_error_lines": 0,
+  "expected_missing_asset_probe_lines": 0,
+  "unexpected_error_lines": [],
+  "status": "PASS",
+  "limit": "Bounded sampled logs, not exhaustive historical error absence. Expected negative HTTP 400/404 etc remain test evidence."
+}

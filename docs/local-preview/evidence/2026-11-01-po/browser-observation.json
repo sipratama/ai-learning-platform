@@ -1,0 +1,108 @@
+{
+  "observed_at_utc": "2026-11-01T08:47:23.700Z",
+  "status": "PASS",
+  "automatic_observation_only": true,
+  "manual_acceptance_status": "NOT RUN",
+  "observations": [
+    {
+      "viewport": "desktop",
+      "route": "/catalog",
+      "http_status": 200,
+      "heading": "Mulai dengan\nrasa ingin tahu.",
+      "horizontal_overflow": false,
+      "screenshot": "desktop-catalog.png"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/paths/path-foundations",
+      "http_status": 200,
+      "heading": "Foundations Path",
+      "horizontal_overflow": false,
+      "screenshot": "desktop-path.png"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/courses/course-flagship",
+      "http_status": 200,
+      "heading": "Menguasai ChatGPT dari Nol",
+      "horizontal_overflow": false,
+      "screenshot": "desktop-course.png"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/courses/course-flagship/lessons/lesson-flagship-1",
+      "http_status": 200,
+      "heading": "First Steps",
+      "horizontal_overflow": false,
+      "screenshot": "desktop-reader.png"
+    },
+    {
+      "viewport": "tablet",
+      "route": "/catalog",
+      "http_status": 200,
+      "heading": "Mulai dengan\nrasa ingin tahu.",
+      "horizontal_overflow": false,
+      "screenshot": "tablet-catalog.png"
+    },
+    {
+      "viewport": "tablet",
+      "route": "/paths/path-foundations",
+      "http_status": 200,
+      "heading": "Foundations Path",
+      "horizontal_overflow": false,
+      "screenshot": "tablet-path.png"
+    },
+    {
+      "viewport": "tablet",
+      "route": "/courses/course-flagship",
+      "http_status": 200,
+      "heading": "Menguasai ChatGPT dari Nol",
+      "horizontal_overflow": false,
+      "screenshot": "tablet-course.png"
+    },
+    {
+      "viewport": "tablet",
+      "route": "/courses/course-flagship/lessons/lesson-flagship-1",
+      "http_status": 200,
+      "heading": "First Steps",
+      "horizontal_overflow": false,
+      "screenshot": "tablet-reader.png"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/catalog",
+      "http_status": 200,
+      "heading": "Mulai dengan\nrasa ingin tahu.",
+      "horizontal_overflow": false,
+      "screenshot": "mobile-catalog.png"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/paths/path-foundations",
+      "http_status": 200,
+      "heading": "Foundations Path",
+      "horizontal_overflow": false,
+      "screenshot": "mobile-path.png"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/courses/course-flagship",
+      "http_status": 200,
+      "heading": "Menguasai ChatGPT dari Nol",
+      "horizontal_overflow": false,
+      "screenshot": "mobile-course.png"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/courses/course-flagship/lessons/lesson-flagship-1",
+      "http_status": 200,
+      "heading": "First Steps",
+      "horizontal_overflow": false,
+      "screenshot": "mobile-reader.png"
+    }
+  ],
+  "console_or_page_errors": [],
+  "external_origins": [],
+  "dialogs": [],
+  "screenshot_retention": "Three selected automatic screenshots copied with auto- prefix; other nine remain in local task evidence, not claimed as committed manual screenshots."
+}

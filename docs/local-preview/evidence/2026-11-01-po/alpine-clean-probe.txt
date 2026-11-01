@@ -1,0 +1,16 @@
+added 297 packages, and audited 298 packages in 5s
+
+121 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+@rolldown/binding-linux-arm64-musl /app/node_modules/@rolldown/binding-linux-arm64-musl/rolldown-binding.linux-arm64-musl.node
+@rolldown/binding-linux-arm64-gnu MISSING
+@tailwindcss/oxide-linux-arm64-musl /app/node_modules/@tailwindcss/oxide-linux-arm64-musl/tailwindcss-oxide.linux-arm64-musl.node
+lightningcss-linux-arm64-musl /app/node_modules/lightningcss-linux-arm64-musl/lightningcss.linux-arm64-musl.node
+NATIVE_IMPORTS_PASS
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

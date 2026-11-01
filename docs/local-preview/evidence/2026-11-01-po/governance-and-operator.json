@@ -1,0 +1,61 @@
+{
+  "reviewed_at_host_utc": "2026-11-01 08:56:28 UTC",
+  "source_base_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+  "pr17": {
+    "merged": true,
+    "merge_sha": "7ec5973be65fdefc0d09e29d9850ea48ca052961",
+    "remote_merged_at": "2026-11-01T09:21:43Z"
+  },
+  "pr18": {
+    "merged": true,
+    "merge_sha": "161e18e80bcf7f3540dc38a0add360267a2e0b1a",
+    "remote_merged_at": "2026-11-01T09:21:24Z",
+    "review_records": [
+      {
+        "id": 5727140226,
+        "user": "sipratama",
+        "state": "COMMENTED",
+        "commit_id": "d0fb0a47163f0c397537d229e325334f59b0b934",
+        "submitted_at": "2026-11-01T09:19:37Z",
+        "disclosed_assessment": "AI-assisted technical review; explicitly not independent human security approval"
+      }
+    ]
+  },
+  "issue16": {
+    "state": "open",
+    "checked_boxes": 9,
+    "status_body_retains_auth_not_authorized": true,
+    "disposition": "Checkboxes do not override unsigned decisions or prove independent review; no issue mutation or closure performed"
+  },
+  "effective_bounded_authorizations": [
+    "Hosted Supabase + ES256 platform selection only",
+    "Frankfurt synthetic target selection",
+    "R1 exact synthetic provider fixture checkpoint only",
+    "Current user task: Guest local Docker/manual-acceptance preparation",
+    "Explicit current operator choice: Gunakan OrbStack untuk uji lokal ini"
+  ],
+  "pending": [
+    "VS01A-CLOSE-001 independent review and final DD-001",
+    "O04/O05/O06 specialist and PO dispositions",
+    "O02 independent identity/security review",
+    "G0/G1/G3 and separate G4 QUAL-002",
+    "GOV-AI-001 adoption/authority remains proposed",
+    "O14 independent tooling/security disposition and other predecessor follow-ups",
+    "Independent API-secret revocation receipt verification"
+  ],
+  "app_auth_source_findings": {
+    "login": false,
+    "app_logout": false,
+    "rbac": false,
+    "admin_ui": false,
+    "operator_token_scripts_are_separate": true
+  },
+  "local_engine": {
+    "docker_desktop_installed_at_checked_locations": false,
+    "active_context": "orbstack",
+    "operator_choice": "Gunakan OrbStack untuk uji lokal ini",
+    "scope": "This local synthetic Guest test only",
+    "docker_desktop_verified": false
+  },
+  "clock_limit": "Host UTC and remote GitHub event timestamps are different source clocks and show ordering skew; no independent clock calibration or historical approval chronology inferred. Commit DAG/SHAs establish source lineage."
+}

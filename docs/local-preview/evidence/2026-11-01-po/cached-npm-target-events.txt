@@ -1,0 +1,24 @@
+29 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.3.3' ],
+29 silly audit   'assertion-error': [ '2.0.1' ],
+29 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0', '1.33.0' ],
+242 http cache lightningcss-linux-arm64-musl@https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz 0ms (cache hit)
+323 http cache assertion-error@https://registry.npmjs.org/assertion-error/-/assertion-error-2.0.1.tgz 0ms (cache hit)
+361 http cache @tailwindcss/oxide-linux-arm64-musl@https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-musl/-/oxide-linux-arm64-musl-4.3.3.tgz 0ms (cache hit)
+365 http cache @rolldown/binding-linux-arm64-musl@https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.16.tgz 0ms (cache hit)
+408 http cache lightningcss-linux-arm64-musl@https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz 0ms (cache hit)
+539 silly tarball no local data for lightningcss-linux-arm64-musl@https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz. Extracting by manifest.
+620 silly tarball no local data for assertion-error@https://registry.npmjs.org/assertion-error/-/assertion-error-2.0.1.tgz. Extracting by manifest.
+658 silly tarball no local data for @tailwindcss/oxide-linux-arm64-musl@https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-musl/-/oxide-linux-arm64-musl-4.3.3.tgz. Extracting by manifest.
+662 silly tarball no local data for @rolldown/binding-linux-arm64-musl@https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.16.tgz. Extracting by manifest.
+705 silly tarball no local data for lightningcss-linux-arm64-musl@https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz. Extracting by manifest.
+884 http fetch GET 200 https://registry.npmjs.org/assertion-error/-/assertion-error-2.0.1.tgz 1333ms (cache miss)
+979 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-musl/-/oxide-linux-arm64-musl-4.3.3.tgz 2081ms (cache miss)
+997 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz 2386ms (cache miss)
+1012 verbose reify failed optional dependency /app/node_modules/vite/node_modules/lightningcss-linux-arm64-musl
+1013 silly reify mark deleted [ '/app/node_modules/vite/node_modules/lightningcss-linux-arm64-musl' ]
+1014 verbose reify failed optional dependency /app/node_modules/@rolldown/binding-linux-arm64-musl
+1015 silly reify mark deleted [ '/app/node_modules/@rolldown/binding-linux-arm64-musl' ]
+1158 silly ADD node_modules/lightningcss-linux-arm64-musl
+1246 silly ADD node_modules/assertion-error
+1293 silly ADD node_modules/@tailwindcss/oxide-linux-arm64-musl
+1365 verbose exit 0

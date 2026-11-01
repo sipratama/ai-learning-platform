@@ -1,0 +1,17 @@
+{
+  "command": [
+    "npm",
+    "exec",
+    "--",
+    "playwright",
+    "test",
+    "--config",
+    "playwright.local.config.ts"
+  ],
+  "started_at_utc": "2026-11-01T08:45:21.863489+00:00",
+  "completed_at_utc": "2026-11-01T08:45:33.425241+00:00",
+  "exit_code": 0,
+  "status": "PASS",
+  "route_interception": false,
+  "target": "actual Compose stack at 127.0.0.1:8088"
+}

@@ -123,6 +123,47 @@ jobs:
             docs/vs01a-integration/evidence/
           retention-days: 14
 
+  local-docker-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.4'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install browser test dependencies
+        working-directory: apps/web
+        run: npm ci
+      - name: Install pinned Playwright Chromium
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Build and start actual Guest preview
+        run: docker compose -f compose.local.yaml up --build -d --wait --wait-timeout 120
+      - name: Actual Docker proxy and browser regression
+        working-directory: apps/web
+        run: npm exec -- playwright test --config playwright.local.config.ts
+      - name: Retain container diagnostics
+        if: always()
+        run: |
+          mkdir -p docker-preview-evidence
+          docker compose -f compose.local.yaml ps --format json > docker-preview-evidence/status.json
+          docker compose -f compose.local.yaml logs --no-color > docker-preview-evidence/containers.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-docker-preview-evidence
+          path: |
+            docker-preview-evidence/
+            apps/web/test-results/local-preview/
+            apps/web/test-results/local-preview-results.json
+            apps/web/playwright-report/local-preview/
+          retention-days: 14
+      - name: Stop this CI runner's preview only
+        if: always()
+        run: docker compose -f compose.local.yaml down
+
   secret-baseline:
     runs-on: ubuntu-latest
     timeout-minutes: 5

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "go-version",
+    "started_at_utc": "2026-11-01T05:17:30.104106+00:00",
+    "completed_at_utc": "2026-11-01T05:17:30.145437+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "go-version.txt"
+  },
+  {
+    "id": "checkpoint-race",
+    "started_at_utc": "2026-11-01T05:17:30.145447+00:00",
+    "completed_at_utc": "2026-11-01T05:17:32.477551+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "local-go-race.jsonl"
+  },
+  {
+    "id": "checkpoint-vet",
+    "started_at_utc": "2026-11-01T05:17:32.477584+00:00",
+    "completed_at_utc": "2026-11-01T05:17:32.590330+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "checkpoint-vet.txt"
+  },
+  {
+    "id": "checkpoint-build",
+    "started_at_utc": "2026-11-01T05:17:32.590341+00:00",
+    "completed_at_utc": "2026-11-01T05:17:33.085928+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "checkpoint-build.txt"
+  },
+  {
+    "id": "checkpoint-format",
+    "started_at_utc": "2026-11-01T05:17:33.085940+00:00",
+    "completed_at_utc": "2026-11-01T05:17:33.096692+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "checkpoint-format.txt"
+  }
+]

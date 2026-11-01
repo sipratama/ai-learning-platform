@@ -1,0 +1,9 @@
+{
+  "environment_alias": "vs02a-synthetic-pending",
+  "executed_at_utc": "2026-11-01T03:06:03.472674+00:00",
+  "probe": "public-jwks-shape-only",
+  "reason": "approved_issuer_not_supplied",
+  "status": "BLOCKED",
+  "token_verification": "NOT RUN",
+  "exit_code": 2
+}

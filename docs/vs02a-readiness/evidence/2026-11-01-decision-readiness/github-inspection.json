@@ -1,0 +1,95 @@
+{
+  "inspected_at_utc": "2026-11-01 05:50:16 UTC",
+  "repository": "sipratama/ai-learning-platform",
+  "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+  "remote_main_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+  "pr": {
+    "number": 17,
+    "state": "open",
+    "draft": true,
+    "head_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "url": "https://github.com/sipratama/ai-learning-platform/pull/17"
+  },
+  "issue": {
+    "number": 16,
+    "state": "open",
+    "url": "https://github.com/sipratama/ai-learning-platform/issues/16"
+  },
+  "submitted_review_queries": [
+    {
+      "pr": 4,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 5,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 8,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 11,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 14,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 15,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    },
+    {
+      "pr": 17,
+      "status": "PASS_READ_ONLY",
+      "submitted_reviews": []
+    }
+  ],
+  "predecessor_po_disposition": {
+    "source": "https://github.com/sipratama/ai-learning-platform/issues/13#issuecomment-6551979025",
+    "candidate_sha": "d12727edc92170dc0bc3c27060786ca37a504b0b",
+    "status": "CONDITIONAL_PO_APPROVAL",
+    "mandatory_independent_review_complete": false
+  },
+  "baseline_ci": {
+    "run_id": 41277321427,
+    "head_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/sipratama/ai-learning-platform/actions/runs/41277321427",
+    "updated_at": "2026-11-01T05:34:18Z",
+    "jobs": [
+      {
+        "id": 124762034930,
+        "name": "frontend",
+        "conclusion": "success",
+        "steps_all_success": true
+      },
+      {
+        "id": 124762035139,
+        "name": "identity-checkpoint-local",
+        "conclusion": "success",
+        "steps_all_success": true
+      },
+      {
+        "id": 124762035169,
+        "name": "backend",
+        "conclusion": "success",
+        "steps_all_success": true
+      },
+      {
+        "id": 124762035205,
+        "name": "secret-baseline",
+        "conclusion": "success",
+        "steps_all_success": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "path": "docs/DP-01/01-product-charter.md",
+    "sha256": "51c656e58046b6f2d838c16c8adf4d3ae4e7b8d4d64d4d38068c495044d581f8",
+    "lines": 115,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-01/02-mvp-scope-baseline.md",
+    "sha256": "e747ab48e48c95eb0f045043965856cef4bd76b97cd4260289053d0bc93b66f8",
+    "lines": 123,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-01/03-decision-registry.md",
+    "sha256": "4ba2583fbf8737916808454570ac95b2c323d931dac08476d07f73936c5bf83f",
+    "lines": 266,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-01/04-open-decisions-register.md",
+    "sha256": "8ab9748e4b0d2f4c370005198ce8ebe8180a71c7ea98b3f17f4aa18086158fa1",
+    "lines": 175,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-01/05-gov-ai-001-ai-assisted-technical-acceptance-proposal.md",
+    "sha256": "a720277b000c02b4c2d9b729cc5247daaa62ae2a8a3702e91f4db1f4bffef5cc",
+    "lines": 324,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/01-implementation-roadmap-and-dependencies.md",
+    "sha256": "a4a43aec8b79fbbcfa11e4bd989ca9c0189354a78ff1fa2c0c921b6b5847d6eb",
+    "lines": 105,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/02-repository-architecture-and-engineering-standards.md",
+    "sha256": "ba154b5b37b59aca5566a9afac18e392e5ab1c2bf3f3cf831b2f6e8f24bf8802",
+    "lines": 78,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/03-vertical-slice-backlog-and-acceptance-contracts.md",
+    "sha256": "dff338024a2e072a0998885b7b0f4e270094afc12373668425bcb88386129699",
+    "lines": 67,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/04-secure-delivery-and-change-management.md",
+    "sha256": "a511caa35bc214bf1b80f73552c673541c77426530ba3b4ed2501f0196fafa27",
+    "lines": 55,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/05-implementation-readiness-and-quality-gates.md",
+    "sha256": "3b486ea9ab8e11c635f007c624babada91425d3e1c61905c8b97f0d25afbd000",
+    "lines": 52,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/06-execution-traceability-and-handoff-register.md",
+    "sha256": "a332e332aef0b713d6c7b291d7ebeb0e99b790d64854cb3e3c4000cc8ae5c3ea",
+    "lines": 205,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/07-vs-01a-formal-closure-and-acceptance.md",
+    "sha256": "07591af27343a784295ae244e6f675371605d62b4956a270627ffdafd23c8267",
+    "lines": 170,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/DP-06/08-vs-01a-current-main-closure-candidate-review-2026-11-01.md",
+    "sha256": "458b235af3db945f9f5425c8f18174d57f8068f00405aadfa270b2c65919b34f",
+    "lines": 75,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs01a-remediation/2026-10-31-pagination-recovery-and-e2e-stability.md",
+    "sha256": "cccfd548bd619db1cb8566b4aa1a079df78fdf4e7a0208ac2b6366f7aa3374eb",
+    "lines": 196,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/01-scope-and-dependency-assessment.md",
+    "sha256": "e28defa2bd640209fb2b4d10e5927146d82f15590a2ae3fb110c2ed774ff2aa7",
+    "lines": 80,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/02-identity-and-authorization-design.md",
+    "sha256": "748a6a3c6425cffc06d7ca14ea823e2f6081356a1dfdd0964b7a36d576a50608",
+    "lines": 132,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/03-account-schema-and-lifecycle-design.md",
+    "sha256": "733b4a7cc6099122bc9cfd23e84775ac0f1de90e9ff7f35e56e37bcc219bd4b8",
+    "lines": 88,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/04-threat-model-and-security-test-matrix.md",
+    "sha256": "473a7b42499be14ddad7caddb0cd6fe9d2fa3135d9d55b539f71efe265977cca",
+    "lines": 108,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/05-environment-and-implementation-plan.md",
+    "sha256": "616e84c5a19383fdc9bf8cf5da93bf260f286010462cab073601e07125e5eed6",
+    "lines": 69,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/06-readiness-decision-and-open-questions.md",
+    "sha256": "cbf664de49f36de073fd4fb5acb9113f21fd71c1c2b1d4b8ce95333b71022f82",
+    "lines": 91,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/07-product-owner-decision-pack-and-implementation-gate-2026-11-01.md",
+    "sha256": "33167c3065ad6b932013d74f764d7f3acf54fe22ffba86a2b7524a5b167645cd",
+    "lines": 79,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/08-po-supabase-hosted-es256-platform-selection-2026-11-01.md",
+    "sha256": "084326e1f972dca3056bc451a50b2d45fa8217ee84c7d8d194fcebc4ef6ea244",
+    "lines": 55,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/09-hosted-supabase-es256-synthetic-setup-and-verification-runbook.md",
+    "sha256": "cb366b099df90548b2da8d3637ff63379ee2d0e88fa4225d70bc709da1351c17",
+    "lines": 90,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/10-environment-verification-and-mcp-assessment-2026-11-01.md",
+    "sha256": "f0bac41125119190535ed9711c8ada07ff700ee0b8c37a79d4889c8114a57ccf",
+    "lines": 72,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/11-go-jwt-security-review-2026-11-01.md",
+    "sha256": "d3b1470ca4d160b02bd57fadc774394c5a8bcfee986568f5501ad7beda4c3fe7",
+    "lines": 49,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/12-readiness-dispositions-and-bundle-1-handoff-2026-11-01.md",
+    "sha256": "c857a20aff2fcc313c1f1d6cc1bcaf836a2d8afa8690aefe1bc38847658f50e7",
+    "lines": 58,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/13-verification-evidence-2026-11-01.md",
+    "sha256": "bb1a36a3b87c9b62ce7d04cd1c94bf803eb23b686c8d9052b700db954349adef",
+    "lines": 50,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/14-connected-supabase-public-jwks-checkpoint-2026-11-01.md",
+    "sha256": "96497957452e0c4bb8ef03bf08b348f9cb97c7befd97bcf1447036ef9b9d05f8",
+    "lines": 77,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/15-synthetic-roster-and-token-checkpoint-approval-2026-11-01.md",
+    "sha256": "50f0efc158953ddefe5ddf34536605453678d7e521e692ab0a940c5ee6587416",
+    "lines": 74,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/16-bounded-token-checkpoint-and-o05-decision-2026-11-01.md",
+    "sha256": "f304557ed6408360ccc31bd57b448abc6477867e3e15eb03af80a28312557e69",
+    "lines": 67,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  },
+  {
+    "path": "docs/vs02a-readiness/17-real-token-checkpoint-evidence-2026-11-01.md",
+    "sha256": "ff6895bf666e7983488c4381b5eab3d9065f9a6d7418ab096666e91fe8dc7846",
+    "lines": 60,
+    "review_scope": "governance, source provenance, gate status, evidence and remaining approval responsibilities"
+  }
+]

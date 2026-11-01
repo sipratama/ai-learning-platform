@@ -1,0 +1,34 @@
+[
+  {
+    "id": "npm-audit",
+    "started_at_utc": "2026-11-01T04:34:21.742158+00:00",
+    "finished_at_utc": "2026-11-01T04:34:23.304270+00:00",
+    "exit_code": 1,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 11,
+      "high": 0,
+      "critical": 0,
+      "total": 11
+    },
+    "source_base_sha": "8ebcffb8903899714326946ce443d4e2c76772ac",
+    "application_dependency_changes": false
+  },
+  {
+    "id": "npm-audit-production",
+    "started_at_utc": "2026-11-01T04:34:23.304309+00:00",
+    "finished_at_utc": "2026-11-01T04:34:23.805817+00:00",
+    "exit_code": 0,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "source_base_sha": "8ebcffb8903899714326946ce443d4e2c76772ac",
+    "application_dependency_changes": false
+  }
+]

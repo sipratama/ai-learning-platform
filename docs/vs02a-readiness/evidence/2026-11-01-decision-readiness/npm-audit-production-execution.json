@@ -1,0 +1,13 @@
+{
+  "id": "npm-audit-production",
+  "command": [
+    "npm",
+    "audit",
+    "--omit=dev",
+    "--json"
+  ],
+  "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+  "started_at_utc": "2026-11-01T05:41:44.247651+00:00",
+  "completed_at_utc": "2026-11-01T05:41:44.902211+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,59 @@
+{
+  "executed_at_utc": "2026-11-01T03:42:23.599853+00:00",
+  "initialized": true,
+  "servers": [
+    {
+      "name": "supabase",
+      "auth_status": "oAuth",
+      "tool_count": 22,
+      "tool_names": [
+        "apply_migration",
+        "create_branch",
+        "delete_branch",
+        "delete_feedback",
+        "deploy_edge_function",
+        "execute_sql",
+        "generate_typescript_types",
+        "get_advisors",
+        "get_edge_function",
+        "get_project_url",
+        "get_publishable_keys",
+        "list_branches",
+        "list_edge_functions",
+        "list_extensions",
+        "list_migrations",
+        "list_tables",
+        "merge_branch",
+        "query_logs",
+        "rebase_branch",
+        "reset_branch",
+        "search_docs",
+        "submit_feedback"
+      ]
+    }
+  ],
+  "model_turns_started": 0,
+  "calls": [
+    "get_project_url",
+    "execute_sql"
+  ],
+  "sql": "SELECT current_setting('server_version') AS postgres_version, current_setting('ssl') AS server_ssl_enabled, EXISTS (SELECT 1 FROM pg_catalog.pg_namespace WHERE nspname = 'identity') AS identity_schema_present, (SELECT count(*) FROM auth.users) AS provider_user_count",
+  "project_url_matches_requested": true,
+  "project_url_sha256": "3dba59397842af3da2badd5cebc82c12e2254151fb2ea35bc3100c78dcaece56",
+  "database_metadata_result": {
+    "postgres_version": "17.11",
+    "server_ssl_enabled": "on",
+    "identity_schema_present": false,
+    "provider_user_count": 0
+  },
+  "operator_attestation": {
+    "source": "User response in current project conversation",
+    "observed_at_utc": "2026-11-01T03:42:21Z",
+    "statement": "Ya, proyek khusus uji sintetis",
+    "scope": "Operator confirms supplied project is under their authority in supplied organization, dedicated to VS-02A synthetic testing, no real accounts/data or shared use",
+    "independent_review": false
+  },
+  "source_commit": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+  "environment_alias": "vs02a-synthetic-candidate",
+  "credential_handling": "OAuth managed by Codex; no credential files read/exported; no tokens retained in evidence"
+}

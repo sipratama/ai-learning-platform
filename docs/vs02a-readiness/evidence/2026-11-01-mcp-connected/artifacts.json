@@ -1,0 +1,20 @@
+{
+  "source_before_revision": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+  "hash": "SHA-256",
+  "scope": "Connected-environment checkpoint and S2 operator scripts; excludes this manifest",
+  "historical_script_source_commit": "7164b7adda548b5ad0ea96f72e763a02d02e2af5",
+  "files": {
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/execution.json": "7c065fc853fc865e010f7839798c57d7083553e73e4790f934617951eed4ff32",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/mcp-and-postgres.json": "cd9e517581de0d522e1fcd38058f79d9745d39070a1b89272c5868eea9ef9c5b",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/operator-settings.json": "c35248ebf2117f9c3eeb377fae3d62e9ba246c2228c779f602375e9caae9c663",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/preparation-checks.json": "f18786d7f80a4994cc89e43b7ac93ed0a43c183d5bdddba6b90558514469aa48",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/probe-before.json": "5f4e30742e6711f7681a84ed666b97ceb639833ad7442f32699310e81f10341a",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/probe-guards.txt": "9174f28c619b65cb98c91623b7e711d0782bc970395933e23334ba191df80b39",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/public-jwks.json": "365c2ab528f796d82cd477950056f08e9944f71621f32dbd38d9337742728a66",
+    "docs/vs02a-readiness/evidence/2026-11-01-mcp-connected/public-key-metadata.json": "164c913eb78c61ddf6614f9b0db8dd6192683cac3c7312f0ef353f5f8844aaa4",
+    "scripts/verify-supabase-jwks.py": "d57b9c091255c8f1ab5754d865fa1c0a4c7bcbbaf023b5206c38b3e568d77223",
+    "scripts/test-verify-supabase-jwks.py": "54450c14363a7506b464ddd9f39f0b5f0921aa5f80e8a2076b88e93ec94ce78a"
+  },
+  "source_before_operator_controls_followup": "914fd011e17c02bef6f65bd01bac05b4db58debe",
+  "source_before_region_decision_followup": "1979fa6e4f1051497fdf17e1270c5b37e1c05053"
+}

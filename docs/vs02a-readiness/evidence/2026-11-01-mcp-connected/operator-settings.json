@@ -1,0 +1,48 @@
+{
+  "source": "Operator response to guided Current key inspection in this project conversation",
+  "recorded_date_local": "2026-11-01 Asia/Jakarta",
+  "reported_value_type": "key ID, not algorithm name or secret",
+  "reported_kid_sha256": "e137f5ed6be6015e8008964d85407fc37c41d1ae0dbb8f05efde42891bd701ad",
+  "matches_observed_public_key": true,
+  "matched_jwks_algorithm": "ES256",
+  "matched_jwks_curve": "P-256",
+  "evidence_limit": "Operator-assisted current-key identification; no independent settings API read or user-token signature test",
+  "signup_enabled": false,
+  "anonymous_signins_enabled": false,
+  "actual_region": {
+    "country": "Germany",
+    "location": "Central EU (Frankfurt)",
+    "region_id": "eu-central-1",
+    "project_status": "Healthy",
+    "compute": "Nano",
+    "source": "Operator-reported Dashboard metadata; no independent region API read"
+  },
+  "token_verification": "NOT RUN",
+  "signup_observations": [
+    {
+      "source": "Operator Dashboard report in current conversation",
+      "signup_enabled": true,
+      "anonymous_signins_enabled": false,
+      "result": "FAIL: public signup enabled",
+      "remediation": "Operator instructed to turn off Allow new users to sign up and save; final state pending"
+    },
+    {
+      "source": "Operator confirmation after guided Dashboard change in current conversation",
+      "reported_statement": "ya semua sudah mati",
+      "signup_enabled": false,
+      "anonymous_signins_enabled": false,
+      "result": "PASS for operator-reported control states; no independent settings API or signup runtime test",
+      "action_owner": "operator",
+      "actual_signup_attempts": 0
+    }
+  ],
+  "settings_evidence_limit": "Operator-reported Dashboard states, not independently read through an Auth settings API",
+  "region_approval": {
+    "source": "Product Owner response in current conversation",
+    "statement": "Gunakan Frankfurt untuk uji sintetis ini",
+    "approved_scope": "Existing isolated synthetic-only VS-02A test project",
+    "relation_to_prior_preference": "Explicit acceptance of Frankfurt for this test environment; Singapore remains historical preference, not a migration instruction",
+    "production_or_real_data_authorized": false,
+    "new_project_or_purchase_authorized": false
+  }
+}

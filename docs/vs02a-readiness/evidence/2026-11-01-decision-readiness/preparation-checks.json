@@ -1,0 +1,19 @@
+{
+  "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+  "checked_at_utc": "2026-11-01T05:52:38.249452+00:00",
+  "docs": 21,
+  "relative_links_and_fragments": 264,
+  "canonical_ids_including_ranges": 108,
+  "local_test_definitions": 33,
+  "local_open_item_definitions": 14,
+  "preserved_baseline_files": 264,
+  "scanned_files": 291,
+  "artifact_digests_checked": 87,
+  "historical_scripts_checked_at_7164b7a": 2,
+  "negative_cases_passed": 53,
+  "individual_moderate_entries_reviewed": 11,
+  "secret_baseline_exit": 0,
+  "secret_pattern_scan": "PASS",
+  "errors": [],
+  "status": "PASS"
+}

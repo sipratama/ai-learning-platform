@@ -1,0 +1,5 @@
+{"config": {"db": "https://vuln.go.dev", "db_last_modified": "2026-10-27T21:16:18Z", "go_version": "go1.27.3", "protocol_version": "v1.0.0", "scan_level": "symbol", "scan_mode": "source", "scanner_name": "govulncheck", "scanner_version": "v1.9.0"}}
+{"SBOM": {"go_version": "go1.27.3", "modules": [{"path": "github.com/sipratama/ai-learning-platform/scripts/vs02a-jwt-checkpoint"}, {"path": "github.com/golang-jwt/jwt/v5", "version": "v5.3.1"}, {"path": "stdlib", "version": "v1.27.3"}], "roots": ["github.com/sipratama/ai-learning-platform/scripts/vs02a-jwt-checkpoint"]}}
+{"progress": {"message": "Fetching vulnerabilities from the database..."}}
+{"progress": {"message": "Checking the code against the vulnerabilities..."}}
+{"retention_summary": {"filter": "Only bulk advisory OSV metadata omitted; all config, SBOM, progress and finding events retained. Full stream retained locally outside Git.", "finding_records": 0, "omitted_osv_metadata_records": 188, "original_stream_bytes": 576353, "original_stream_sha256": "416c4cf6b699ac5503eb9ac09f3f5d4f4524541e7b24170e3678572efd72a623"}}

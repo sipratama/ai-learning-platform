@@ -1,0 +1,417 @@
+{
+  "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+  "inspected_at_utc": "2026-11-01T05:46:38.006461+00:00",
+  "package_entries": 11,
+  "root_advisory_ids": [
+    "GHSA-g3hv-75wg-m249"
+  ],
+  "independent_root_advisories": 1,
+  "inherited_package_entries": 10,
+  "packages": [
+    {
+      "package": "@eslint-community/eslint-utils",
+      "version": "4.10.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "eslint"
+      ],
+      "effects": [
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "declared_dependencies": {
+        "eslint-visitor-keys": "^3.4.3"
+      },
+      "peer_dependencies": {
+        "eslint": "^6.0.0 || ^7.0.0 || >=8.0.0"
+      },
+      "fix_available_as_reported": {
+        "name": "eslint",
+        "version": "4.0.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@eslint/config-array",
+      "version": "0.23.5",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "minimatch"
+      ],
+      "effects": [
+        "eslint"
+      ],
+      "declared_dependencies": {
+        "@eslint/object-schema": "^3.0.5",
+        "debug": "^4.3.1",
+        "minimatch": "^10.2.4"
+      },
+      "peer_dependencies": {},
+      "fix_available_as_reported": {
+        "name": "eslint",
+        "version": "4.0.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@eslint/js",
+      "version": "10.0.1",
+      "dev": true,
+      "direct": true,
+      "severity": "moderate",
+      "audit_range": ">=10.0.1",
+      "via": [
+        "eslint"
+      ],
+      "effects": [],
+      "declared_dependencies": {},
+      "peer_dependencies": {
+        "eslint": "^10.0.0"
+      },
+      "fix_available_as_reported": {
+        "name": "@eslint/js",
+        "version": "9.39.5",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@typescript-eslint/eslint-plugin",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "@typescript-eslint/parser",
+        "@typescript-eslint/type-utils",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "effects": [],
+      "declared_dependencies": {
+        "@eslint-community/regexpp": "^4.12.2",
+        "@typescript-eslint/scope-manager": "8.72.1",
+        "@typescript-eslint/type-utils": "8.72.1",
+        "@typescript-eslint/utils": "8.72.1",
+        "@typescript-eslint/visitor-keys": "8.72.1",
+        "ignore": "^7.0.5",
+        "natural-compare": "^1.4.0",
+        "ts-api-utils": "^2.5.0"
+      },
+      "peer_dependencies": {
+        "@typescript-eslint/parser": "^8.72.1",
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": true,
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@typescript-eslint/parser",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "@typescript-eslint/typescript-estree",
+        "eslint"
+      ],
+      "effects": [
+        "@typescript-eslint/eslint-plugin",
+        "typescript-eslint"
+      ],
+      "declared_dependencies": {
+        "@typescript-eslint/scope-manager": "8.72.1",
+        "@typescript-eslint/types": "8.72.1",
+        "@typescript-eslint/typescript-estree": "8.72.1",
+        "@typescript-eslint/visitor-keys": "8.72.1",
+        "debug": "^4.4.3"
+      },
+      "peer_dependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": {
+        "name": "typescript-eslint",
+        "version": "8.36.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@typescript-eslint/type-utils",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": ">=5.62.1-alpha.0",
+      "via": [
+        "@typescript-eslint/typescript-estree",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "effects": [
+        "@typescript-eslint/eslint-plugin"
+      ],
+      "declared_dependencies": {
+        "@typescript-eslint/types": "8.72.1",
+        "@typescript-eslint/typescript-estree": "8.72.1",
+        "@typescript-eslint/utils": "8.72.1",
+        "debug": "^4.4.3",
+        "ts-api-utils": "^2.5.0"
+      },
+      "peer_dependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": true,
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@typescript-eslint/typescript-estree",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": ">=6.16.0",
+      "via": [
+        "minimatch"
+      ],
+      "effects": [
+        "@typescript-eslint/parser",
+        "@typescript-eslint/type-utils",
+        "@typescript-eslint/utils",
+        "typescript-eslint"
+      ],
+      "declared_dependencies": {
+        "@typescript-eslint/project-service": "8.72.1",
+        "@typescript-eslint/tsconfig-utils": "8.72.1",
+        "@typescript-eslint/types": "8.72.1",
+        "@typescript-eslint/visitor-keys": "8.72.1",
+        "debug": "^4.4.3",
+        "minimatch": "^10.2.2",
+        "semver": "^7.7.3",
+        "tinyglobby": "^0.2.15",
+        "ts-api-utils": "^2.5.0"
+      },
+      "peer_dependencies": {
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": {
+        "name": "typescript-eslint",
+        "version": "8.36.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "@typescript-eslint/utils",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "@eslint-community/eslint-utils",
+        "@typescript-eslint/typescript-estree",
+        "eslint"
+      ],
+      "effects": [
+        "typescript-eslint"
+      ],
+      "declared_dependencies": {
+        "@eslint-community/eslint-utils": "^4.9.1",
+        "@typescript-eslint/scope-manager": "8.72.1",
+        "@typescript-eslint/types": "8.72.1",
+        "@typescript-eslint/typescript-estree": "8.72.1"
+      },
+      "peer_dependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": {
+        "name": "typescript-eslint",
+        "version": "8.36.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "eslint",
+      "version": "10.14.0",
+      "dev": true,
+      "direct": true,
+      "severity": "moderate",
+      "audit_range": "0.7.1 - 2.0.0-rc.1 || >=4.1.0",
+      "via": [
+        "@eslint-community/eslint-utils",
+        "@eslint/config-array",
+        "minimatch"
+      ],
+      "effects": [
+        "@eslint-community/eslint-utils",
+        "@eslint/js",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "@typescript-eslint/type-utils",
+        "@typescript-eslint/utils",
+        "typescript-eslint"
+      ],
+      "declared_dependencies": {
+        "@eslint-community/eslint-utils": "^4.8.0",
+        "@eslint-community/regexpp": "^4.12.2",
+        "@eslint/config-array": "^0.23.5",
+        "@eslint/config-helpers": "^0.7.0",
+        "@eslint/core": "^1.2.1",
+        "@eslint/plugin-kit": "^0.7.3",
+        "@humanfs/node": "^0.16.8",
+        "@humanwhocodes/module-importer": "^1.0.1",
+        "@humanwhocodes/retry": "^0.4.2",
+        "@types/estree": "^1.0.6",
+        "ajv": "^6.14.0",
+        "cross-spawn": "^7.0.6",
+        "debug": "^4.3.2",
+        "escape-string-regexp": "^4.0.0",
+        "eslint-scope": "^9.1.2",
+        "eslint-visitor-keys": "^5.0.1",
+        "espree": "^11.2.0",
+        "esquery": "^1.7.0",
+        "esutils": "^2.0.2",
+        "fast-deep-equal": "^3.1.3",
+        "file-entry-cache": "11.1.5 || >11.1.6 <12",
+        "find-up": "^5.0.0",
+        "glob-parent": "^6.0.2",
+        "ignore": "^5.2.0",
+        "imurmurhash": "^0.1.4",
+        "is-glob": "^4.0.0",
+        "json-stable-stringify-without-jsonify": "^1.0.1",
+        "minimatch": "^10.2.6",
+        "natural-compare": "^1.4.0",
+        "optionator": "^0.9.3"
+      },
+      "peer_dependencies": {
+        "jiti": "*"
+      },
+      "fix_available_as_reported": {
+        "name": "eslint",
+        "version": "4.0.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "minimatch",
+      "version": "10.2.6",
+      "dev": true,
+      "direct": false,
+      "severity": "moderate",
+      "audit_range": "<11.0.1",
+      "via": [
+        {
+          "source": 1244012,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has potential denial of service via globparts amplification",
+          "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-405"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<11.0.1"
+        }
+      ],
+      "effects": [
+        "@eslint/config-array",
+        "@typescript-eslint/typescript-estree",
+        "eslint"
+      ],
+      "declared_dependencies": {
+        "brace-expansion": "^5.0.8"
+      },
+      "peer_dependencies": {},
+      "fix_available_as_reported": {
+        "name": "eslint",
+        "version": "4.0.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    },
+    {
+      "package": "typescript-eslint",
+      "version": "8.72.1",
+      "dev": true,
+      "direct": true,
+      "severity": "moderate",
+      "audit_range": "*",
+      "via": [
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "@typescript-eslint/typescript-estree",
+        "@typescript-eslint/utils",
+        "eslint"
+      ],
+      "effects": [],
+      "declared_dependencies": {
+        "@typescript-eslint/eslint-plugin": "8.72.1",
+        "@typescript-eslint/parser": "8.72.1",
+        "@typescript-eslint/typescript-estree": "8.72.1",
+        "@typescript-eslint/utils": "8.72.1"
+      },
+      "peer_dependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "fix_available_as_reported": {
+        "name": "typescript-eslint",
+        "version": "8.36.0",
+        "isSemVerMajor": true
+      },
+      "disposition": "OPEN_REVIEW_REQUIRED",
+      "waiver": false
+    }
+  ],
+  "file_sha256": {
+    "apps/web/package.json": "97e5a9619b12dff35396e2c327e77f4c8a6d75693b4adf63956249460d2956ca",
+    "apps/web/package-lock.json": "c8ef1e6fb18ef3b1766f7b4a5ed30b1acd7aeb72e429ef7a6dbb37a5a1bb7c25",
+    "apps/web/eslint.config.mjs": "2f8dd34b0bf3fa1e5d3ae04b0a243b861c625a70650d5708f53dac1bde164d42",
+    ".github/workflows/ci.yml": "aa2cc9856c259d16a03a572ecaba336b148600a3d71e4c30475f13960470b3c1",
+    "apps/web/node_modules/minimatch/dist/esm/index.js": "59821ec2ce0d3df968292036e5c831ad322b33e9c33a949ecbc9dfe125d165be",
+    "apps/web/node_modules/eslint/lib/eslint/eslint-helpers.js": "4a1d745b6b7e1972ba59d2402ce488e90309825c8f3bb4d973a59d8dee511ebd",
+    "apps/web/node_modules/@eslint/config-array/dist/esm/index.js": "39fd87507068ce385a79a9672bdc5e1483ed6cddf195124ef29dad7ba07f60c6",
+    "apps/web/node_modules/@typescript-eslint/typescript-estree/dist/useProgramFromProjectService.js": "01187bd4d1369992441a8d416f31531640ac6b6d021a7035e59ce47e017b482f"
+  },
+  "installed_caller_review": {
+    "eslint_glob_options": "dot: true; optimizationLevel not set",
+    "config_array_glob_options": "dot: true; optimizationLevel not set",
+    "typescript_estree_allow_default_project_options": "dot: true; optimizationLevel not set",
+    "minimatch_default_optimization_level": 1,
+    "advisory_precondition": "attacker-controlled glob pattern, optimizationLevel >= 2",
+    "current_app_config": "static ignore patterns and recommended presets, no parserOptions.projectService/allowDefaultProject",
+    "dynamic_hostile_pattern_test": "NOT RUN; no exploit attempted",
+    "conclusion": "Direct vulnerable dependency present. Specific high-optimization path not demonstrated in inspected callers; bounded applicability inference, not a waiver or whole-graph proof."
+  }
+}

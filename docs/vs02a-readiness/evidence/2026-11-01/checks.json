@@ -1,0 +1,381 @@
+[
+  {
+    "id": "go-version",
+    "command": [
+      "go",
+      "version"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:47.595720+00:00",
+    "finished_at_utc": "2026-11-01T03:05:47.673458+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "70f94d37a097ca424ec1a1c0d5a81288ec60b4ceeae67edc3a75aeb6ce378600"
+  },
+  {
+    "id": "go-modules",
+    "command": [
+      "go",
+      "mod",
+      "download"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:47.673921+00:00",
+    "finished_at_utc": "2026-11-01T03:05:47.694230+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "2e81e7872f6737b869fe161b6c45c96206c8669c9d834144d374ac9bc207f69e"
+  },
+  {
+    "id": "go-format",
+    "command": [
+      "sh",
+      "-c",
+      "test -z \"$(gofmt -l .)\""
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:47.694623+00:00",
+    "finished_at_utc": "2026-11-01T03:05:47.769593+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "go-vet",
+    "command": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:47.770061+00:00",
+    "finished_at_utc": "2026-11-01T03:05:48.365947+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "go-vet-fixture",
+    "command": [
+      "go",
+      "vet",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:48.366501+00:00",
+    "finished_at_utc": "2026-11-01T03:05:48.700052+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "go-test",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:48.700589+00:00",
+    "finished_at_utc": "2026-11-01T03:05:50.319705+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "485f0c7dcd57fbf22ecac7c5d36dd1aa6b2f8d2517ec3fb64ce1d60b4e4bfe90"
+  },
+  {
+    "id": "go-test-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:50.320588+00:00",
+    "finished_at_utc": "2026-11-01T03:05:51.469719+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "a0605f4b31b5f9e2eec5cb97473361886c9dc55ae59fb71d0dad240ace9f15a4"
+  },
+  {
+    "id": "go-race",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:51.470273+00:00",
+    "finished_at_utc": "2026-11-01T03:05:53.906511+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "affe6320626b6ee0e63af90d798520f58f79444b642feb96cd04ad842f1d6389"
+  },
+  {
+    "id": "go-race-fixture",
+    "command": [
+      "go",
+      "test",
+      "-count=1",
+      "-race",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:53.907196+00:00",
+    "finished_at_utc": "2026-11-01T03:05:56.234817+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "d4d9ea0de8ec25f356239afb5385c9beba5aaf2f8490332714691436125e54ff"
+  },
+  {
+    "id": "go-build",
+    "command": [
+      "go",
+      "build",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:56.235495+00:00",
+    "finished_at_utc": "2026-11-01T03:05:56.669716+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "go-build-fixture",
+    "command": [
+      "go",
+      "build",
+      "-tags",
+      "devfixture",
+      "./..."
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:56.670439+00:00",
+    "finished_at_utc": "2026-11-01T03:05:57.116665+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "id": "fixture-boundary",
+    "command": [
+      "bash",
+      "../../scripts/check-fixture-boundary.sh"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:57.117340+00:00",
+    "finished_at_utc": "2026-11-01T03:05:59.239245+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "backend-checks.txt",
+    "output_sha256": "13a8511fa0b24da7b0a357c64a8c7406d86e98daca6d0bea71e3cd823d7cd10e"
+  },
+  {
+    "id": "node-version",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:48.623719+00:00",
+    "finished_at_utc": "2026-11-01T03:05:48.665138+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "2266957ed9a639bd7264d714bfa798a961510bf2e50695c668ab8fc0c3f4e906"
+  },
+  {
+    "id": "npm-version",
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:48.665583+00:00",
+    "finished_at_utc": "2026-11-01T03:05:48.956260+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "d49bd31f65cb736f4045946e1c8365657cfed300dc0e4f173af5e93ab4500e1a"
+  },
+  {
+    "id": "npm-ci",
+    "command": [
+      "npm",
+      "ci"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:48.956820+00:00",
+    "finished_at_utc": "2026-11-01T03:06:17.519891+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "1d3ed36d8bbf6f2c6e938ae014fed22e6f6f0828a6be62fa26de7953552aa0aa"
+  },
+  {
+    "id": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:06:17.520603+00:00",
+    "finished_at_utc": "2026-11-01T03:06:19.651990+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "4a977d722e841afd5232a2d052bce3fcb1902fd56fe60531744d5aae2b96c2e3"
+  },
+  {
+    "id": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:06:19.652508+00:00",
+    "finished_at_utc": "2026-11-01T03:06:21.202657+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "79599dcadb0f8eb76df2b2f17f6ba56c8821ca51e56b206395ba8f99e5ff5d4e"
+  },
+  {
+    "id": "unit",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:06:21.203404+00:00",
+    "finished_at_utc": "2026-11-01T03:06:24.274583+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "093a017ef0168684810aeb1ebddefdad95a891a9ef9cf262531560de941029ee"
+  },
+  {
+    "id": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:06:24.275178+00:00",
+    "finished_at_utc": "2026-11-01T03:06:26.971536+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "1a9b7f6062ff20731d9cb8303a86afb2e0532d20f911d6f329ca18aada9d2d37"
+  },
+  {
+    "id": "browser-mocked",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:mock"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:06:26.972300+00:00",
+    "finished_at_utc": "2026-11-01T03:07:10.286201+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "d152df201a974869efe58e5900028a68d41371bccf6c5d14a20d8671c2494d94"
+  },
+  {
+    "id": "browser-real",
+    "command": [
+      "npm",
+      "run",
+      "test:e2e:real"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:07:10.287188+00:00",
+    "finished_at_utc": "2026-11-01T03:07:31.004879+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "frontend-checks.txt",
+    "output_sha256": "b44cb52b6231520d36f41f5a0759c6b3064f187412a560868b918cd09650e9e3"
+  },
+  {
+    "id": "dependency-audit",
+    "command": [
+      "npm",
+      "audit",
+      "--json"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:07:31.005637+00:00",
+    "finished_at_utc": "2026-11-01T03:07:32.982970+00:00",
+    "exit_code": 1,
+    "status": "FAIL",
+    "log": "dependency-audit.json",
+    "output_sha256": "a30cf66cbdf81123cebea8eaca4cc65383168981f6566742b66d368d9082902e"
+  },
+  {
+    "id": "probe-guards",
+    "command": [
+      "python3",
+      "scripts/test-verify-supabase-jwks.py"
+    ],
+    "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "environment": "local-disposable-source-copy-darwin-arm64",
+    "started_at_utc": "2026-11-01T03:05:49.790809+00:00",
+    "finished_at_utc": "2026-11-01T03:05:50.034001+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "probe-guards.txt",
+    "log_sha256": "ece310b0586ceb09e8a658695702f9e1b810b241dded96e6671b3f3ef8438f7d",
+    "added_script_sha256": {
+      "verify-supabase-jwks.py": "b4dbf2448ae40d58cad05878e9d6a4a5f2b2948a09d600aceceacb0df0de2619",
+      "test-verify-supabase-jwks.py": "2f60201d518bbfcfbd667a02eba98601c1624853e9e9a1290adfcd8e4af3fdde"
+    }
+  }
+]

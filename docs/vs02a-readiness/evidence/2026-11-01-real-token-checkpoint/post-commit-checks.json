@@ -1,0 +1,42 @@
+[
+  {
+    "id": "operator-tests",
+    "command": [
+      "python3",
+      "scripts/test_vs02a_checkpoint_operator.py"
+    ],
+    "source_sha": "22c04ea1e5a2b0f097780ed3ae0a83fe79659fe6",
+    "started_at_utc": "2026-11-01T05:23:20.652319+00:00",
+    "completed_at_utc": "2026-11-01T05:23:20.758485+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "operator-tests.txt"
+  },
+  {
+    "id": "existing-probe-tests",
+    "command": [
+      "python3",
+      "scripts/test-verify-supabase-jwks.py"
+    ],
+    "source_sha": "22c04ea1e5a2b0f097780ed3ae0a83fe79659fe6",
+    "started_at_utc": "2026-11-01T05:23:20.758497+00:00",
+    "completed_at_utc": "2026-11-01T05:23:20.840202+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "existing-probe-tests.txt"
+  },
+  {
+    "id": "govulncheck",
+    "command": [
+      "/tmp/vs02a-token-checkpoint/bin/govulncheck",
+      "-json",
+      "./..."
+    ],
+    "source_sha": "22c04ea1e5a2b0f097780ed3ae0a83fe79659fe6",
+    "started_at_utc": "2026-11-01T05:23:20.840212+00:00",
+    "completed_at_utc": "2026-11-01T05:23:24.369483+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "log": "govulncheck.jsonl"
+  }
+]

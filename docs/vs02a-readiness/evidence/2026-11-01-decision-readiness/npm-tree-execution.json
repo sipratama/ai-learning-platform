@@ -1,0 +1,24 @@
+{
+  "id": "npm-tree",
+  "command": [
+    "npm",
+    "ls",
+    "eslint",
+    "@eslint/js",
+    "@eslint/config-array",
+    "@eslint-community/eslint-utils",
+    "typescript-eslint",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser",
+    "@typescript-eslint/type-utils",
+    "@typescript-eslint/typescript-estree",
+    "@typescript-eslint/utils",
+    "minimatch",
+    "--all",
+    "--json"
+  ],
+  "source_sha": "0b80442f8430753d21e187287ab705a95998dcd5",
+  "started_at_utc": "2026-11-01T05:41:44.902507+00:00",
+  "completed_at_utc": "2026-11-01T05:41:45.500914+00:00",
+  "exit_code": 0
+}

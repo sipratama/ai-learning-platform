@@ -1,0 +1,43 @@
+{
+  "date_local": "2026-11-01 Asia/Jakarta",
+  "source_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+  "initial_branch": "main",
+  "initial_worktree": "clean",
+  "fetch_origin_prune": "exit 0",
+  "branch_created": "docs/vs-02a-supabase-environment-verification",
+  "pr15": {
+    "merged": true,
+    "merge_sha": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+    "merged_at_utc": "2026-11-01T02:59:05Z",
+    "url": "https://github.com/sipratama/ai-learning-platform/pull/15"
+  },
+  "issue16_at_initial_read": {
+    "state": "open",
+    "comments": 0,
+    "checked_operator_items": 0
+  },
+  "submitted_pr_reviews": {
+    "14": 0,
+    "15": 0
+  },
+  "conditional_po_predecessor_disposition": "https://github.com/sipratama/ai-learning-platform/issues/13#issuecomment-6551979025",
+  "supabase": {
+    "connection": "not connected",
+    "project_inventory": "BLOCKED",
+    "project_existence": "unknown",
+    "environment_identifier": null,
+    "cli": "not found",
+    "local_project_link": "not found",
+    "supabase_environment_variable_names": [],
+    "tokens_handled": false
+  },
+  "mcp_unauthenticated_probe": {
+    "method": "GET",
+    "url": "https://mcp.supabase.com/mcp?read_only=true&features=account,docs",
+    "http_status": 401,
+    "tls_certificate_verification": true,
+    "response_file_timestamp_utc": "2026-11-01T03:04:30.839514+00:00",
+    "meaning": "endpoint reachable; authentication required; no MCP initialization or project access"
+  },
+  "executor": "AI-assisted Codex task; not an independent human reviewer"
+}

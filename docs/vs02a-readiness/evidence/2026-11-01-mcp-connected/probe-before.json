@@ -1,0 +1,1 @@
+{"environment_alias": "vs02a-synthetic-candidate", "executed_at_utc": "2026-11-01T03:40:11.448479+00:00", "probe": "public-jwks-shape-only", "reason": "unreviewed_jwk_extension", "status": "FAIL", "token_verification": "NOT RUN"}

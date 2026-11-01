@@ -1,0 +1,182 @@
+CHECK node-version
+COMMAND node --version
+EXIT 0
+v22.23.4
+
+
+CHECK npm-version
+COMMAND npm --version
+EXIT 0
+10.9.9
+
+
+CHECK npm-ci
+COMMAND npm ci
+EXIT 0
+
+added 297 packages, and audited 298 packages in 28s
+
+121 packages are looking for funding
+  run `npm fund` for details
+
+11 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+
+CHECK typecheck
+COMMAND npm run typecheck
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 typecheck
+> tsc --noEmit
+
+
+
+CHECK lint
+COMMAND npm run lint
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 lint
+> eslint .
+
+
+
+CHECK unit
+COMMAND npm test
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /private/tmp/vs02a-environment-verification/source/apps/web
+
+
+ Test Files  5 passed (5)
+      Tests  26 passed (26)
+   Start at  10:06:22
+   Duration  1.81s (environment 55%, tests 22%, setup 10%, transform 7%, import 6%)
+
+
+
+CHECK build
+COMMAND npm run build
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 190 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                  0.61 kB │ gzip:   0.38 kB
+dist/assets/public-sans-vietnamese-wght-normal-CtlIRbEm.woff2    7.71 kB
+dist/assets/public-sans-latin-ext-wght-normal-MQgHevqp.woff2    18.47 kB
+dist/assets/public-sans-latin-wght-normal-DdeTHZLK.woff2        26.83 kB
+dist/assets/index-CGCVY44V.css                                  31.93 kB │ gzip:   7.42 kB
+dist/assets/index-C73yga0R.js                                  411.93 kB │ gzip: 127.54 kB
+
+✓ built in 351ms
+
+
+CHECK browser-mocked
+COMMAND npm run test:e2e:mock
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 test:e2e:mock
+> playwright test
+
+[WebServer] (node:6623) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 3 workers
+
+(node:6624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6625) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6626) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (2.4s)
+  ✓   3 [desktop] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (3.3s)
+  ✓   2 [desktop] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (3.6s)
+  ✓   4 [desktop] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.8s)
+  ✓   6 [desktop] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (1.3s)
+  ✓   7 [desktop] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.4s)
+(node:6698) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [desktop] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (6.9s)
+  ✓   9 [tablet] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.3s)
+(node:6716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [desktop] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (7.2s)
+  ✓  10 [tablet] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (1.8s)
+(node:6734) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [tablet] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.4s)
+  ✓  13 [tablet] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.5s)
+  ✓  15 [tablet] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.5s)
+  ✓  14 [tablet] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (3.9s)
+(node:6765) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [tablet] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (6.8s)
+(node:6773) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 [mobile] › tests/e2e/guest.spec.ts:51:1 › Guest navigates Path → Course → both free Lessons; flashcard stays local (2.8s)
+  ✓  18 [mobile] › tests/e2e/guest.spec.ts:101:1 › 200% text, 320px reflow, and reduced motion retain all controls (2.3s)
+  ✓  19 [mobile] › tests/e2e/guest.spec.ts:135:1 › search, membership filtering, no-match reset, and history work (1.6s)
+  ✓  20 [mobile] › tests/e2e/guest.spec.ts:160:1 › opaque cursor pagination appends and a new query resets it (1.5s)
+  ✓  16 [tablet] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (7.4s)
+(node:6814) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  22 [mobile] › tests/e2e/guest.spec.ts:252:1 › keyboard skip link, focus and native mobile dialog are operable (3.6s)
+  ✓  23 [mobile] › tests/e2e/guest.spec.ts:372:1 › unsafe Markdown/media stay inert and mismatched/private links stay generic (2.3s)
+  ✓  21 [mobile] › tests/e2e/guest.spec.ts:189:1 › loading, error, empty, and invalid cursor preserve recovery (6.5s)
+  ✓  24 [mobile] › tests/e2e/guest.spec.ts:438:1 › rendered screens pass automated accessibility and produce screenshot evidence (5.2s)
+
+  24 passed (42.5s)
+
+
+CHECK browser-real
+COMMAND npm run test:e2e:real
+EXIT 0
+
+> ai-learning-platform-web@0.0.0 test:e2e:real
+> playwright test --config playwright.integration.config.ts
+
+[WebServer] (node:6890) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 2 workers
+
+(node:6891) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [real-desktop] › tests/integration/guest-real.spec.ts:34:1 › FT-001–003: actual Go public reads support the complete Guest journey (2.1s)
+  ✓   2 [real-desktop] › tests/integration/guest-real.spec.ts:140:1 › FT-001 / N07–11: search, membership and real signed cursor pagination (2.3s)
+  ✓   4 [real-desktop] › tests/integration/guest-real.spec.ts:291:1 › ST-013 / N12–13: real fixture rich content and public media stay safe (953ms)
+  ✓   3 [real-desktop] › tests/integration/guest-real.spec.ts:214:1 › ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable (1.6s)
+  ✓   6 [real-desktop] › tests/integration/pagination-recovery.spec.ts:10:1 › AI-F01: actual API restart recovery replaces the error, results and signed cursor repeatedly (3.2s)
+(node:6947) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [real-desktop] › tests/integration/guest-real.spec.ts:331:1 › real desktop/mobile keyboard, layouts and screenshots preserve the original UI (4.7s)
+(node:6961) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [real-mobile] › tests/integration/guest-real.spec.ts:34:1 › FT-001–003: actual Go public reads support the complete Guest journey (1.9s)
+  ✓   8 [real-mobile] › tests/integration/guest-real.spec.ts:140:1 › FT-001 / N07–11: search, membership and real signed cursor pagination (2.1s)
+  ✓   9 [real-mobile] › tests/integration/guest-real.spec.ts:214:1 › ST-008 / N01–06,N14–17: hidden, draft and official outcomes remain unavailable (1.4s)
+  ✓  10 [real-mobile] › tests/integration/guest-real.spec.ts:291:1 › ST-013 / N12–13: real fixture rich content and public media stay safe (975ms)
+  ✓  12 [real-mobile] › tests/integration/pagination-recovery.spec.ts:10:1 › AI-F01: actual API restart recovery replaces the error, results and signed cursor repeatedly (3.2s)
+  ✓  11 [real-mobile] › tests/integration/guest-real.spec.ts:331:1 › real desktop/mobile keyboard, layouts and screenshots preserve the original UI (4.6s)
+
+  12 passed (19.8s)

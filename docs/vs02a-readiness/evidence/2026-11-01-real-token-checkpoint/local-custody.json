@@ -1,0 +1,17 @@
+{
+  "record_id": "VSA-SYN-20261101-R1",
+  "observed_at_utc": "2026-11-01T05:23:07.584551+00:00",
+  "credential_ledger_exists": false,
+  "credential_ledger_removed_reported_by_live_run": true,
+  "passwords_or_private_path_in_evidence": false,
+  "fixture_users_deleted": false,
+  "api_secret_disclosure": "Value omitted; never saved/reused from chat",
+  "revocation_replacement": "OPERATOR_REPORTED_COMPLETE",
+  "operator_statement": "Sudah dicabut dan pengganti dibuat",
+  "independent_key_revocation_verification": "NOT RUN; no key-management capability or disclosed-key replay used",
+  "replacement_env_template": "PASS; blank 0600 outside Git, 0700 parent",
+  "replacement_key_entry": "PASS_LOCAL_HIDDEN_PROMPT_REPORTED_BY_HELPER",
+  "future_key_operations_under_R1": false,
+  "replacement_key_provenance": "Operator input; not compared with disclosed key and not sent to provider",
+  "replacement_key_entry_completed_at_utc": "2026-11-01T05:29:36.820738+00:00"
+}

@@ -9,7 +9,14 @@
   "evidence_limit": "Operator-assisted current-key identification; no independent settings API read or user-token signature test",
   "signup_enabled": false,
   "anonymous_signins_enabled": false,
-  "actual_region": "NOT VERIFIED",
+  "actual_region": {
+    "country": "Germany",
+    "location": "Central EU (Frankfurt)",
+    "region_id": "eu-central-1",
+    "project_status": "Healthy",
+    "compute": "Nano",
+    "source": "Operator-reported Dashboard metadata; no independent region API read"
+  },
   "token_verification": "NOT RUN",
   "signup_observations": [
     {
@@ -29,5 +36,13 @@
       "actual_signup_attempts": 0
     }
   ],
-  "settings_evidence_limit": "Operator-reported Dashboard states, not independently read through an Auth settings API"
+  "settings_evidence_limit": "Operator-reported Dashboard states, not independently read through an Auth settings API",
+  "region_approval": {
+    "source": "Product Owner response in current conversation",
+    "statement": "Gunakan Frankfurt untuk uji sintetis ini",
+    "approved_scope": "Existing isolated synthetic-only VS-02A test project",
+    "relation_to_prior_preference": "Explicit acceptance of Frankfurt for this test environment; Singapore remains historical preference, not a migration instruction",
+    "production_or_real_data_authorized": false,
+    "new_project_or_purchase_authorized": false
+  }
 }

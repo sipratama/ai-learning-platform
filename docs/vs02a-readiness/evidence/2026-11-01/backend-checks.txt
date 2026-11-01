@@ -1,0 +1,79 @@
+CHECK go-version
+COMMAND go version
+EXIT 0
+go version go1.27.3 darwin/arm64
+
+
+CHECK go-modules
+COMMAND go mod download
+EXIT 0
+go: no module dependencies to download
+
+
+CHECK go-format
+COMMAND sh -c test -z "$(gofmt -l .)"
+EXIT 0
+
+
+CHECK go-vet
+COMMAND go vet ./...
+EXIT 0
+
+
+CHECK go-vet-fixture
+COMMAND go vet -tags devfixture ./...
+EXIT 0
+
+
+CHECK go-test
+COMMAND go test -count=1 ./...
+EXIT 0
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	0.455s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	0.868s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	0.455s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	0.841s
+
+
+CHECK go-test-fixture
+COMMAND go test -count=1 -tags devfixture ./...
+EXIT 0
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	0.330s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/devfixture	0.327s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	0.304s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	0.365s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	0.317s
+
+
+CHECK go-race
+COMMAND go test -count=1 -race ./...
+EXIT 0
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	1.377s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	1.334s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	1.408s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	1.345s
+
+
+CHECK go-race-fixture
+COMMAND go test -count=1 -race -tags devfixture ./...
+EXIT 0
+ok  	github.com/sipratama/ai-learning-platform/apps/api/cmd/api	1.371s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/devfixture	1.435s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/config	1.340s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/platform/httpserver	1.451s
+ok  	github.com/sipratama/ai-learning-platform/apps/api/internal/publiclearning	1.339s
+
+
+CHECK go-build
+COMMAND go build ./...
+EXIT 0
+
+
+CHECK go-build-fixture
+COMMAND go build -tags devfixture ./...
+EXIT 0
+
+
+CHECK fixture-boundary
+COMMAND bash ../../scripts/check-fixture-boundary.sh
+EXIT 0
+Fixture build and startup boundaries verified.

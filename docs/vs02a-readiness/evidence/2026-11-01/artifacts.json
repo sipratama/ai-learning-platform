@@ -1,0 +1,19 @@
+{
+  "source_baseline": "91080f45e1aba38316eeecca6eeba3f618bd7f3a",
+  "hash": "SHA-256",
+  "scope": "Redacted local preparation evidence and added operator scripts; manifest excludes itself",
+  "files": {
+    "docs/vs02a-readiness/evidence/2026-11-01/backend-checks.txt": "f748ce8a9883392af86ded4d0072f59addf61981623842fc89c104d0c63c38fc",
+    "docs/vs02a-readiness/evidence/2026-11-01/checks.json": "b2bcff52ee346c540fb641a8d121bd85e61a4fa339a8c0a5d7c8642e30ae4a36",
+    "docs/vs02a-readiness/evidence/2026-11-01/dependency-audit-production.json": "91a5b6d1130d5faa1aa00682c2e65a1fe14f34140d897b98a016e1faca23599a",
+    "docs/vs02a-readiness/evidence/2026-11-01/dependency-audit.json": "a30cf66cbdf81123cebea8eaca4cc65383168981f6566742b66d368d9082902e",
+    "docs/vs02a-readiness/evidence/2026-11-01/frontend-checks.txt": "3f671534eb692af650eedd2c3ef80e9e7e4e00d94b3aa459de26579cb5a48f9f",
+    "docs/vs02a-readiness/evidence/2026-11-01/jwt-module.json": "6b006bc193d21f67e9bb29cb57d9949bf89f0536957402fc3e6b23b1015fe60e",
+    "docs/vs02a-readiness/evidence/2026-11-01/observations.json": "4e0f998c44adbbe21b0842c4c64e0dc1dbb917aa6f3553dcfdc2b7706b61cfb2",
+    "docs/vs02a-readiness/evidence/2026-11-01/preparation-checks.json": "8734c073640da9a92066d0956a9f9eeeaf30d7654eec30f3463fe6251dd54452",
+    "docs/vs02a-readiness/evidence/2026-11-01/probe-guards.txt": "ece310b0586ceb09e8a658695702f9e1b810b241dded96e6671b3f3ef8438f7d",
+    "docs/vs02a-readiness/evidence/2026-11-01/probe-unconfigured.json": "db63b3451306cceb3f1fa9f0cdcc5f2840a5bc24082df8c8103f95cf9cabe30a",
+    "scripts/verify-supabase-jwks.py": "b4dbf2448ae40d58cad05878e9d6a4a5f2b2948a09d600aceceacb0df0de2619",
+    "scripts/test-verify-supabase-jwks.py": "2f60201d518bbfcfbd667a02eba98601c1624853e9e9a1290adfcd8e4af3fdde"
+  }
+}

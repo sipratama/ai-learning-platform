@@ -1,0 +1,45 @@
+{
+  "record_id": "VSA-SYN-20261101-R1",
+  "status": "APPROVED",
+  "issuer_sha256": "6bbc53576144f2de6f6099639010fa5603394de404f16dcb324b1c0e22debd9a",
+  "mail_policy": "reserved-invalid-no-mailbox-no-outbound-mail",
+  "credential_policy": "local-private-ledger-0600-tokens-memory-only",
+  "provider_actions": [
+    "create-exact-roster",
+    "password-sign-in-max-two-per-user",
+    "local-logout-task-sessions-only"
+  ],
+  "reset_delete_owner": "Current authorized operator/Product Owner; explicit R1 acceptance in project conversation",
+  "roster": [
+    {
+      "alias": "A",
+      "label": "Student A",
+      "email": "vs02a-student-a@vs02a.invalid",
+      "application_grants": []
+    },
+    {
+      "alias": "B",
+      "label": "Student B",
+      "email": "vs02a-student-b@vs02a.invalid",
+      "application_grants": []
+    },
+    {
+      "alias": "C",
+      "label": "Candidate C",
+      "email": "vs02a-candidate-c@vs02a.invalid",
+      "application_grants": []
+    }
+  ],
+  "approval_provenance": {
+    "source": "Explicit user response to R1 approval question in the current project conversation",
+    "statement": "Setujui R1 persis seperti tertulis",
+    "recorded_at_utc": "2026-11-01T04:30:10.398472+00:00",
+    "scope": "Exact three fixtures, reserved non-delivery mail, credential custody, bounded creation/password sign-in/local logout, reset/delete ownership",
+    "independent_security_review": false,
+    "o05_approved": false,
+    "auth_bundle_1_authorized": false
+  },
+  "independent_security_review": "PENDING",
+  "o05_decision": "PROPOSED_NOT_APPROVED",
+  "auth_bundle_1_authorized": false
+}

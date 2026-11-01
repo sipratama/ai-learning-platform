@@ -58,10 +58,16 @@ jobs:
           cache-dependency-path: apps/web/package-lock.json
       - name: Install locked dependencies
         run: npm ci
+      - name: Audit tooling and production dependencies
+        run: |
+          npm audit
+          npm audit --omit=dev
       - name: Typecheck
         run: npm run typecheck
       - name: Lint
         run: npm run lint
+      - name: Tooling compatibility and lint coverage
+        run: npm run test:tooling
       - name: Test
         run: npm test
       - name: Build

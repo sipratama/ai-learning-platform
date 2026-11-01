@@ -2,7 +2,7 @@
   "source_base_sha": "8ebcffb8903899714326946ce443d4e2c76772ac",
   "tooling_source_sha": "22c04ea1e5a2b0f097780ed3ae0a83fe79659fe6",
   "docs": 17,
-  "relative_links_and_fragments": 226,
+  "relative_links_and_fragments": 227,
   "canonical_ids_including_ranges": 107,
   "local_test_definitions": 33,
   "local_open_item_definitions": 14,
@@ -12,12 +12,12 @@
     ".github/workflows/ci.yml",
     "docs/vs02a-readiness/09-hosted-supabase-es256-synthetic-setup-and-verification-runbook.md"
   ],
-  "scanned_files": 263,
+  "scanned_files": 264,
   "secret_pattern_scan": "PASS",
   "secret_baseline_exit": 0,
-  "artifact_digests_checked": 39,
+  "artifact_digests_checked": 40,
   "negative_subcases_passed": 53,
   "errors": [],
   "status": "PASS",
-  "checked_at_utc": "2026-11-01T05:31:28.215080+00:00"
+  "checked_at_utc": "2026-11-01T05:32:13.245032+00:00"
 }

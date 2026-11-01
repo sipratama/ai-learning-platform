@@ -1,0 +1,12 @@
+{
+  "completed_at_utc": "2026-11-01T05:29:36.820738+00:00",
+  "directory_mode": "0700",
+  "environment_alias": "vs02a-synthetic-candidate",
+  "file_mode": "0600",
+  "operation": "configure-env",
+  "provider_writes": 0,
+  "record_id": "VSA-SYN-20261101-R1",
+  "secret_stored": true,
+  "started_at_utc": "2026-11-01T05:22:44.759218+00:00",
+  "status": "PASS"
+}

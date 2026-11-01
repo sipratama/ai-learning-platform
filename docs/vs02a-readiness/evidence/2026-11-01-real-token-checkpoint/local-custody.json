@@ -10,6 +10,8 @@
   "operator_statement": "Sudah dicabut dan pengganti dibuat",
   "independent_key_revocation_verification": "NOT RUN; no key-management capability or disclosed-key replay used",
   "replacement_env_template": "PASS; blank 0600 outside Git, 0700 parent",
-  "replacement_key_entry": "PENDING_LOCAL_OPERATOR_INPUT",
-  "future_key_operations_under_R1": false
+  "replacement_key_entry": "PASS_LOCAL_HIDDEN_PROMPT_REPORTED_BY_HELPER",
+  "future_key_operations_under_R1": false,
+  "replacement_key_provenance": "Operator input; not compared with disclosed key and not sent to provider",
+  "replacement_key_entry_completed_at_utc": "2026-11-01T05:29:36.820738+00:00"
 }
